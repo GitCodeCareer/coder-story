@@ -13,3 +13,9 @@ backgroundColor: "bg-indigo-600"
 <a href="/about">About</a>
 <a href="/interviews">Interviews</a>
 <a href="/contact">Contact</a>
+
+{% for post in collections.posts %}
+    <h3>
+        {{ post.data.title }}
+    </h3>
+{% endfor %}

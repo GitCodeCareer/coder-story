@@ -1,0 +1,37 @@
+backend:  
+  name:  git-gateway
+
+collections: 
+  - name:  "interviews"
+    label:  "Interviews"
+    folder: "src/interviews"
+    create: true 
+    slug: "{{slug}}"
+    fields:
+      -  {
+        label: "Title", 
+        name: "title", 
+        widget: "string"
+      }
+      -  {
+        label: "Excerpt", 
+        name: "excerpt", 
+        widget: "text"
+      }
+      -  {
+        label: "Image", 
+        name: "profileImage", 
+        widget: "image"
+      }
+      -  {
+        label: "Publish Date", 
+        name: "publishDate", 
+        widget: "datetime"
+      }
+      -  {
+        label: "Post Body", 
+        name: "body", 
+        widget: "markdown"
+      }
+
+media_folder:  "/assets/img"

@@ -1,0 +1,4 @@
+{
+    "layout": "components/interview.njk",
+    "tags": "posts"
+}
