@@ -1,0 +1,38 @@
+{
+
+    "resources": [{
+            "name": "Syntax",
+            "url": "https://syntax.fm",
+            "description": "Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work and talking about their own experiences.",
+            "mainImage": "https://res.cloudinary.com/coderstory/image/upload/v1549114766/Resources/syntax.jpg",
+            "categoryImage": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+            "category": "Podcast"
+        },
+        {
+            "name": "Syntax",
+            "url": "https://syntax.fm",
+            "description": "Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work and talking about their own experiences.",
+            "mainImage": "https://res.cloudinary.com/coderstory/image/upload/v1549114766/Resources/syntax.jpg",
+            "categoryImage": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+            "category": "Podcast"
+        },
+        {
+            "name": "Syntax",
+            "url": "https://syntax.fm",
+            "description": "Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work and talking about their own experiences.",
+            "mainImage": "https://res.cloudinary.com/coderstory/image/upload/v1549114766/Resources/syntax.jpg",
+            "categoryImage": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+            "category": "Podcast"
+        },
+        {
+            "name": "Syntax",
+            "url": "https://syntax.fm",
+            "description": "Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work and talking about their own experiences.",
+            "mainImage": "https://res.cloudinary.com/coderstory/image/upload/v1549114766/Resources/syntax.jpg",
+            "categoryImage": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+            "category": "Podcast"
+        }
+
+
+    ]
+}

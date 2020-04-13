@@ -3,6 +3,8 @@ module.exports = function(eleventyConfig) {
     // Set Assets Folder 
     eleventyConfig.addPassthroughCopy("assets");
 
+    
+
     return {
         passthroughFileCopy: true,
         markdownTemplateEngine: "njk", 
