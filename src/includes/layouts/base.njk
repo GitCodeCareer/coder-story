@@ -1,5 +1,9 @@
 {% include "components/head.njk" %}
 
-{{ content | safe }}
+{% block content %}
+    {{ content | safe }}
+{% endblock %}
+
+{% block postContent %}{% endblock %}
 
 {% include "components/footer.njk" %}

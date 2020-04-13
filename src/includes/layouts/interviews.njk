@@ -1,0 +1,9 @@
+{% extends "layouts/simple.njk" %}
+
+{% block postContent %}
+
+    {% for interview in collections.interviews %}
+        <a href="{{ interview.url }}">{{ interview.data.title }}</a>
+    {% endfor %}
+
+{% endblock %}
