@@ -1,0 +1,10 @@
+{
+    "email": "hello@coderstory.io",
+    "socials": [{
+        "name": "facebook",
+        "url": "https://facebook.com"
+    }, {
+        "name": "twitter",
+        "url": "https://twitter.com"
+    }]
+}
