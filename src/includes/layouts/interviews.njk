@@ -31,7 +31,7 @@
 					<a href="{{ interview.url }}">
                             <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
                                 <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
-                                    {{ interview.data.date }}
+                                    {{ interview.data.date | readableDate }}
                                 </div>
                                 <img src="{{ interview.data.backgroundImage }}" class="h-32 rounded-lg w-full object-cover">
                                 <div class="flex justify-center">
