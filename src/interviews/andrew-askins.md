@@ -17,7 +17,7 @@ social: https://twitter.com/AndrewAskins
 status: Published
 date: 2020-01-30
 ---
-## Who are you? Where are you from and what is your backstory?
+**Who are you? Where are you from and what is your backstory?**
 
 Hi 👋 I'm Andrew. I'm the CEO of Krit, an [app development agency](https://builtbykrit.com/) that works with non-technical founders at early stage startups. I grew up in Columbia, SC - a sleepy southern city with about 100,000 people in the city proper. I started Krit while I was in college studying Computer Science (I was actually studying abroad in Scotland at the time).  
 <br>
@@ -28,12 +28,16 @@ I worked as an iOS developer before starting Krit. For the first 3 years of our 
 **What made you get into programming?**
 
 My first interaction with any code was in a high school class called ITGS. It stood for Integrated Technology in a Global Society (*gag*). We had an open project at the end of the class, and I decided to build a website for my grandparents' business. I used Dreamweaver to create it and recruited a friend who actually knew how to code to help me edit some of the HTML and CSS. 
+
 <br>
 Unfortunately, the site can't be found anywhere, not even in the Wayback machine. So you'll have to take my word for it that it was truly hideous.
+
 <br>
+
 When I got to college I had no idea what I wanted to major in or do in life. My only thought was that I might want to teach math in the Peace Corps. So I signed up for Vector Calc and Computer Science 141. My thinking was that Computer Science would involve enough math that I could probably still do the teaching thing if I decided not to major in math. I quickly found that I hated Vector Calc, so a math major seemed like a pretty bad idea.
 
 <br>
+
 Computer Science, on the other hand, was a completely different experience. My professor was a Ph.D. student who was known around campus as JJ the Boombox guy. He would wear ridiculous blazers and carry a giant, 80s boombox around blaring techno music.
 
 <br>
