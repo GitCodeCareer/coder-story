@@ -73,11 +73,19 @@ My process looks something like this:
 * Take a job working for dirt cheap where you immediately get thrown into the fire and asked to build an app a week.
 * Do a lot of googling and nag your boss until you find one day that you’re a programmer.
 
+
+
 I wouldn’t necessarily recommend this path to anyone else, but I think there are a couple of key pieces that are important.
+
+
 
 It’s hard to build anything without a basic understanding of programming principles. What is a loop? What is a variable? How do arrays work?
 
+
+
 To learn these basics you can go the traditional route and get a computer science degree, pay money for a coding boot camp, or teach yourself through blog posts and videos. There is no right answer here. What works for you will depend on what motivates you, how quickly you want to make progress and how much money you have.
+
+
 
 Once you have the basics down the best way to learn anything in programming is to build something. Whether you’re learning a new language, framework, design concept, etc. the best way to learn is to build something. Just start and every time you get stuck start googling.
 
