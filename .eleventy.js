@@ -3,10 +3,6 @@ module.exports = function(config) {
     config.addPassthroughCopy("assets");
     config.addPassthroughCopy("admin");
 
-    config.addFilter("readableDate", dateObj => {
-        return DateTime.fromJSDate(dateObj).toFormat("DDD");
-    });
-    
     return {
         passthroughFileCopy: true,
         markdownTemplateEngine: "njk",
