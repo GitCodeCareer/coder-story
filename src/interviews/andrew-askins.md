@@ -21,6 +21,8 @@ date: 2020-01-30
 
 Hi 👋 I'm Andrew. I’m the CEO of Krit, an[app development agency](https://builtbykrit.com/)that works with non-technical founders at early stage startups. I grew up in Columbia, SC - a sleepy southern city with about 100,000 people in the city proper. I started Krit while I was in college studying Computer Science (I was actually studying abroad in Scotland at the time).
 
+
+
 I worked as an iOS developer before starting Krit. For the first 3 years of our life as a company, I was primarily a front-end developer. Two years ago I stopped writing code full-time and embraced the CEO role. These days I spend my time focusing on sales, marketing and working with clients. It has absolutely been the right step for me, although my experience working as a programmer first continues to help me every day.
 
 ![](https://lh6.googleusercontent.com/LdDJZBP-ku5VVm55ijaMM75_eBzsUVbLPSebYnj3r2qWqtQDvZ_P7VmupCW8E2-B41QLFevKXYbK21lz7aVrZ2zLjPFEqj7ZBmgfqXBuQFCaPor3k8YYC9qDfFQsf5sbp4X3qIkw)
