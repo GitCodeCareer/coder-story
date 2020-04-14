@@ -137,6 +137,7 @@ We try to follow Test Driven Development, so we write tests constantly as we're 
 <br>
 
 **Do you face any particular challenges when building over a period of time?**
+
 I've struggled with ADHD for most of my life. When I was programming full time this was particularly hard to deal with. Programming requires long periods of deep, focused work. Medication helped a little bit, but also came with increased anxiety and a loss of appetite.
 
 <br>
@@ -149,6 +150,7 @@ I think everyone experiences this to some degree, regardless of whether they hav
 <br>
 
 **Are you currently learning anything new?**
+
 Two years ago I stopped writing code. We were at a point with the company where sales had been up and down and we realized if it was ever going to change we need someone to focus on it fulltime. It was a scary leap, we cut our capacity for client work by 25% (we only had 4 people at the time and all of us were doing client work) and I had to trust my team completely.
 
 <br>
@@ -162,6 +164,7 @@ At the same time, I wouldn't be an effective leader or salesperson without under
 <br>
 
 **Advice for those learning to code?**
+
 I touched on this earlier, but it's so important that I will say it again. Spend a lot of time thinking about what motivates you. Then do everything you can to align yourself with that thing. And don't beat yourself up about it.
 
 <br>
@@ -207,6 +210,8 @@ I've never read any programming books, I'm not even a huge fan of business books
 * Amy Hoy - <https://stackingthebricks.com/>
 
 * Nathan Barry - <https://nathanbarry.com/>
+
+<br>
 
 **Where can people learn more about you and your work?**
 
