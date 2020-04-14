@@ -15,7 +15,7 @@ backgroundImage: https://specials-images.forbesimg.com/imageserve/507971418/960x
 website: https://www.andrewaskins.com/
 social: https://twitter.com/AndrewAskins
 status: Published
-date: 2020-01-30
+date: 2020-01-30T00:00:00.000Z
 ---
 **Who are you? Where are you from and what is your backstory?**
 
@@ -115,6 +115,7 @@ Once you have the basics down the best way to learn anything in programming is t
 <br>
 
 **What does your process for building apps look like?**
+
 At Krit, our process for building an app for a new client starts with a Roadmapping Session. This is a paid consulting session where we spend an entire day with a client learning about their industry, their business goals and defining the scope for the MLP (Minimum Loveable Product).
 
 <br>
@@ -138,6 +139,8 @@ We try to follow Test Driven Development, so we write tests constantly as we're 
 
 **Do you face any particular challenges when building over a period of time?**
 
+<br>
+
 I've struggled with ADHD for most of my life. When I was programming full time this was particularly hard to deal with. Programming requires long periods of deep, focused work. Medication helped a little bit, but also came with increased anxiety and a loss of appetite.
 
 <br>
@@ -147,6 +150,7 @@ So I had to find ways to hack my motivation. I didn't have the discipline to tea
 <br>
 
 I think everyone experiences this to some degree, regardless of whether they have an attention disorder or not. The more you can learn about what motivates you, and align yourself with those forces, the more successful and the happier you will be.
+
 <br>
 
 **Are you currently learning anything new?**
@@ -165,6 +169,8 @@ At the same time, I wouldn't be an effective leader or salesperson without under
 
 **Advice for those learning to code?**
 
+<br>
+
 I touched on this earlier, but it's so important that I will say it again. Spend a lot of time thinking about what motivates you. Then do everything you can to align yourself with that thing. And don't beat yourself up about it.
 
 <br>
@@ -174,6 +180,7 @@ For me it's people. I beat myself up about not being able to get side projects o
 <br>
 
 If you need to pay for a code school in order to be motivated to learn to code, that's fine. If you don't, that's fine too. If you just want to learn to code and then use it as stepping stone to a career in sales or product management, that's also a fine path. Just figure out what drives you, and work to get more and more of that in your life.
+
 <br>
 
 **What's your tech stack?**
@@ -192,6 +199,8 @@ We intentionally choose tools that optimize for speed of development over scale.
 <br>
 
 **What have been influential books, resources and links that have helped you?**
+
+<br>
 
 I've never read any programming books, I'm not even a huge fan of business books. I prefer to read sci-fi and fantasy novels. That said I devour blog content. Here are a few bloggers who have been hugely influential to me at different points in my career:
 
