@@ -17,12 +17,14 @@ social: https://twitter.com/AndrewAskins
 status: Published
 date: 2020-01-30
 ---
-**Who are you? Where are you from and what is your backstory?**
+## Who are you? Where are you from and what is your backstory?
 
 Hi 👋 I'm Andrew. I'm the CEO of Krit, an [app development agency](https://builtbykrit.com/) that works with non-technical founders at early stage startups. I grew up in Columbia, SC - a sleepy southern city with about 100,000 people in the city proper. I started Krit while I was in college studying Computer Science (I was actually studying abroad in Scotland at the time).  
 <br>
 I worked as an iOS developer before starting Krit. For the first 3 years of our life as a company, I was primarily a front-end developer. Two years ago I stopped writing code full-time and embraced the CEO role. These days I spend my time focusing on sales, marketing and working with clients. It has absolutely been the right step for me, although my experience working as a programmer first continues to help me every day.
 <br>
+<br>
+
 **What made you get into programming?**
 
 My first interaction with any code was in a high school class called ITGS. It stood for Integrated Technology in a Global Society (*gag*). We had an open project at the end of the class, and I decided to build a website for my grandparents' business. I used Dreamweaver to create it and recruited a friend who actually knew how to code to help me edit some of the HTML and CSS. 
