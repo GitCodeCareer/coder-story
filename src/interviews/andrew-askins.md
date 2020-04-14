@@ -17,17 +17,21 @@ social: https://twitter.com/AndrewAskins
 status: Published
 date: 2020-01-30
 ---
-Who are you? Where are you from and what is your backstory?
+**Who are you? Where are you from and what is your backstory?**
 
-Hi 👋 I'm Andrew. I'm the CEO of Krit, an [app development agency](https://builtbykrit.com/) that works with non-technical founders at early stage startups. I grew up in Columbia, SC - a sleepy southern city with about 100,000 people in the city proper. I started Krit while I was in college studying Computer Science (I was actually studying abroad in Scotland at the time).
+Hi 👋 I'm Andrew. I'm the CEO of Krit, an [app development agency](https://builtbykrit.com/) that works with non-technical founders at early stage startups. I grew up in Columbia, SC - a sleepy southern city with about 100,000 people in the city proper. I started Krit while I was in college studying Computer Science (I was actually studying abroad in Scotland at the time).  
+
+<br><br>
 
 I worked as an iOS developer before starting Krit. For the first 3 years of our life as a company, I was primarily a front-end developer. Two years ago I stopped writing code full-time and embraced the CEO role. These days I spend my time focusing on sales, marketing and working with clients. It has absolutely been the right step for me, although my experience working as a programmer first continues to help me every day.
 
 ![](https://lh6.googleusercontent.com/LdDJZBP-ku5VVm55ijaMM75_eBzsUVbLPSebYnj3r2qWqtQDvZ_P7VmupCW8E2-B41QLFevKXYbK21lz7aVrZ2zLjPFEqj7ZBmgfqXBuQFCaPor3k8YYC9qDfFQsf5sbp4X3qIkw)
 
-What made you get into programming?
+**What made you get into programming?**
 
 My first interaction with any code was in a high school class called ITGS. It stood for Integrated Technology in a Global Society (*gag*). We had an open project at the end of the class, and I decided to build a website for my grandparents' business. I used Dreamweaver to create it and recruited a friend who actually knew how to code to help me edit some of the HTML and CSS. Unfortunately, the site can't be found anywhere, not even in the Wayback machine. So you'll have to take my word for it that it was truly hideous.
+
+<br><br>
 
 When I got to college I had no idea what I wanted to major in or do in life. My only thought was that I might want to teach math in the Peace Corps. So I signed up for Vector Calc and Computer Science 141. My thinking was that Computer Science would involve enough math that I could probably still do the teaching thing if I decided not to major in math. I quickly found that I hated Vector Calc, so a math major seemed like a pretty bad idea.
 
@@ -37,23 +41,23 @@ Computer Science, on the other hand, was a completely different experience. My p
 
 JJ made learning the basics of programming so much fun. He introduced the concept of Objects to us with a lolcats meme. All of our programming assignments involved building simple games in the command line. I found myself gravitating towards the problem-solving nature of writing code.
 
-What made you start Krit?
+**What made you start Krit?**
 
 The summer after my freshman year of college, 3 friends and I got jobs working with a new startup in town. The company was called 52apps. Their original plan was to build an app a week and see what worked.
 
 The interview went horribly.
 
-"Have you all ever built an iOS app?"
-
-"No, we haven't."
-
-"So, have you all ever worked on anything outside of school?"
-
-We looked around at each other, "uh... no. Not really."
-
-"Do any of you have an iPhone?"
-
-"No..."
+> "Have you all ever built an iOS app?"
+>
+> "No, we haven't."
+>
+> "So, have you all ever worked on anything outside of school?"
+>
+> We looked around at each other, "uh... no. Not really."
+>
+> "Do any of you have an iPhone?"
+>
+> "No..."
 
 But we were willing to work for super cheap ($500 per month working full time that first summer), so we were hired.
 
@@ -65,27 +69,35 @@ We spent the first year and a half working on a set of software tools for freela
 
 ![](https://res.cloudinary.com/coderstory/image/upload/v1551208756/Interview%20Image%20Gallery/OFFICE.png)
 
-What does your process for learning to code look like?
+**What does your process for learning to code look like?**
 
 My process looks something like this:
 
--   Pay a bunch of money to spend 4 years in a computer science program where you'll learn a lot about programming concepts but not much about programming itself.
-
--   Take a job working for dirt cheap where you immediately get thrown into the fire and asked to build an app a week.
-
--   Do a lot of googling and nag your boss until you find one day that you're a programmer.
+* Pay a bunch of money to spend 4 years in a computer science program where you'll learn a lot about programming concepts but not much about programming itself.
+* Take a job working for dirt cheap where you immediately get thrown into the fire and asked to build an app a week.
+* Do a lot of googling and nag your boss until you find one day that you're a programmer.
 
 I wouldn't necessarily recommend this path to anyone else, but I think there are a couple of key pieces that are important.
 
+<br><br>
+
 It's hard to build anything without a basic understanding of programming principles. What is a loop? What is a variable? How do arrays work?
+
+<br><br>
 
 To learn these basics you can go the traditional route and get a computer science degree, pay money for a coding boot camp, or teach yourself through blog posts and videos. There is no right answer here. What works for you will depend on what motivates you, how quickly you want to make progress and how much money you have.
 
+<br><br>
+
 Once you have the basics down the best way to learn anything in programming is to build something. Whether you're learning a new language, framework, design concept, etc. the best way to learn is to build something. Just start and every time you get stuck start googling.
 
-What does your process for building apps look like?
+<br><br>
+
+**What does your process for building apps look like?**
 
 At Krit, our process for building an app for a new client starts with a Roadmapping Session. This is a paid consulting session where we spend an entire day with a client learning about their industry, their business goals and defining the scope for the MLP (Minimum Loveable Product).
+
+<br><br>
 
 After we have the scope defined our team does some thumbnail sketches and spends a couple of weeks researching. We look into third-party tools, figure out the high-level data models and put together an estimate. We use t-shirt sizes for our estimates (x-small, small, medium) and each size corresponds to a number of hours ranging from 2-25.
 
@@ -93,71 +105,92 @@ After we have the scope defined our team does some thumbnail sketches and spends
 
 If a client decides to move forward with a project we start designing the app. In parallel, we write documentation for the backend and set up our deployment infrastructure (this has gotten a lot easier with Heroku).
 
+<br><br>
+
 Once the designs are finalized we start building. On the frontend, we build what we call a sandbox first. This is essentially frontend documentation. We build all of the components that will be used in the app, minus any of the functionality. Then we rough out all of the templates, and finally, hook them up to the backend as endpoints are finished.
 
 ![](https://res.cloudinary.com/coderstory/image/upload/v1551208758/Interview%20Image%20Gallery/Workin.png)
 
 We try to follow Test Driven Development, so we write tests constantly as we're writing code. We've written in more detail about [our development process here](https://builtbykrit.com/blog/how-an-idea-becomes-an-app-a-look-at-the-krit-development-process).
 
-Do you face any particular challenges when building over a period of time?
+<br><br>
+
+**Do you face any particular challenges when building over a period of time?**
 
 I've struggled with ADHD for most of my life. When I was programming full time this was particularly hard to deal with. Programming requires long periods of deep, focused work. Medication helped a little bit, but also came with increased anxiety and a loss of appetite.
 
+<br><br>
+
 So I had to find ways to hack my motivation. I didn't have the discipline to teach myself programming, so I studied it in college. I wasn't super motivated as an employee, so I started Krit. At times my motivation would wane at Krit, so I tried to put systems in place to hold myself accountable with my teammates (daily standups, etc.). Ultimately I realized engineering wasn't motivating to me, no matter how much I wanted it to be, so I transitioned to sales and management.
+
+<br><br>
 
 I think everyone experiences this to some degree, regardless of whether they have an attention disorder or not. The more you can learn about what motivates you, and align yourself with those forces, the more successful and the happier you will be.
 
-Are you currently learning anything new?
+<br><br>
+
+**Are you currently learning anything new?**
 
 Two years ago I stopped writing code. We were at a point with the company where sales had been up and down and we realized if it was ever going to change we need someone to focus on it fulltime. It was a scary leap, we cut our capacity for client work by 25% (we only had 4 people at the time and all of us were doing client work) and I had to trust my team completely.
 
+<br><br>
+
 Now I focus on sales, marketing, and management. All three are still a work in progress, but I'm happier and more productive than I ever was as a programmer. I always knew that I didn't want to be coding forever, I enjoyed being able to build things more than I enjoyed the building itself. But I didn't expect the transition to happen so fast. I'm glad it did.
+
+<br><br>
 
 At the same time, I wouldn't be an effective leader or salesperson without understanding the entire process. Being a programmer gives me credibility with future clients and probably gets them to lower their guard a little bit too...
 
 ![](https://res.cloudinary.com/coderstory/image/upload/v1551208758/Interview%20Image%20Gallery/DSC_0336_1.jpg)
 
-Advice for those learning to code?
+**Advice for those learning to code?**
 
 I touched on this earlier, but it's so important that I will say it again. Spend a lot of time thinking about what motivates you. Then do everything you can to align yourself with that thing. And don't beat yourself up about it.
 
+<br><br>
+
 For me it's people. I beat myself up about not being able to get side projects off the ground. But once I had partners and investors, I was able to start Krit. I have always struggled with going to the gym regularly. Now I pay a bunch of money for Crossfit, because there are people there encouraging me.
+
+<br><br>
 
 If you need to pay for a code school in order to be motivated to learn to code, that's fine. If you don't, that's fine too. If you just want to learn to code and then use it as stepping stone to a career in sales or product management, that's also a fine path. Just figure out what drives you, and work to get more and more of that in your life.
 
-What's your tech stack?
+<br><br>
+
+**What's your tech stack?**
 
 At Krit our typical tech stack is:
 
--   Ember.js / Javascript
+* Ember.js / Javascript
+* Django / Python
+* PostgresQL
+* Heroku
 
--   Django / Python
-
--   PostgresQL
-
--   Heroku
+<br>
 
 We intentionally choose tools that optimize for speed of development over scale. Most of our clients are early-stage startups, their biggest risk is that they can't find product/market fit before running out of money. Ember and Django are both conventions over configuration frameworks. They take a lot of the crud (pun intended) off of our plate so we can focus on moving quickly and invest time in the features that make the product unique.
 
-What have been influential books, resources and links that have helped you?
+<br><br>
+
+**What have been influential books, resources and links that have helped you?**
 
 I've never read any programming books, I'm not even a huge fan of business books. I prefer to read sci-fi and fantasy novels. That said I devour blog content. Here are a few bloggers who have been hugely influential to me at different points in my career:
 
-Joel Spolsky - <https://www.joelonsoftware.com/>
+* Joel Spolsky - <https://www.joelonsoftware.com/>
 
-Paul Graham - <http://paulgraham.com/>
+* Paul Graham - <http://paulgraham.com/>
 
-Justin Jackson - <https://justinjackson.ca/>
+* Justin Jackson - <https://justinjackson.ca/>
 
-Alex Turnbull - <https://www.groovehq.com/blog/entrepreneurship>
+* Alex Turnbull - <https://www.groovehq.com/blog/entrepreneurship>
 
-Jason & Caroline Zook - <https://wanderingaimfully.com/>
+* Jason & Caroline Zook - <https://wanderingaimfully.com/>
 
-Amy Hoy - <https://stackingthebricks.com/>
+* Amy Hoy - <https://stackingthebricks.com/>
 
-Nathan Barry - <https://nathanbarry.com/>
+* Nathan Barry - <https://nathanbarry.com/>
 
-Where can people learn more about you and your work?
+**Where can people learn more about you and your work?**
 
 I'm on twitter as [@AndrewAskins](https://twitter.com/AndrewAskins). I tweet pretty regularly about startups, tech and football. If you have any questions about getting into tech, transitioning from programming to other roles, or the state of the Carolina Panthers hit me up there.  
 
