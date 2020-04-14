@@ -1,9 +1,7 @@
-module.exports = function(eleventyConfig) {
+module.exports = function(config) {
     
     // Set Assets Folder 
-    eleventyConfig.addPassthroughCopy("assets");
-
-    
+    config.addPassthroughCopy("assets");
 
     return {
         passthroughFileCopy: true,
