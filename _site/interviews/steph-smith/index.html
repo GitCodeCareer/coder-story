@@ -6,11 +6,13 @@
     <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
     <link href="../assets/css/main.css" rel="stylesheet">
 
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
 
 </head>
 <body class="">
@@ -97,6 +99,14 @@
                             <div class="mb-2 text-gray-700 mt-6">
                                 Lorem ipsum dolor amet sum
                             </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="a" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="a"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
 
                         </div>
                         <div class="mt-10 py-10 border-t border-gray-300">
@@ -143,16 +153,44 @@ a</p>
                     </div>
                 </div>
             </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
         </section>
     </main>
-    <footer class="relative bg-gray-300 pt-8 pb-6">
-        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-            style="height: 80px; transform: translateZ(0px);">
-            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                version="1.1" viewBox="0 0 2560 100" x="0" y="0">
-                <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
-            </svg>
+
+    <footer class="flex justify-center text-gray-100 bg-indigo-900">
+    <div class="container py-20">
+        <h1 class="text-center text-lg font-bold lg:text-2xl">
+                Join 160+ others and never miss out on <br>our latest stories, blog posts and goodies.
+            </h1>
+
+        <div class="flex justify-center mt-6 mb-10   ">
+            <div class="bg-white rounded-lg">
+                <div class="flex flex-wrap justify-between md:flex-row">
+                    <input type="email" class="m-1 p-2 appearance-none text-gray-700 text-sm focus:outline-none" placeholder="Enter your email">
+                    <button class="w-full m-1 p-2 text-sm bg-indigo-900 rounded-lg font-semibold uppercase lg:w-auto">subscribe</button>
+                </div>
+            </div>
         </div>
 
-    </footer>
+        <hr class="h-px mt-6 mb-6 bg-gray-700 border-none">
+
+        <div class="flex flex-col items-center justify-between mt-6 md:flex-row">
+            <div>
+                <a href="/" class="px-3 py-2 rounded-md text-sm font-medium text-white">Logo</a>
+            </div>
+            <div class="flex mt-4 md:m-0">
+                <div class="-mx-4">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    <a href="/blog" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Blog</a>
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
 

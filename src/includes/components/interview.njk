@@ -47,6 +47,14 @@
                             <div class="mb-2 text-gray-700 mt-6">
                                 {{ description }}
                             </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="{{ social }}" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="{{ website }}"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
 
                         </div>
                         <div class="mt-10 py-10 border-t border-gray-300">
@@ -59,17 +67,13 @@
                     </div>
                 </div>
             </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            {# <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a> #}
         </section>
     </main>
-    <footer class="relative bg-gray-300 pt-8 pb-6">
-        <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
-            style="height: 80px; transform: translateZ(0px);">
-            <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
-                version="1.1" viewBox="0 0 2560 100" x="0" y="0">
-                <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
-            </svg>
-        </div>
 
-    </footer>
+    {% include "components/footer.njk" %}
 
 {% endblock %}
