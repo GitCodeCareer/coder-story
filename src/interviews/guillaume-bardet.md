@@ -7,7 +7,7 @@ backgroundImage: /assets/img/hanny-naibaho-awxvxy8bszc-unsplash.jpg
 website: https://qlearly.com/
 social: https://twitter.com/GuillaumeBardet
 status: Published
-date: 2020-01-30
+date: 2019-02-04T00:00:00.000Z
 ---
 **Who are you? Where are you from? What's your backstory?**
 
