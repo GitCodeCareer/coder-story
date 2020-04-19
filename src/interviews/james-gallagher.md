@@ -1,7 +1,7 @@
 ---
 title: James Gallagher
 description: |
-  Writer & Researcher @Career_Karma. EIR @beondeck
+  Writer & Researcher @Career_Karma. Expert In Residence @beondeck
 location: "Remote "
 profileImage: /assets/img/bkl1xagr_400x400.jpg
 backgroundImage: /assets/img/austin-distel-dfjjmvhwh_8-unsplash.jpg
