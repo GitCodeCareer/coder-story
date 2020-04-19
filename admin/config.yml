@@ -22,6 +22,7 @@ collections:
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Post Body", name: "body", widget: "markdown"}
         - name: "interviews" # Used in routes, e.g., /admin/collections/blog
+  - name: "posts"      
     label: "Blog Posts" # Used in the UI
     folder: "src/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
