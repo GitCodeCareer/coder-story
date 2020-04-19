@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <link rel="dns-prefetch" href="https://identity.netlify.com">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>CoderStory | Home</title>
     <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
@@ -14,6 +14,15 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
     <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
 
+    <meta property="og:title" content="CoderStory">
+    <meta property="og:description" content="Let your story inspire someone else's.">
+    <meta property="og:image" content="../assets/img/social.jpeg">
+    <meta property="og:url" content="https://coderstory.io">
+
+    <meta name="twitter:title" content="CoderStory ">
+    <meta name="twitter:description" content="Let your story inspire someone else's.">
+    <meta name="twitter:image" content="../assets/img/social.jpeg">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 <body class="">
 <nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
@@ -22,14 +31,14 @@
             <div class="flex items-center">
                 <div class="flex-shrink-0">
                     <a href="/">
-                        <img src="../assets/img/coderstory-white.png" class="h-32">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
                     </a>
                 </div>
             </div>
             <div class="hidden md:block">
                 <div class="ml-4 flex items-center md:ml-6">
                     <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
-                    <a href="/blog" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Blog</a>
+                    
                     <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
                     <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
                 </div>
@@ -198,19 +207,19 @@
 					<a href="">
                     <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
                         <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
-                            Podcast
+                            Education
                         </div>
-                        <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="h-32 rounded-lg w-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="h-32 rounded-lg w-full object-cover">
 
                         <div class="flex justify-center">
-                            <img src="https://res.cloudinary.com/coderstory/image/upload/v1549114766/Resources/syntax.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                            <img src="https://www.datacamp.com/datacamp-sq.png" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
                         </div>
                         <div class="py-2 px-2">
                             <div class=" font-bold font-title text-center">
-                                Syntax
+                                Datacamp
                             </div>
 
-                            <div class="text-sm font-light text-center my-2">Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work and talking about their own experiences.</div>
+                            <div class="text-sm font-light text-center my-2">DataCamp offers interactive R, Python, Sheets, SQL and shell courses. All on topics in data science, statistics and machine learning. </div>
                         </div>
                     </div>
                 </a>
@@ -223,19 +232,19 @@
 					<a href="">
                     <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
                         <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
-                            Podcast
+                            Tool
                         </div>
-                        <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="h-32 rounded-lg w-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="h-32 rounded-lg w-full object-cover">
 
                         <div class="flex justify-center">
-                            <img src="https://res.cloudinary.com/coderstory/image/upload/v1549114766/Resources/syntax.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                            <img src="https://cdn.iconscout.com/icon/free/png-512/notion-1693557-1442598.png" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
                         </div>
                         <div class="py-2 px-2">
                             <div class=" font-bold font-title text-center">
-                                Syntax
+                                Notion
                             </div>
 
-                            <div class="text-sm font-light text-center my-2">Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work and talking about their own experiences.</div>
+                            <div class="text-sm font-light text-center my-2">A tool that blends your everyday work apps into one. It's the all-in-one workspace for you and your team. Write, plan, collaborate, and get organized</div>
                         </div>
                     </div>
                 </a>
@@ -248,19 +257,19 @@
 					<a href="">
                     <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
                         <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
-                            Podcast
+                            Games
                         </div>
-                        <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="h-32 rounded-lg w-full object-cover">
+                        <img src="https://images.unsplash.com/photo-1585857188908-5b6de3179683?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="h-32 rounded-lg w-full object-cover">
 
                         <div class="flex justify-center">
-                            <img src="https://res.cloudinary.com/coderstory/image/upload/v1549114766/Resources/syntax.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/355f709412729.560ddd785683b.png" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
                         </div>
                         <div class="py-2 px-2">
                             <div class=" font-bold font-title text-center">
-                                Syntax
+                                Animal Crossing
                             </div>
 
-                            <div class="text-sm font-light text-center my-2">Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work and talking about their own experiences.</div>
+                            <div class="text-sm font-light text-center my-2">Escape to a deserted island and create your own paradise as you explore, create, and customize in the Animal Crossing: New Horizons game.</div>
                         </div>
                     </div>
                 </a>
@@ -277,16 +286,23 @@
 <footer class="flex justify-center text-gray-100 bg-indigo-900">
     <div class="container py-20">
         <h1 class="text-center text-lg font-bold lg:text-2xl">
-                Join 160+ others and never miss out on <br>our latest stories, blog posts and goodies.
-            </h1>
+            Join 160+ others and never miss out on <br>our latest stories, blog posts and goodies.
+        </h1>
 
         <div class="flex justify-center mt-6 mb-10   ">
             <div class="bg-white rounded-lg">
                 <div class="flex flex-wrap justify-between md:flex-row">
-                    <input type="email" class="m-1 p-2 appearance-none text-gray-700 text-sm focus:outline-none" placeholder="Enter your email">
-                    <button class="w-full m-1 p-2 text-sm bg-indigo-900 rounded-lg font-semibold uppercase lg:w-auto">subscribe</button>
+                    <form style="margin-block-end: 0rem;"action="https://coderstory.us19.list-manage.com/subscribe/post?u=3757dc73cf7e45a04dddc18bd&amp;id=70b2a3e203" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                        <input type="email" value="" name="EMAIL" class="required m-1 p-2 appearance-none text-gray-700 text-sm focus:outline-none"
+                        placeholder="Enter your email">
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3757dc73cf7e45a04dddc18bd_70b2a3e203" tabindex="-1" value=""></div>
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="w-full m-1 p-2 text-sm bg-indigo-900 rounded-lg font-semibold uppercase lg:w-auto">
+                    </form>
+
                 </div>
             </div>
+
         </div>
 
         <hr class="h-px mt-6 mb-6 bg-gray-700 border-none">
@@ -294,15 +310,19 @@
         <div class="flex flex-col items-center justify-between mt-3 md:flex-row">
             <div>
                 <a href="/">
-                    <img src="../assets/img/coderstory-white.png" class="h-20">
+                    <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-20">
                 </a>
             </div>
             <div class="flex mt-4 md:m-0">
                 <div class="-mx-4">
-                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
-                    <a href="/blog" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Blog</a>
-                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
-                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                    <a href="/interviews"
+                        class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about"
+                        class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved"
+                        class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get
+                        Involved</a>
                 </div>
             </div>
         </div>

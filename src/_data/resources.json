@@ -9,28 +9,28 @@
             "category": "Podcast"
         },
         {
-            "name": "Syntax",
-            "url": "https://syntax.fm",
-            "description": "Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work and talking about their own experiences.",
-            "mainImage": "https://res.cloudinary.com/coderstory/image/upload/v1549114766/Resources/syntax.jpg",
-            "categoryImage": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-            "category": "Podcast"
+            "name": "Datacamp",
+            "url": "https://www.datacamp.com/",
+            "description": "DataCamp offers interactive R, Python, Sheets, SQL and shell courses. All on topics in data science, statistics and machine learning. ",
+            "mainImage": "https://www.datacamp.com/datacamp-sq.png",
+            "categoryImage": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+            "category": "Education"
         },
         {
-            "name": "Syntax",
-            "url": "https://syntax.fm",
-            "description": "Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work and talking about their own experiences.",
-            "mainImage": "https://res.cloudinary.com/coderstory/image/upload/v1549114766/Resources/syntax.jpg",
-            "categoryImage": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-            "category": "Podcast"
+            "name": "Notion",
+            "url": "https://www.notion.so/?r=214e0530fce94520ba63e13fbaa479c1",
+            "description": "A tool that blends your everyday work apps into one. It's the all-in-one workspace for you and your team. Write, plan, collaborate, and get organized",
+            "mainImage": "https://cdn.iconscout.com/icon/free/png-512/notion-1693557-1442598.png",
+            "categoryImage": "https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+            "category": "Tool"
         },
         {
-            "name": "Syntax",
-            "url": "https://syntax.fm",
-            "description": "Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work and talking about their own experiences.",
-            "mainImage": "https://res.cloudinary.com/coderstory/image/upload/v1549114766/Resources/syntax.jpg",
-            "categoryImage": "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
-            "category": "Podcast"
+            "name": "Animal Crossing",
+            "url": "https://www.amazon.co.uk/Animal-Crossing-New-Horizons-Nintendo/dp/B07SMRM43T/ref=sr_1_1?crid=OY6HCZ5620ME&dchild=1&keywords=animal+crossing+new+horizons&qid=1587317450&sprefix=animal+cros%2Caps%2C149&sr=8-1",
+            "description": "Escape to a deserted island and create your own paradise as you explore, create, and customize in the Animal Crossing: New Horizons game.",
+            "mainImage": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/355f709412729.560ddd785683b.png",
+            "categoryImage": "https://images.unsplash.com/photo-1585857188908-5b6de3179683?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
+            "category": "Games"
         }
 
 
