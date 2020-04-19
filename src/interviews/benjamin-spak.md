@@ -30,9 +30,7 @@ I’m Benjamin Spak born in New York and raised in central Florida. T-shaped fro
 
 **What made you get into programming?**
 
-In a word ‘Myspace’. I know, yikes, and elder millennial! I think Myspace and Neopets got several people on board. Initially, I wanted to be a designer, so I picked up some photoshop, and did custom Myspace layouts for a few local bands and businesses in high school.
-
-\
+In a word ‘Myspace’. I know, yikes, and elder millennial! I think Myspace and Neopets got several people on board. Initially, I wanted to be a designer, so I picked up some photoshop, and did custom Myspace layouts for a few local bands and businesses in high school.\
 <br>
 
 After taking a few additional courses in web design in high school, I learned the now dated process of creating a layout in Photoshop, slicing them & coding them in Dreamweaver. When it came time to learn PHP I hit a wall and set aside coding for around 5 years. Eventually, while bored in the Air Force I began to pick it back up, along with online marketing.
@@ -53,10 +51,7 @@ I started #301DaysOfCode because I wanted to take myself from being an internet 
 
 I’m a bit of a slacker and scatter brained, I’m not sure I’m the best person to learn code from haha. While I’m working with code now, I’m still very much a generalist. I’ve sampled a bit of Ruby, Javascript, Python, PHP & several of the frameworks that tie into them. I love seeing where their approaches overlap and where they differ. I think, personally, that’s how I learn best; finding the patterns in code & languages.
 
-\
-<br>
-
-\
+<br>\
 I usually, use last minute learning. This is where I will provide a longer project timeline so that I can pick up new skills and learn new things as a project calls for it. Usually, I’ll have a work project act as a forcing function to spur me to learn something new in order to complete a task.
 
 <br>
