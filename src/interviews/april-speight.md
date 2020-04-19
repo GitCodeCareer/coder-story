@@ -8,7 +8,7 @@ backgroundImage: https://images.unsplash.com/photo-1570063578733-6a33b69d1439?ix
 website: https://www.vogueandcode.com/
 social: https://twitter.com/vogueandcode
 status: Published
-date: 2020-01-30T00:00:00.000Z
+date: 2019-05-02T23:00:00.000Z
 ---
 **Who are you? Where are you from and what is your backstory?**
 
