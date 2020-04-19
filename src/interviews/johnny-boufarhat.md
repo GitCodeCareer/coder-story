@@ -1,7 +1,6 @@
 ---
 title: Johnny Boufarhat
-description: Founder @hopinofficial - live online events platform to enable
-  organisers to create captivating and engaging online events
+description: "Founder @hopinofficial. Previously Readory & Multiplex. "
 location: London, United Kingdom
 profileImage: /assets/img/yn5mwky0_400x400-1-.jpg
 backgroundImage: /assets/img/allie-smith-goupqaau9qo-unsplash.jpg
@@ -10,8 +9,6 @@ social: https://twitter.com/johnnyboufarhat
 status: Published
 date: 2019-02-15T00:00:00.000Z
 ---
-**Last Updated at**: {{ date }}
-
 **Who are you? Where are you from and what is your backstory?**
 
 I was born and raised in Australia but have constantly moved around from a young age, I’ve now found myself happy and settled in London for the last two years. I am consumed by functional health and the microbiome after being diagnosed with an ‘incurable’ illness which I was able to treat and cure naturally - and that’s probably what has motivated and shaped me the most up until now.
@@ -54,7 +51,11 @@ The same goes for programming, read a tutorial, follow it a few times, do a few 
 
 **What does your process for building apps look like?**
 
-I am a terrible example to follow, I usually just dive straight in thinking about what the project will need as it goes -- and thus I don’t write great code the first time, it usually needs to be refactored numerous times. It’s both good and a bad thing as I know many great programmers that will get stuck in the planning phase thinking about problems that will arise in the code later on and not starting the project, as a lot of the times solutions come up naturally along the way. On the flip side, at least they don’t waste as many hours reiterating, refactoring, or bug-fixing.<br>
+I am a terrible example to follow, I usually just dive straight in thinking about what the project will need as it goes -- and thus I don’t write great code the first time, it usually needs to be refactored numerous times. It’s both good and a bad thing as I know many great programmers that will get stuck in the planning phase thinking about problems that will arise in the code later on and not starting the project, as a lot of the times solutions come up naturally along the way. On the flip side, at least they don’t waste as many hours reiterating, refactoring, or bug-fixing.
+
+<br>
+
+
 
 **Do you face any particular challenges when building over a period of time?**
 
@@ -132,7 +133,7 @@ Anyone who wants to host their own meetups or networking events online, Hopiin i
 
 <br>
 
-If you are interested in health, the microbiome or tech feel free to follow me on ***[twitter](https://twitter.com/johnnyboufarhat)***.
+If you are interested in health, the microbiome or tech feel free to follow me on ***[twitter](https://twitter.com/johnnyboufarhat).***
 
 <br>
 
