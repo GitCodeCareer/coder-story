@@ -8,7 +8,7 @@ backgroundImage: /assets/img/austin-distel-dfjjmvhwh_8-unsplash.jpg
 website: https://jamesg.app/
 social: https://twitter.com/jamesg_oca
 status: Published
-date: 2020-01-30
+date: 2019-04-09T23:00:00.000Z
 ---
 **Who are you? Where are you from and what is your backstory?**
 
