@@ -8,7 +8,7 @@ backgroundImage: /assets/img/nesa-by-makers-igur1ix0mqm-unsplash.jpg
 website: https://www.danielk.co.uk/
 social: https://twitter.com/_daniel_tweets
 status: Published
-date: 2020-01-30T00:00:00.000Z
+date: 2019-04-02T23:00:00.000Z
 ---
 **Who are you? Where are you from? What's your backstory?**
 
