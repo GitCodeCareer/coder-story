@@ -11,7 +11,7 @@ backgroundImage: /assets/img/element5-digital-ue2t1tcfsn8-unsplash.jpg
 website: https://1hakr.com/
 social: https://twitter.com/1HaKr
 status: Published
-date: 2020-01-30
+date: 2019-02-22T00:00:00.000Z
 ---
 **Who are you? Where are you from and what is your backstory?**
 
