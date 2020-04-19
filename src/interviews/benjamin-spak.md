@@ -49,9 +49,7 @@ I started #301DaysOfCode because I wanted to take myself from being an internet 
 
 **What does your process for learning to code look like?**
 
-I’m a bit of a slacker and scatter brained, I’m not sure I’m the best person to learn code from haha. While I’m working with code now, I’m still very much a generalist. I’ve sampled a bit of Ruby, Javascript, Python, PHP & several of the frameworks that tie into them. I love seeing where their approaches overlap and where they differ. I think, personally, that’s how I learn best; finding the patterns in code & languages.
-
-<br>\
+I’m a bit of a slacker and scatter brained, I’m not sure I’m the best person to learn code from haha. While I’m working with code now, I’m still very much a generalist. I’ve sampled a bit of Ruby, Javascript, Python, PHP & several of the frameworks that tie into them. I love seeing where their approaches overlap and where they differ. I think, personally, that’s how I learn best; finding the patterns in code & languages.<br>\
 I usually, use last minute learning. This is where I will provide a longer project timeline so that I can pick up new skills and learn new things as a project calls for it. Usually, I’ll have a work project act as a forcing function to spur me to learn something new in order to complete a task.
 
 <br>
