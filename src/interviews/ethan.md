@@ -8,7 +8,7 @@ backgroundImage: /assets/img/1500x500.jpeg
 website: https://ethan.link/
 social: https://twitter.com/Booligoosh
 status: Upcoming
-date: 2020-01-30
+date: 2019-02-04T00:00:00.000Z
 ---
 **Who are you? Where are you from and what is your backstory?** 
 
