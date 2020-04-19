@@ -21,7 +21,6 @@ collections:
       - {label: "Status", name: "status", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Post Body", name: "body", widget: "markdown"}
-        - name: "interviews" # Used in routes, e.g., /admin/collections/blog
   - name: "posts"      
     label: "Blog Posts" # Used in the UI
     folder: "src/posts" # The path to the folder where the documents are stored
