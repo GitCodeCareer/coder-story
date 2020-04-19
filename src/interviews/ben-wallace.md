@@ -100,6 +100,8 @@ Being quite new to this community in general, I've come across quite a few peopl
 
 Awesome people to check out!
 
+<br>
+
 \- ***[@vogueandcode](https://twitter.com/vogueandcode)*** April has managed to take not only coding but fashion - and merge the two together! I love everything fashion related and she writes amazing content so check her out!
 
 \-  ***[@AndrewAskins](https://twitter.com/AndrewAskins)*** We had the chance to share Andrew's story and since then I've been a fan! Not only does he run his agency [Krit](https://builtbykrit.com/blog), but he also shares his thoughts via a weekly post as well as promoting great content on his company website!
@@ -109,6 +111,8 @@ Awesome people to check out!
 \- ***[@MelRobbins](https://twitter.com/melrobbins)*** Sometimes we all need a little push or motivation, and I love following Mel as she always pushes you to believe in yourself and take control of your own journey! She has some great resources that you can check out via Audible which I would highly recommend.
 
 \- ***[@fajarsaddiqFS](https://twitter.com/fajarsiddiqFS)*** I have had the opportunity to come across some great makers, and although we haven't interacted as much as I would have liked, Fajar has been such a big supporter of CoderStory and even created the amazing promotional video that we shared when we relaunched. Sometimes when I need to feel optimistic or need to put a smile on my face, I always take the time to check out his feeds as he's always doing something and I'm really looking forward to seeing what comes next for him!
+
+<br>
 
 **Where can people learn more about you?**
 
