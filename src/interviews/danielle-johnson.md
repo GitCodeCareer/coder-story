@@ -1,14 +1,13 @@
 ---
 title: Danielle Johnson
-description: Co-founder @SquarecatWebDev • Maker @LeaveMeAloneApp • Love letter
-  http://subscriptionscore.com
+description: "Co-founder @SquarecatWebDev • Maker @LeaveMeAloneApp "
 location: "Wherever the adventure takes her "
 profileImage: /assets/img/e7_yljdb_400x400.jpg
 backgroundImage: /assets/img/boxed-water-is-better-btj_y8cdxpq-unsplash.jpg
 website: https://squarecat.io/
 social: https://twitter.com/dinkydani21
 status: "Published "
-date: 2020-01-30
+date: 2020-01-30T00:00:00.000Z
 ---
 **Who are you? Where are you from and what is your backstory?**
 
