@@ -1,7 +1,7 @@
 ---
 title: Roland Horvath
 description: Astronaut wannabe. Maker, designer, developer 🚀 3x WWDC scholar.
-  Lowkey App Store cover boy ✨ Head of engineering @extracard
+  Head of engineering @extracard
 location: Move in Progress
 profileImage: /assets/img/8ebmxs6g_400x400.jpg
 backgroundImage: /assets/img/photo-1541873676-a18131494184.jpeg
