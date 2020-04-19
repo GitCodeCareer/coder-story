@@ -8,7 +8,7 @@ backgroundImage: /assets/img/luke-stackpoole-moeqotmupg8-unsplash.jpg
 website: https://jesswallace.co/
 social: https://twitter.com/jesswallaceuk
 status: Published
-date: 2020-01-30
+date: 2019-03-06T00:00:00.000Z
 ---
 **Who are you? Where are you from? What’s your backstory?**
 
