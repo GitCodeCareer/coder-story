@@ -8,7 +8,7 @@ backgroundImage: /assets/img/james-pond-26vbutluffo-unsplash.jpg
 website: https://bjeaurn.com/
 social: https://twitter.com/bjeaurn
 status: "Published "
-date: 2020-01-30
+date: 2019-02-04T00:00:00.000Z
 ---
 **Who are you? Where are you from? What's your backstory?**
 
