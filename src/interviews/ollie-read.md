@@ -1,14 +1,13 @@
 ---
 title: Ollie Read
-description: PHP Developer, Laravel Aficionado,  Pixel Artist & World Builder.
-  Currently writing the multi-tenancy with Laravel Course.
+description: "PHP Developer, Laravel Aficionado,  Pixel Artist & World Builder. "
 location: Worcestershire, United Kingdom
 profileImage: /assets/img/q129uzdt_400x400.jpg
 backgroundImage: /assets/img/roman-synkevych-vxinuov1n84-unsplash.jpg
 website: https://ollieread.com/
 social: https://twitter.com/ollieread
 status: Published
-date: 2019-03-17T00:00:00.000Z
+date: 2019-05-16T23:00:00.000Z
 ---
 **Who are you? Where are you from and what is your backstory?**
 
