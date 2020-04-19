@@ -1,13 +1,14 @@
 ---
 title: Daniel Kaczmarczyk
-description: Lead Software Engineering Instructor @ Flatiron School
+description: Lead Software Engineering Instructor @ Flatiron School. Stack - js;
+  ruby; python;
 location: London, United Kingdom
 profileImage: /assets/img/glfmul-t_400x400.jpg
 backgroundImage: /assets/img/nesa-by-makers-igur1ix0mqm-unsplash.jpg
 website: https://www.danielk.co.uk/
 social: https://twitter.com/_daniel_tweets
 status: Published
-date: 2020-01-30
+date: 2020-01-30T00:00:00.000Z
 ---
 **Who are you? Where are you from? What's your backstory?**
 
