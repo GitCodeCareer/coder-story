@@ -176,19 +176,24 @@ I am not really one for books. I prefer to read short- and long-form articles wh
 
 <br>
 
-* Paul Graham’s Essays - Every essay that I have read by Paul Graham has been inspirational and filled with unique insights and wisdom. The one about High School is particularly interesting.
-* KMikeyM - Mike was the inspiration behind this project.
-* TechCrunch - TechCrunch is a great source of business and tech content that is a great read when you have a spare moment.
-* How to GraphQL - This tutorial was the first guide that introduced me to the world of GraphQL and was developed by people who worked at Product Hunt, Prism, and more.
-* Product Hunt - Product Hunt has helped me gain exposure for my products over the last year. I also recommend the Product Hunt Radio podcast which features in-depth interviews with makers and entrepreneurs who are changing the world.
-* You can learn more about the podcasts I listen to ***[here](https://jamesgallagher.app/now)***.
+\-  Paul Graham’s Essays - Every essay that I have read by Paul Graham has been inspirational and filled with unique insights and wisdom. The one about High School is particularly interesting.
+
+\- KMikeyM - Mike was the inspiration behind this project.
+
+\- TechCrunch - TechCrunch is a great source of business and tech content that is a great read when you have a spare moment.
+
+\- How to GraphQL - This tutorial was the first guide that introduced me to the world of GraphQL and was developed by people who worked at Product Hunt, Prism, and more.
+
+\- Product Hunt - Product Hunt has helped me gain exposure for my products over the last year. I also recommend the Product Hunt Radio podcast which features in-depth interviews with makers and entrepreneurs who are changing the world.
+
+\- You can learn more about the podcasts I listen to ***[here](https://jamesgallagher.app/now)***.
 
 <br>
 
 **Where can people learn more about you and your work?**
 
-You can contact me on Twitter ***[@jamesg_oca](https://twitter.com/jamesg_oca)***, or via email at james@opencommit.com. I frequently Tweet about startups, capitalism, and technology. If you are interested in learning more about me, you can check out my new personal site and blog ***[here](https://jamesgallagher.app/)***.
+You can contact me on Twitter ***[@jamesg_oca](https://twitter.com/jamesg_oca)***, or via email at james@opencommit.com. I frequently Tweet about startups, capitalism, and technology. If you are interested in learning more about me, you can check out my new personal site and blog **[here](https://jamesgallagher.app/)**.
 
 <br>
 
-Finally, you can learn more about investing in me[here](https://www.jamesg.app/). My stock price is currently $6.07 per share.
+Finally, you can learn more about investing in me [here](https://www.jamesg.app/). My stock price is currently $6.07 per share.
