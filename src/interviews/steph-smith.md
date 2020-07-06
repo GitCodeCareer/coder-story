@@ -1,7 +1,6 @@
 ---
 title: Steph Smith
-description: "Maker | Senior Analyst @TheHustle - Working on http://Trends.co |
-  Prev Head of Pubs @Toptal | Dev "
+description: "Maker | Founder Integral Labs | Prev Head of Pubs @Toptal | Dev "
 location: The World
 profileImage: /assets/img/steph.jpg
 backgroundImage: /assets/img/stephen-dawson-qwtcej5clys-unsplash.jpg
