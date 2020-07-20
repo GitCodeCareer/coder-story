@@ -1,0 +1,235 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Lee Crosdale</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("/assets/img/alex-kotliarskyi-qbpzgqemskg-unsplash.jpg");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="/assets/img/unnamed.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Lee Crosdale
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                Essex, United Kingdom
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                Lead Laravel/PHP Web Developer. If you DM him he will only respond via Vulcan Mind-Meld.
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/leecrosdale" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://crosdale.dev/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from and what is your backstory?</strong></p>
+<p>My name is Lee Crosdale, I’m from Essex, UK, I live with my fiancee and two step children and I’m also the Lead Laravel and PHP Developer at ***<a href="https://enovate.co.uk/">Enovate</a>***, a web design agency in Chelmsford, Essex, UK.</p>
+<br>
+<p>I’ve had a passion for programming since a young age, and worked full time in web development for nearly 10 years.On the side I run a small Laravel 48 hour hackathon named LaraHack, at this time we have just finished the 3rd event.</p>
+<br>
+<p><strong>What made you get into programming?</strong></p>
+<p>I was given a book on HTML 2.0 when I was about 8 years old, I had an interest in coding from that point onwards, however I didn’t really get into it as a full time hobby until I was around 12, when I discovered an open source PHP RPG game named ‘Dragon Knight’. I set the site to run locally on my computer, but then realised there were some bugs, I started to work out how to fix those bugs, and the rest is history.</p>
+<br>
+<p><strong>What made you create LaraHack?</strong></p>
+<p>I was actively looking for Hackathons and came across the LaravelUK community. I asked around for a bit and noticed there was nothing of the sort. I decided to whip up a quick site, and started gathering sign ups, I acquired some sponsorship funding and put that into twitter advertising, but the sign ups were largely gathered by word of mouth, or simply tweeting / instagramming some screenshots of the site, with a small amount of information. I think the first event had around 50 sign ups, we hit 400 after the 3rd event, not too bad considering I don’t actively try to push it out that often.</p>
+<br>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<p>When I started coding, there wasn’t a huge amount of resources online, so I largely spent time reading and changing open source code, and also talking with people on MSN Messenger (yes I’m that old).</p>
+<br>
+<p>Nowadays there is a wealth of information to get started with coding, but I think the key to it is simply to pick a project, and practice, practice, practice. For me, those came in the shape of text based PHP RPG games. I would usually write down what I wanted the site to do, and then start coding to reach that functionality.</p>
+<br>
+<p>My process is largely trial and error. I like to gather an idea and start coding.Before the time of a decent framework like Laravel I would build my own libraries such as Database helper classes etc. I think if you’re learning PHP, you should start at the core foundations and not at a framework from the get go.</p>
+<br>
+<p><strong>What does your process for building apps look like?</strong></p>
+<p>Since I build websites as a job but also as a hobby, I’ll pick the more professional one since my hobby process is pretty much a hackathon style of code until it works, which has it’s pros and cons.</p>
+<br>
+<p>My work process is pretty simple. One of the team members would talk to the client, and come up with some sort of sitemap / sketch for how the site may look. We would then get into a spec write up where we would figure out any custom code or functionality that may need to be coded. Once we have a spec and a time-frame, we code in weekly sprints and do a quick 15 minute stand up each day. That cycle would carry on until the testing phase, where we generate bug reports / issues on GitLab where the cycle would begin again.</p>
+<br>
+<p>When the client has tested and is happy, it goes live, however we closely monitor the logs for anything the testing may have missed.Make sure to always allocate time PLUS extra time for fixing bugs or coming up against challenging code. There is no point planning 2 weeks of work and leaving 0 hours for issues or life, you’re simply not going to achieve your goal.</p>
+<br>
+<p><strong>Do you face any particular challenges when building over a period of time?</strong></p>
+<p>As a lead developer there are always challenges day to day, such as making decisions on how to approach a specific problem, usually I’ll do this by trying to gather as much information about that task as possible either by running through the code myself (if it’s a dev issue), or speaking with my peers about potential fixes/changes or possible issues that may be caused by those changes. Hopefully by that point there would be enough information to make a decision about that problem.</p>
+<br>
+<p>I would say my biggest challenge that I’ve come up against is having juniors in my team, it’s one thing learning yourself, but it’s another explaining that process to someone without as much experience as you. It’s awesome seeing people grow from strength to strength, and none of us have fallen out yet, so I like to think I’m doing something right!</p>
+<br>
+<p>From a learning perspective I would say my biggest challenge was simply finding help and resources. There are some brilliant tools online now (Codecadamy, FreeCodeCamp etc) which I wish were about when I was 12.I still use Laracasts when I need to find out something specific about Laravel, it’s a great site for all levels of experience.</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>Always! I’m currently learning the nuances of the Yii2 framework, mainly because at my current job the framework of choice is CraftCMS, the documentation from Craft isn’t amazing, so understanding how it’s core works is a must for me.There is a great site named CraftQuest.io that has been quite helpful, and obviously stack overflow as been a lifesaver at times.</p>
+<br>
+<p><strong>Advice for those learning to code?</strong></p>
+<p>Honestly the best advice I can give is to enjoy it, don’t burn yourself out.Programming can be the most fun and the worst experience of your life at the same time, that feeling when you learn something new, or simply fix a bug is awesome.Also, don’t forget there are so many people out there that are willing to help you out, don’t ever be afraid of asking questions when you’re stuck, you’re not going to learn anything by just staring at your screen.</p>
+<br>
+<p>Take lots of walks, relax, do something else, enjoy life. Places like Instagram can make it seem like coding has to consume your entire life, which is fine for some people, but for me, burn out is the worst. Take your time, you’ll get there eventually with enough hard work and determination. There have been times where I’ve spent 4 hours on an issue, only to take a 5 minute break and fix it 20 minutes later.</p>
+<br>
+<p>I’m pretty active at LaravelUK, which is a great place to ask questions (in the #helpneeded channel) - <a href="https://laravelphp.uk/">https://laravelphp.uk</a> register for the slack channel and join us!</p>
+<br>
+<p><strong>What’s your tech stack?</strong></p>
+<p>The tools that I mainly use on a day to day basis are</p>
+<p>- PHPStorm -<a href="https://www.jetbrains.com/phpstorm/">https://www.jetbrains.com/phpstorm/</a></p>
+<p>- DBeaver -<a href="https://dbeaver.io/">https://dbeaver.io/</a></p>
+<p>- Git / GitKraken -<a href="https://www.gitkraken.com/">https://www.gitkraken.com/</a></p>
+<p>- Notepad++ -<a href="https://notepad-plus-plus.org/download/v7.6.6.html">https://notepad-plus-plus.org/download/v7.6.6.html</a></p>
+<p>- VSCode -<a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a></p>
+<br>
+<p>Honestly I don’t know what I’d do without PHPStorm now, it’s a great tool for helping you understand your code.I usually switch between Windows and Ubuntu (i3-gaps) depending on what I’m working on. All the above tools work on both platforms</p>
+<br>
+<p>The programming languages that I use mainly are</p>
+<p>- PHP (CraftCMS or Laravel) -<a href="https://craftcms.com/">https://craftcms.com/</a>-<a href="https://laravel.com/">https://laravel.com/</a></p>
+<p>- Javascript (VueJS, jQuery)</p>
+<br>
+<p>Although I know</p>
+<p>- Python</p>
+<p>- C#.net</p>
+<p>- X++ -<a href="https://dynamics.microsoft.com/en-gb/ax-overview/">https://dynamics.microsoft.com/en-gb/ax-overview/</a></p>
+<p>- ASP (original)</p>
+<br>
+<p><strong>What have been influential books, resources and links that have helped you?</strong></p>
+<p>Sadly most of my programming resources from the beginning are gone or way too outdated now. The books that I’ve found influential through the years were</p>
+<p>- Where Wizards Stay Up Late</p>
+<p>- Dreaming in Code</p>
+<p>- Automate This</p>
+<p>- The Phoenix Project</p>
+<br>
+<p><strong>Where can people learn more about you and your work?</strong></p>
+<p>- LaraHack -<a href="https://larahack.com/">https://larahack.com</a></p>
+<p>- My personal site -<a href="https://crosdale.dev/">https://crosdale.dev</a></p>
+<p>- Twitch -<a href="https://twitch.tv/crosdale">https://twitch.tv/crosdale</a></p>
+<p>- Twitter - <a href="https://twitter.com/leecrosdale">https://twitter.com/leecrosdale</a></p>
+<p>- LaravelUK -<a href="https://laravelphp.uk/">https://laravelphp.uk</a></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

@@ -1,0 +1,214 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Veni Kunche</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("/assets/img/christina-wocintechchat-com-mtvpwhqkzk4-unsplash.jpg");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="/assets/img/veni-kunche.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Veni Kunche
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                Washington DC, United States
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                Software Engineer. Founder. Maker. Runss @DiversifyTechCo &amp; @CodewithVeni. She/Her
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/venikunche" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://veni.dev/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from? What's your backstory?</strong></p>
+<p>I am Veni. I was born in India but we lived all around the world (Saudi Arabia, India, Canada, USA) when we were kids. We settled in the U.S when I was in high school and we’ve been here ever since. My husband, my beautiful one-year-old daughter and I live in Virginia USA for now.</p>
+<br>
+<p>I studied Computer Science in my undergrad and I’ve been in the tech industry for about 15 years. I’ve either built web applications or done database management work.</p>
+<br>
+<p>I currently work part-time, as a Senior Software Engineer, for the Web Informatics and Mapping group at the US Geological Survey. I build web applications for researchers and scientists within the Department of Interiors.</p>
+<br>
+<p>The rest of the time I am working on my business, Diversify Tech. I also run a newsletter and blog for women developers called Code with Veni.</p>
+<br>
+<p><strong>What made you get into programming?</strong></p>
+<p>My dad, an engineering graduate who now works in Information Technology, was my inspiration. He came from a low-income family in India and got through college on a scholarship and ended up in tech.</p>
+<br>
+<p>Being in tech opened up a lot of doors for him and our family. My brother and I live a very different life compared to our family back home. Being in tech is what got him a job in the US. He inspired both me and my brother to pursue careers in technology.</p>
+<br>
+<p>Due to his influence, I tried out a Computer Science class in High School. I got hooked. I love to create new things and be able to bring my ideas to life.</p>
+<br>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<p>Everyone has a different process that fits them but I like to learn by doing. I like to dive in, make mistakes, and figure things out.</p>
+<br>
+<p>The advantage to this is that I only learn what I need to so it cuts down on time to build a product.</p>
+<br>
+<p>The disadvantage is that I’m not an expert in any one tech stack. I’m ok with that as long I’m building products that people want.</p>
+<br>
+<p><strong>What does your process for building apps look like?</strong></p>
+<p>It has evolved a lot over the years. My current process is to start small. Sometimes, I don’t even code and use existing software to hack things together.</p>
+<br>
+<p>I recently bootstrapped a website using Airtable as a backend and used typeform wherever I needed forms. The old developer me would have been super embarrassed by this. But it works and I haven’t heard any complaints.</p>
+<br>
+<p>After building something small, I learn what I should focus on and build that out more.</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>Yes. I’m learning GatsbyJS which is a static site generator for React. In the process I’m also learning React. I used to use the Angular framework.</p>
+<br>
+<p><strong>What's your tech stack?</strong></p>
+<p>When I first started in my career, it was Java, JSP and jQuery. Now for my day job, I use Python and Angular.</p>
+<br>
+<p>It varies a lot for my side projects,. Sometimes I use Firebase &amp; Angular. I’m trying out React for my new project. I may use Vue for another project. I like to try out a few things to see what I like best.</p>
+<br>
+<p><strong>Advice for those learning to code?</strong></p>
+<p>My advice is to learn smart, be patient and embrace change.</p>
+<br>
+<p>I see a lot of folks going through bootcamps, and a multitude of tutorials and certifications. It is great to gain so much knowledge but there is no real end to learning. I encourage you to apply what you learn sooner. Offer to create a friend’s website, volunteer to build a website for a non-profit, work on an open source project or come up with a project that would be useful to you. After all, the reason to learn to code is to create products/solutions and solve problems.</p>
+<br>
+<p>Be patient. When you first start coding you will encounter a lot of errors and bugs. It might take a minute or hours to figure out what went wrong. That’s ok. Everyone goes through it. Once you do figure it out, you will feel immense pride and satisfaction. As you gain more and more experience debugging will become easier.</p>
+<br>
+<p>Change is part of tech. You might have to learn a new programming language, or a new framework. Know that this is common. Be conscious that you will need to learn and adapt to the changing environment.</p>
+<br>
+<p><strong>Shameless Plugs</strong></p>
+<p>I run a newsletter for women devs called <a href="http://codewithveni.com/">Code with Veni</a>. I recently launched <a href="http://diversifytech.co/">Diversify Tech</a>, a collection of resources for underrepresented people in tech.</p>
+<br>
+<p><img src="https://res.cloudinary.com/coderstory/image/upload/v1549138372/Interview%20Image%20Gallery/Screenshot_2019-02-02_at_20.12.33.png" alt="DiversifyTech"></p>
+<br>
+<p><strong>Hot Picks</strong></p>
+<p>I started using Netlify for hosting recently and it’s awesome. You can install SSL with one click and deploy within minutes. And it’s free.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

@@ -1,0 +1,224 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Johnny Boufarhat</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("/assets/img/allie-smith-goupqaau9qo-unsplash.jpg");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="/assets/img/yn5mwky0_400x400-1-.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Johnny Boufarhat
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                London, United Kingdom
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                Founder @hopinofficial. Previously Readory &amp; Multiplex. 
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/johnnyboufarhat" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://hopin.to/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from and what is your backstory?</strong></p>
+<p>I was born and raised in Australia but have constantly moved around from a young age, I’ve now found myself happy and settled in London for the last two years. I am consumed by functional health and the microbiome after being diagnosed with an ‘incurable’ illness which I was able to treat and cure naturally - and that’s probably what has motivated and shaped me the most up until now.</p>
+<br>
+<p><strong>What made you get into programming?</strong></p>
+<p>I wasn’t always into programming I always just liked to make things on the pc, from a young age I experimented with Photoshop/illustrator, Natural-Motion Endorphin, AfterEffects, and 3DMax. It wasn’t until I started playing a game called Garry’s Mod in my school years that I gained any interest into learning how to program.</p>
+<br>
+<p>Although I was studying Mechanical engineering, my real traction in coding came when I wanted to create a product for students to get discounts through a (social sharing) app. After selling the app for students whilst in uni, I continued my interest in code mainly by cloning projects for fun to see how difficult it was to replicate the world’s most popular websites/apps.</p>
+<br>
+<p><strong>What made you create Hopiin?</strong></p>
+<p>Hopiin was an idea that came to fruition after noticing how in the digital-age so many of us lack ‘genuine’ connection even though we are part of many slack/digital communities and have many digital connections. I realised that nothing replicates face-to-face interaction and in the remote, digital world an online alternative to the event networking/meetup space would be really beneficial.</p>
+<br>
+<p><img src="https://lh5.googleusercontent.com/EcIsje4sgHGF-P1vj8fGFAvNCKizRJiqMfo4xzDvE8B-T2mdVEjKcZ_HS8yfwobsqA73wI9DB_U2t7Q-mRI9H-DWKdpza0PV-7vepDxzw-_H1s3O7p9jcPftXueuq49rQiU-nujk" alt=""></p>
+<br>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<p>I’m sure the majority of others who learned to code would say the same thing, jump straight in. Think about it like how you would anything else, if someone was to ask you how to learn to cook you would probably say something like:</p>
+<br>
+<p>Read a recipe and then follow it, and do the same with other recipes until you naturally understand why the recipes do some of the things they do -- then you’ll be able to start making your own flavourful variations or creations.</p>
+<br>
+<p>The same goes for programming, read a tutorial, follow it a few times, do a few others and eventually you’ll be able to put things together yourself. Also stack overflow, lots and lots of stack overflow.</p>
+<br>
+<p><strong>What does your process for building apps look like?</strong></p>
+<p>I am a terrible example to follow, I usually just dive straight in thinking about what the project will need as it goes -- and thus I don’t write great code the first time, it usually needs to be refactored numerous times. It’s both good and a bad thing as I know many great programmers that will get stuck in the planning phase thinking about problems that will arise in the code later on and not starting the project, as a lot of the times solutions come up naturally along the way. On the flip side, at least they don’t waste as many hours reiterating, refactoring, or bug-fixing.</p>
+<br>
+<p><strong>Do you face any particular challenges when building over a period of time?</strong></p>
+<p>Yes, absolutely. Motivation, as I’m not someone who loves programming (and all its intricacies and beauties) rather - I love the act of creating something, it can be really difficult for me to stay motivated to learn something that potentially slows down development time *cough, testing*. The problem I find now is that since <em><strong><a href="https://hopiin.com/">Hopiin</a></strong></em> is getting larger and more intricate, not wanting to learn how to test or implement tests is causing many problems when adding new features.</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>As mentioned above, I am considering learning testing, also taking a deeper dive into React and VueJS.</p>
+<br>
+<p><strong>Advice for those learning to code?</strong></p>
+<p>Don’t stop Believin’.</p>
+<br>
+<p>Seriously though, especially for those who are new I would say to keep your vision and goal in mind and continually remind yourself that most coders don’t know what they are doing and rely on a small percentage that do and share (through stack overflow, tutorials, libraries etc). Start with tutorials and move up, maybe go through one udemy course and then start cloning apps through tutorials.</p>
+<br>
+<p>For those on the journey looking for mentoring, there are many groups out there through freecodecamp, meetup etcetera where you can learn to code with others. An expensive option is codementor.</p>
+<br>
+<p><strong>What’s your tech stack?</strong></p>
+<p>I usually just try to push something out as quick as possible -- which tends to lead me to the following stack, however it depends on the project:</p>
+<br>
+<p>- Ruby on Rails</p>
+<p>- PostGres</p>
+<p>- Heroku</p>
+<p>- JQuery</p>
+<p>- Stripe</p>
+<p>- Amazon s3</p>
+<p>- Rollbar</p>
+<p>- Sendgrid</p>
+<p>- New Relic</p>
+<p>- Google Analytics</p>
+<br>
+<p><strong>What have been influential books, resources and links that have helped you?</strong></p>
+<p>In regards to learning how to code:</p>
+<p>- Stackoverflow, did I mention stack overflow?</p>
+<p>- Codementor and scotch.io are two underrated places to find great tutorials and blogs posts, and<a href="http://railscasts.com/"> railscasts</a> &amp; <a href="https://gorails.com/">gorails</a> are awesome resources for rails developers.</p>
+<p>- Udemy is great too, especially if you buy on sale (which is pretty much all the time, 90% sale…)</p>
+<br>
+<p><strong>Where can people learn more about you and your work?</strong></p>
+<p><a href="http://hopiin.com/">Hopiin</a> is going to launch soon, take a look and sign up to get an update when we launch. We’ll be hosting some exciting online events for the tech community very soon.</p>
+<br>
+<p>Anyone who wants to host their own meetups or networking events online, Hopiin is a great way to do that.</p>
+<br>
+<p>If you are interested in health, the microbiome or tech feel free to follow me on <em><strong><a href="https://twitter.com/johnnyboufarhat">twitter</a>.</strong></em></p>
+<br>
+<p>Also my DM’s are open for anything related to hopiin, you can also reach out to me via e-mail <em><strong><a href="mailto:johnny@hopiin.com">here</a></strong></em></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

@@ -1,0 +1,212 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Oliver Sarfas</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("/assets/img/max-duzij-qajjk-un3bi-unsplash.jpg");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="/assets/img/personal_picture.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Oliver Sarfas
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                Grantham,  United Kingdom
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                Director at @clevereggio. Blogs at https://sarfas.codes
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/sarfascodes" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://sarfas.codes/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from and what is your backstory?</strong></p>
+<p>My name is Oliver Sarfas, I’m based in a little old town called Grantham just outside of Nottingham, UK. I started working with web development about 8 years ago. My main history is in the Telematics insurance industry, where you put a black box in your car, and the insurance company rate your driving.</p>
+<br>
+<p><strong>What made you get into programming?</strong></p>
+<p>I kind of fell into it if I’m honest! My first job was as a PA to the CEO of a company. After 3 weeks he pulled me into a meeting and shared with me that I was “without a doubt, the most useless PA he’d had to date”. However, I have a mathematical background and a keen eye for logic, so he gave me access to their MSSQL database to build some behaviour algorithms. I looked at how to put this onto a website, and from there I picked up PHP.</p>
+<br>
+<p><strong>What made you want to become a creator?</strong></p>
+<p>I’m not really known in the Laravel, PHP, or making community for creating anything specific. However I’m working with a good friend at the moment on something that we’re hoping will impact the digital agency market. I’ll be sure to share more details once we’re further along in the project. We decided on this piece, as he owns a Digital Agency, and I’ve worked for a couple. We found a niché that isn’t currently fulfilled and figured we’d give it a go!</p>
+<br>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<p>I recently wrote a blog post about this, and how I help newcomers to the industry find their feet. My general process for learning is to ask myself“what problem do I want to solve”. It’s very easy to just dive into something, and lose sight of why you’re doing it.</p>
+<br>
+<p>I’ll generally scour YouTube or Twitch to find some content relevant to the language I’m looking to pick up. I’ll ask around communities for some help, even if it’s just someone on call to validate whatever monstrosity I’m building from time to time.</p>
+<br>
+<p>From there, I’ve generally got a good grasp of what I’m doing, and I’ll be able to Google myself into the solution I want. Then there’s StackOverflow which we all know is the only reason that programmers manage to resolve any issues - I’d be lost without it most days.</p>
+<br>
+<p>I like to keep records of my learning through my blog so I can look back at things, or I’ll use Git and fork off projects. Leaving little archives of my progress as I go.</p>
+<br>
+<p><strong>What does your process for building apps look like?</strong></p>
+<p>As with learning a language, or how to code, building apps has the same fundamental start for me, “Why”. I’ll have a single tagline written somewhere close, so that I never lose that idea and will frequently refer back to it.</p>
+<br>
+<p>I’ll build a basic functional proof of concept (PoC) to begin with. It’ll be dirty, ugly, and quite frankly not fit for purpose - but it works! From there I’ll move into Minimum Viable Product.</p>
+<br>
+<p>The code will be refactored to be “proper” instead of the horrendous mess that comes with PoC. Designs and cross-compatibility come into play, meaning that there’s discussions around branding and all that “fun stuff”.</p>
+<br>
+<p>After that, I’ll generally move into a soft launch. Just to get a taster of how the product is being received in the market. Providing all goes well, we’ll kick the marketing, social media, advertising, etc, into gear and we’re flying.<br></p>
+<p><strong>Do you face any particular challenges when building over a period of time?</strong></p>
+<p>Naming, branding, and marketing. I’m terrible at it. That’s why I like to have a designer on call (luckily I have a sister who is a Graphic Designer) who can help with that aspect of things. I’ve also got a close network of professionals around me that I trust and will often blindly follow with recommendations.</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>I’m scrubbing up on my VueJS and general Javascript skills. With the pace of the industry at the moment, JS is evolving nearly every week, and I’ve struggled keeping up with it to be honest. Once I’m happy with my VueJS and core JS stuff, I’d love to get onboard with some React and Node. I’ve seen it used in the market, and it’s highly employable at the moment.<br></p>
+<p><strong>Advice for those learning to code?</strong></p>
+<p>Build something. Anything. It can be useless, it can be gimmicky. With the wealth of information available today, it’s very easy to jump into a rabbit hole of learning and never come out for air.</p>
+<br>
+<p>Everytime you learn something, put it to use. If you’re learning about CSS animations, transitions, etc. Why not make something silly like a spinning, rotating, picture of your face? It proves you can do it, and it’s something fun to build.</p>
+<br>
+<p>Ultimately, what’s going to get you hired is your code and what your code produces. Concepts can be taught, application of those techniques is a little different and commands far more attention.</p>
+<br>
+<p><strong>What’s your tech stack?</strong></p>
+<p>- PHP7.3, MySQL8.0, Redis, VueJS, Laravel 5.8</p>
+<p>- Hosting is predominantly AWS, with the occasional Digital Ocean droplet</p>
+<p>- I use Laravel Forge for all my server provisioning.</p>
+<p>- CloudFlare for DNS, SSL, and DDoS protection</p>
+<br>
+<p><strong>What have been influential books, resources and links that have helped you?</strong></p>
+<p>- Laracasts - Brilliant for newcomers to the industry. Not just for Laravel, it has resources for a wide range of PHP topics</p>
+<p>- Codecourse - concentrates on some of the more advanced techniques, however still very viable for newcomers as there’s resource on there to suit everyone. The creator Alex is a great communicator and his tutorials / walkthroughs are effortless.</p>
+<br>
+<p><strong>Where can people learn more about you and your work?</strong></p>
+<p>- <a href="https://twitter.com/osarfas">https://twitter.com/osarfas</a></p>
+<p>- <a href="https://blog.sarfas.codes/">https://blog.sarfas.codes</a></p>
+<p>- <a href="https://twitch.tv/sarfascodes">https://twitch.tv/sarfascodes</a></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

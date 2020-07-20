@@ -1,0 +1,226 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | April Speight</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("https://images.unsplash.com/photo-1570063578733-6a33b69d1439?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="https://pbs.twimg.com/profile_images/1246662805240967168/_IosDi7F_400x400.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                April Speight
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                Hollywood, California
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                Plays a developer on YouTube 👩🏾‍💻 @azureadvocates - Spatial Computing at @Microsoft
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/vogueandcode" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://www.vogueandcode.com/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from and what is your backstory?</strong></p>
+<p>Hello! I'm April and let's just say - to the average person, I look a little all over the place. I've always had a lot of varied interests growing up and fortunately that carried over into my adult life.</p>
+<br>
+<p>I spent most of my life on the east coast between Maryland, Virginia and finally DC before relocating to California. I currently live in Hollywood, CA and wouldn't trade it for the world. I started my professional career in luxury fashion as a menswear stylist and transitioned into tech as a project manager.</p>
+<br>
+<p>Today, I work remote as a Senior Program Manager at Microsoft with the docs.microsoft.com team. I get to help improve the developer experience on our docs platform so that devs from everywhere are able to get the most out of learning how to use Azure.</p>
+<br>
+<p><strong>What made you get into programming?</strong></p>
+<p>I initially thought that I had wanted to be a data scientist - boy was I mistaken! I just couldn't wrap my head around being interested in numbers so that dream was short lived. So instead, I took an interest in AI and found my niche in voice-assistants. Basically, Alexa and Siri are my besties.</p>
+<br>
+<p>In the midst of learning Python, I found that a lot of the existing content had assumed too much of the reader. I figured there had to be a better way to instruct others. So, I began to create foundational videos on <a href="https://www.youtube.com/c/vogueandcode">YouTube</a> explaining coding concepts.</p>
+<br>
+<p>I took a break for a while to better refine my approach and I'm happy to announce that the videos will return later this month!</p>
+<br>
+<p><strong>What made you create Vogue &amp; Code?</strong></p>
+<p>Transitioning into tech was a wild roller coaster in itself. I had to figure out a lot on my own because 6 years ago, there wasn't a lot of content around transitioning into the industry. Fast forward 6 years later, I've found my (hopefully) forever home with Microsoft so I'm thankful to be in a place where I can finally chill out and just focus on enjoying life.</p>
+<br>
+<p>However, I'm a big fan of being the resource I wish I had when I started out on this journey. So, I figured that I could best be of assistance by creating a platform that helps others transition into the industry and navigate all of the odd things that we go through. I created <a href="https://www.vogueandcode.com/">Vogue &amp; Code</a> to provide advice to others by sharing my personal experience and what has worked for me.</p>
+<br>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<p>I found that it was best to start with a goal. If you don't have a goal in mind, you could find yourself a little all over the best when it comes to learning how to code. My goal was to become more familiar with Python so that I could build voice assistants. I created a <a href="https://www.vogueandcode.com/blog/coding/my-coding-curriculum">coding curriculum</a> and posted it to my website so that those who may have a similar interest could figure out where to start as well.</p>
+<br>
+<p>When it came down to creating this curriculum, I started with the end goal and worked backwards. I'm a huge fan of online learning through tutorials and programs such as Codecademy and Udacity. I used both platforms as my base and read through the prerequisites for the courses that covered the topics that would help me build a voice assistant.</p>
+<br>
+<p>More often than enough, I'd come across a concept in which I would know absolutely nothing about. Whenever that occurred I found another resource for learning. Once I made it all the way to the very first thing that I should learn (which happened to be the command line for me), I stepped back and saw an entire roadmap for reaching my goal. So, I got to it and started with the command line!</p>
+<br>
+<p><strong>What does your process for building apps look like?</strong></p>
+<p>I create a lot of novelty apps that are usually just for fun to help me understand how to better use a certain product or technology. I recently shared my steps for starting a coding project in my blog post: <a href="https://www.vogueandcode.com/blog/coding/how-to-start-a-code-project">How to Start a Code Project</a>.</p>
+<br>
+<p><strong>Do you face any particular challenges when building over a period of time?</strong></p>
+<p>Since I started my career in tech as a project manager, identifying and mitigating risks before starting a project is in my blood! I stay true to the steps I outlined in my <a href="https://www.vogueandcode.com/blog/coding/how-to-start-a-code-project">How to Start a Code Project</a> post.</p>
+<br>
+<p>I can sometimes get a bit overwhelmed with figuring out the logic of how to make something work. So, it's often a lot of self-talk to bring myself down to Earth and start small rather than implement everything at once.</p>
+<br>
+<p>That's what sprints are for - right?</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>I've been learning more about how to use Azure Functions lately! I recently shared an <a href="https://www.vogueandcode.com/blog/tutorials/how-im-feeling">app</a> on my blog that I created with Azure Functions, Flic and Twilio SMS. I was totally new to Azure Functions when I started the project but now feel that I have a better understanding of how it all works.</p>
+<br>
+<p>Since I love interactive tutorials, I used <a href="https://docs.microsoft.com/en-us/learn/paths/create-serverless-applications/">Microsoft Learn</a> to get started followed by documentation provided by my team over on <a href="https://docs.microsoft.com/en-us/azure/azure-functions/">docs.microsoft.com</a>.</p>
+<br>
+<p><strong>Advice for those learning to code?</strong></p>
+<p>Don't Give Up. I think that's sound advice for those who are new and those who are already on their journey to learning how to code. It can be agonising to see so many of your peers discussing technical concepts that fly right over your head. You'll feel like technology is insulting your intelligence. You may even want to throw away your entire computer.</p>
+<br>
+<p>But the reality of it all is that we've all (for the most part) have been there. Even those of us who've been coding for years still get tripped up from time to time. Worry less about where others are in their journey and focus more on what you're learning. Because trust me, you'll get there! You'll find yourself discussing concepts that you once knew absolutely nothing about.</p>
+<br>
+<p>For the longest time, I knew absolutely NOTHING about how cloud computing works (which is interesting given that I know a lot more about Azure now that I work for Microsoft). After sitting through an <a href="https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/">Azure Fundamentals</a> module on Microsoft Learn, I had it all figured out. I literally thought that it would take me forever to understand the concept when really, it just took an hour.</p>
+<br>
+<p>If you're curious to learn more about a concept, just Google the concept and give one of the tutorials a try.</p>
+<br>
+<p><strong>What's your tech stack?</strong></p>
+<p>I'm super simple here! I code in Python and have more recently been using <a href="https://docs.microsoft.com/en-us/azure/">Azure</a> products. In addition, I play around a lot with <a href="https://www.twilio.com/docs/autopilot">Twilio Autopilot</a>, <a href="https://www.twilio.com/docs/sms">Twilio Programmable SMS</a>, and <a href="https://www.twilio.com/docs/voice">Twilio Programmable Voice</a>.</p>
+<br>
+<p><strong>What have been influential books, resources and links that have helped you?</strong></p>
+<p>I haven't found really any interest in tech books yet (although I'm in the process of writing an instructional book for children!). However, I love reading about women. I find motivation through the story of women I admire. I tend to stick to my fashion roots and read the autobiographies of women in the industry.</p>
+<br>
+<p>My absolute favorites are <a href="https://www.amazon.com/Ill-Drink-That-Style-Twist/dp/0143127705">I'll Drink to That: A Life in Style, with a Twist</a> by Betty Breich, <a href="https://www.amazon.com/Woman-I-Wanted-Be/dp/1451651554/ref=sr_1_2?crid=5AIKDO1933VC&amp;keywords=the+woman+i+wanted+to+be+diane+von+furstenberg&amp;qid=1555426355&amp;s=books&amp;sprefix=the+woman+i+want%2Cstripbooks%2C206&amp;sr=1-2">The Woman I Wanted to Be</a> by Dianne von Furstenberg, <a href="https://www.amazon.com/You-Cant-Touch-My-Hair/dp/0143129201">You Can't Touch My Hair: And Other Things I Still Have to Explain</a> by Phoebe Robinson (but omg PLEASE do the audiobook version of this book - Phoebe is HILARIOUS). I actually have autographed copies of both! I suppose I love reading the stories of women creators so much because it shows just how much craziness they were going through in their life despite performing infamously well at their jobs. It's a gentle reminder that we're all human and can make it through a lot of what life throws at us.</p>
+<br>
+<p>Outside of those books, I often find myself listening to podcast episodes on <a href="https://podcasts.apple.com/us/podcast/girlboss-radio-with-sophia-amoruso/id1041122387?mt=2">Girlboss Radio</a>, <a href="https://podcasts.apple.com/us/podcast/pardon-my-french-with-garance-dor-c3-a9/id1080302761?mt=2">Pardon My French</a>, and <a href="https://www.wnycstudios.org/shows/whiteguys">So Many White Guys</a>. I also like the articles on <a href="https://www.girlboss.com/">Girlboss</a> because the advice is beyond practical and not so cookie cutter - I was even once a <a href="https://www.girlboss.com/money/scrimp-city-systems-analyst">contributor</a>! The article is pretty old now as I've since moved on to a new career but it's still worth giving a read.</p>
+<br>
+<p><strong>Where can people learn more about you and your work?</strong></p>
+<p>Be sure to head over to <a href="https://www.vogueandcode.com/">Vogue and Code</a> to check out my blog posts! The <a href="https://www.vogueandcode.com/archives">archives</a> page sorts out everything into separate categories.</p>
+<br>
+<p>While you're on the site, be sure to check out <a href="https://www.vogueandocde.com/shop">The Shop</a>! I just added some goodies such as the coveted <a href="https://www.vogueandcode.com/shop/founder-sweatshirt">Founder</a> sweatshirt and <a href="https://www.vogueandcode.com/shop/pretty-girls-code-tee">Pretty Girls Code</a> tee.</p>
+<br>
+<p>I'm pretty active on <a href="https://www.twitter.com/vogueandcode">Twitter</a> so be sure to give me a follow there. And if you're interested in learning Python, be sure to subscribe to my <a href="https://www.youtube.com/c/vogueandcode">YouTube</a> channel.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

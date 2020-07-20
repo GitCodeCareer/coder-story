@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JessWallace94/coder-story.git"
+    "url": "git+https://github.com/GitCodeCareer/coder-story.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JessWallace94/coder-story/issues"
+    "url": "https://github.com/GitCodeCareer/coder-story/issues"
   },
-  "homepage": "https://github.com/JessWallace94/coder-story#readme",
+  "homepage": "https://github.com/GitCodeCareer/coder-story#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.10.0"
   }

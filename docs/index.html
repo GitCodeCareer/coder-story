@@ -1,0 +1,352 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Home</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    
+<!-- Header -->
+<section>
+    <div class="bg-indigo-900 md:overflow-hidden">
+        <div class="px-4 py-20 md:pt-4 md:pb-40">
+            <div class="container md:mx-auto">
+                <div class="md:flex md:flex-wrap">
+                    <div class="md:w-3/4 text-center md:text-left md:pt-16">
+
+                        <h2 class="text-3xl tracking-tight leading-10 font-extrabold text-indigo-300 sm:text-5xl sm:leading-none md:text-6xl">Stories to expand your <span class="text-white underline">knowledge.</span></h2>
+
+                        <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-md  sm:mx-auto md:mt-5 md:text-lg lg:mx-0">We are here to share journey's that educate and inspire you to answer the age old question: One Day or Day One?</p>
+                        <a href="/interviews"
+                                class="mt-6 mb-12 md:mb-0 md:mt-6 inline-block py-3 px-8 text-white bg-indigo-500 hover:bg-indigo-600 rounded-lg shadow">Start your story
+                                </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="container mx-auto mb-20 mt-10">
+    <h2 class="text-3xl tracking-tight text-center leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-5xl mt-8 mb-4">Dive into their <span class="text-indigo-900 underline">experiences</span></h2>
+
+    <div class="flex flex-wrap">
+
+        
+            <div class="w-full lg:w-1/3 py-4 px-4" >
+                <div class=" ">
+					<a href="/interviews/bjorn-schijff/">
+                    <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                        <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                            Published 
+                        </div>
+                        <img src="/assets/img/james-pond-26vbutluffo-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                        <div class="flex justify-center">
+                            <img src="/assets/img/fmzg5bbl_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                        </div>
+                        <div class="py-2 px-2">
+                            <div class=" font-bold font-title text-center">
+                                Bjorn Schijff
+                            </div>
+
+                            <div class="text-sm font-light text-center my-2">Senior Frontend Engineer 💻. Trainer. #Angular, #TypeScript, #RxJS. Entrepreneur. Gaming/Esports. </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    
+            <div class="w-full lg:w-1/3 py-4 px-4" >
+                <div class=" ">
+					<a href="/interviews/ethan/">
+                    <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                        <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                            Upcoming
+                        </div>
+                        <img src="/assets/img/1500x500.jpeg" class="h-32 rounded-lg w-full object-cover">
+                        <div class="flex justify-center">
+                            <img src="/assets/img/y7afwfoz_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                        </div>
+                        <div class="py-2 px-2">
+                            <div class=" font-bold font-title text-center">
+                                Ethan 
+                            </div>
+
+                            <div class="text-sm font-light text-center my-2">16 yo maker behind @KanbanMail, @CodeTheWebBlog, @TogetherDotFit, @MakerDotRocks and more.</div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    
+            <div class="w-full lg:w-1/3 py-4 px-4" >
+                <div class=" ">
+					<a href="/interviews/guillaume-bardet/">
+                    <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                        <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                            Published
+                        </div>
+                        <img src="/assets/img/hanny-naibaho-awxvxy8bszc-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                        <div class="flex justify-center">
+                            <img src="/assets/img/guilleme.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                        </div>
+                        <div class="py-2 px-2">
+                            <div class=" font-bold font-title text-center">
+                                Guillaume Bardet
+                            </div>
+
+                            <div class="text-sm font-light text-center my-2">Working on @QlearlyHQ & @FoundersBundle</div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    
+
+</section>
+
+<section class="container mx-auto my-20">
+    <h2 class="text-3xl tracking-tight text-center leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-5xl mt-8 mb-4 md:mb-10">Our top picks from across the  <span class="text-indigo-900 underline">internet</span></h2>
+
+    <div class="flex flex-wrap">
+
+        
+            <div class="w-full lg:w-1/4 py-4 px-4" >
+                <div class=" ">
+					<a href="">
+                    <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                        <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                            Podcast
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="h-32 rounded-lg w-full object-cover">
+
+                        <div class="flex justify-center">
+                            <img src="https://res.cloudinary.com/coderstory/image/upload/v1549114766/Resources/syntax.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                        </div>
+                        <div class="py-2 px-2">
+                            <div class=" font-bold font-title text-center">
+                                Syntax
+                            </div>
+
+                            <div class="text-sm font-light text-center my-2">Full Stack Developers Wes Bos and Scott Tolinski dive deep into web development topics, explaining how they work and talking about their own experiences.</div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    
+            <div class="w-full lg:w-1/4 py-4 px-4" >
+                <div class=" ">
+					<a href="">
+                    <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                        <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                            Education
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="h-32 rounded-lg w-full object-cover">
+
+                        <div class="flex justify-center">
+                            <img src="https://www.datacamp.com/datacamp-sq.png" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                        </div>
+                        <div class="py-2 px-2">
+                            <div class=" font-bold font-title text-center">
+                                Datacamp
+                            </div>
+
+                            <div class="text-sm font-light text-center my-2">DataCamp offers interactive R, Python, Sheets, SQL and shell courses. All on topics in data science, statistics and machine learning. </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    
+            <div class="w-full lg:w-1/4 py-4 px-4" >
+                <div class=" ">
+					<a href="">
+                    <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                        <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                            Tool
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="h-32 rounded-lg w-full object-cover">
+
+                        <div class="flex justify-center">
+                            <img src="https://cdn.iconscout.com/icon/free/png-512/notion-1693557-1442598.png" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                        </div>
+                        <div class="py-2 px-2">
+                            <div class=" font-bold font-title text-center">
+                                Notion
+                            </div>
+
+                            <div class="text-sm font-light text-center my-2">A tool that blends your everyday work apps into one. It's the all-in-one workspace for you and your team. Write, plan, collaborate, and get organized</div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    
+            <div class="w-full lg:w-1/4 py-4 px-4" >
+                <div class=" ">
+					<a href="">
+                    <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                        <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                            Games
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1585857188908-5b6de3179683?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60" class="h-32 rounded-lg w-full object-cover">
+
+                        <div class="flex justify-center">
+                            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/355f709412729.560ddd785683b.png" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                        </div>
+                        <div class="py-2 px-2">
+                            <div class=" font-bold font-title text-center">
+                                Animal Crossing
+                            </div>
+
+                            <div class="text-sm font-light text-center my-2">Escape to a deserted island and create your own paradise as you explore, create, and customize in the Animal Crossing: New Horizons game.</div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    
+
+</section>
+
+
+
+
+<footer class="flex justify-center text-gray-100 bg-indigo-900">
+    <div class="container py-20">
+        <h1 class="text-center text-lg font-bold lg:text-2xl">
+            Join 160+ others and never miss out on <br>our latest stories, blog posts and goodies.
+        </h1>
+
+        <div class="flex justify-center mt-6 mb-10   ">
+            <div class="bg-white rounded-lg">
+                <div class="flex flex-wrap justify-between md:flex-row">
+                    <form style="margin-block-end: 0rem;"action="https://coderstory.us19.list-manage.com/subscribe/post?u=3757dc73cf7e45a04dddc18bd&amp;id=70b2a3e203" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                        <input type="email" value="" name="EMAIL" class="required m-1 p-2 appearance-none text-gray-700 text-sm focus:outline-none"
+                        placeholder="Enter your email">
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3757dc73cf7e45a04dddc18bd_70b2a3e203" tabindex="-1" value=""></div>
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="w-full m-1 p-2 text-sm bg-indigo-900 rounded-lg font-semibold uppercase lg:w-auto">
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="h-px mt-6 mb-6 bg-gray-700 border-none">
+
+        <div class="flex flex-col items-center justify-between mt-3 md:flex-row">
+            <div>
+                <a href="/">
+                    <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-20">
+                </a>
+            </div>
+            <div class="flex mt-4 md:m-0">
+                <div class="-mx-4">
+                    <a href="/interviews"
+                        class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about"
+                        class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved"
+                        class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get
+                        Involved</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>

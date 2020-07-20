@@ -1,0 +1,251 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Pat Walls</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("/assets/img/boulder-bowl-daylight-1580329.jpg");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="https://pbs.twimg.com/profile_images/1056074539703193600/ajqrJ3nG_400x400.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Pat Walls
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                Wyoming, United States
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                Founder @starter_story and @trypigeon. Launched http://24hrstartup.com Black heart
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/thepatwalls" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://patwalls.co/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from? What's your backstory?</strong></p>
+<p>My name is Pat Walls, I’m 28 years old, and I am from Jackson Hole, Wyoming USA - although I’ve moved around for most of my life.</p>
+<br>
+<p>I haven’t always been a developer. My backstory mostly consists of me jumping around different careers, interests, and hobbies. Over the last few years, I’ve been working mostly as a developer and entrepreneur and running some side businesses.</p>
+<br>
+<p>I’m really looking forward to this interview because there are so many unique ways people get into coding. Unlike many other professions, where there’s usually a very clear path for success, coding is different, and I love that. I also love how ANYONE can learn.</p>
+<br>
+<p>But it also creates a lot of noise, people say “you should do this” or “you should do that”. Different things work for different people, and this is what worked for me!</p>
+<p><strong>What made you get into programming?</strong></p>
+<p>Basically, I got into programming after feeling not challenged at work.</p>
+<br>
+<p>I was working at a tech company in San Francisco doing some technical work with enterprise software. Before that, I was doing accounting, so I really enjoyed this new more technical, creative work I was doing.</p>
+<br>
+<p>But quickly, I felt like I mastered the work, and I wanted a bigger challenge. I also didn’t want to pigeonhole myself with these very specific enterprise software skills I was learning. I wanted to learn how to really code and build software.</p>
+<br>
+<p>This was about three years ago when boot camps were just starting to take off. I heard about a boot camp in San Francisco that guarantees you a job (or you don’t have to pay at all), and I immediately signed up.</p>
+<br>
+<p>The boot camp was the most intense thing I’ve done in my life. I learned how to code and was “software engineer ready” in 3 months (well, I still sucked but impressive how much I learned in that short span of time).</p>
+<br>
+<p>After the boot camp, I got a job as a software engineer and the rest was history :)</p>
+<br>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<p>I’m a hack.</p>
+<br>
+<p>For me, I don’t enjoy reading books, documentation, or other written stuff about programming. It’s hard for me to grasp how the code works unless I get my hands dirty.</p>
+<br>
+<p>My attention span is short, and I find reading articles about programming to be like watching paint dry.</p>
+<br>
+<p>I learn by trying to code to solve whatever problem. That is when things “click” for me.</p>
+<br>
+<p>If I need to learn a new language or framework, I like to use tutorials that help me take things step by step until I can get the hang of things.</p>
+<br>
+<p>For me, just building stuff over and over helps me learn. I’m not very good at understanding how things work the first time around. It usually takes me a couple attempts.</p>
+<br>
+<p>For example, when I was trying to get better at React, I remember just working on lots of fun little projects which helped me improve.</p>
+<br>
+<p><strong>What does your process for building apps look like?</strong></p>
+<p>I build all my apps in Ruby on Rails or React.</p>
+<br>
+<p>I learned this stack in my boot camp, and I don’t have any particular interest in learning a new framework unless it’s necessary (like I had to build a mobile app or something).</p>
+<br>
+<p>When I build an app, I usually start by implementing the absolute core features first, because I want to see if the thing I’m doing is actually possible or as cool as I think it is in my head - and we’ve all experienced how building that part is the most exciting as well.</p>
+<br>
+<p>Then I do a bunch of design stuff to try to make it look like how I envisioned. I like to implement things really quickly so I don’t lose my original vision of how it looks and feels.</p>
+<br>
+<p>After that I do the boring stuff, like user login, meta tags, image uploads, etc etc.</p>
+<br>
+<p>My code is also extremely “hacky” as I always tell myself I’ll fix it later, and usually don’t. I’m pretty lazy like that.</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>Not any new frameworks, but with my projects, there always feels like there’s something new I need to learn.</p>
+<br>
+<p>Like for example, I heard I need to use schema.org tags on all my pages? Lots of SEO stuff.</p>
+<br>
+<p>I try to automate as many things as possible, so I’m always learning more things around that, like handling workers, errors, retries, image asset generation, APIs, etc.</p>
+<br>
+<p><strong>What's your tech stack?</strong></p>
+<p>- Rails</p>
+<p>- React (Sometimes) for UI intense stuff</p>
+<p>- Postgres</p>
+<p>- Heroku</p>
+<p>- Sidekiq</p>
+<p>- S3 for storing files</p>
+<p>- HAML templates</p>
+<p>- Devise for user logins</p>
+<p>- SendGrid for emails</p>
+<p>- Sentry for error reporting</p>
+<p>- New Relic &amp; Google Analytics</p>
+<p>- Bootstrap for design stuff</p>
+<br>
+<p><strong>Advice for those learning to code?</strong></p>
+<p>Build your own projects!</p>
+<br>
+<p>If you’re really new to coding, don’t use codecademy - in my opinion, it’s a dreadful way to learn.</p>
+<br>
+<p>Stop spending weeks reading up on the “fundamentals”. Just dive right in and build stuff. Like I said earlier, getting my hands dirty really works well for me.</p>
+<br>
+<p>Sometimes the most painful thing (esp when you’re new) is to just get your environment set up. Check out tutorials and YouTube videos for that. Also just google, copy/paste any time you get stuck and you’ll eventually fix it :)</p>
+<br>
+<p><strong>Shameless Plugs</strong></p>
+<p>- StarterStory.com - Learn how to start a business</p>
+<p>- You Don’t Need WordPress - Create a blog with Google Docs</p>
+<p>- Clout Report - Crowdsourced data on upcoming rappers</p>
+<p>- The 24 Hour Startup Challenge</p>
+<br>
+<p><strong>Hot Picks</strong></p>
+<p>I really like this meta tags project by Moe Amaya. I also like Uber Suggest, a free keyword research tool.</p>
+<br>
+<p>I love using Streak, a CRM for Gmail. And Klaviyo for all of my email newsletters.</p>
+<br>
+<p>Big fan of similarweb.com. Blurt.app is an awesome writing tool.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

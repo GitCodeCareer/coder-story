@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+media_folder: assets/img
+
+collections:
+  - name: "interviews" # Used in routes, e.g., /admin/collections/blog
+    label: "Interviews" # Used in the UI
+    folder: "src/interviews" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "description", name: "description", widget: "text"}
+      - {label: "location", name: "location", widget: "string"}
+      - {label: "Profile Image", name: "profileImage", widget: "image"}
+      - {label: "Background Image", name: "backgroundImage", widget: "image"}
+      - {label: "Website", name: "website", widget: "string"}
+      - {label: "Social", name: "social", widget: "string"}
+      - {label: "Status", name: "status", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "date"}
+      - {label: "Post Body", name: "body", widget: "markdown"}
+  - name: "posts"      
+    label: "Blog Posts" # Used in the UI
+    folder: "src/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Excerpt", name: "excerpt", widget: "text"}
+      - {label: "Featured Image", name: "image", widget: "image"}
+      - {label: "Publish Date", name: "date", widget: "date"}
+      - {label: "Post Body", name: "body", widget: "markdown"}

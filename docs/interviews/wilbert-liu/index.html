@@ -1,0 +1,228 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Wilbert Liu</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("/assets/img/1500x500-2-.jpeg");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="/assets/img/wilbert.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Wilbert Liu
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                Yogyakarta, Indonesia
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                Maker, Designer &amp; Software Engineer.  Previously @gameloft &amp; @icehousecorp
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/wilbertliu" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://wilbertliu.com/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from and what is your backstory?</strong></p>
+<p>Hi, I’m Wilbert, a software engineer and maker of quite a few products. I grew up in a city called Yogyakarta in Indonesia, a well known city for education. My father was an entrepreneur, and I also have 4 siblings, which can be quite a handful when I think about it!</p>
+<br>
+<p>I grew up as quite an introverted person that loved to play video games. Identity crisis is what people would say was happening. Suddenly that changed when I surrendered my life to follow Christ in a service that I didn’t didn’t intend to originally be a part of but that changed my life and brought me into a community that made me feel loved unconditionally.</p>
+<br>
+<p>After passing a few intersections in my life, I found my passion in making things through code, not only having fun with it, but using it as a way to solve problems that other people may have come up against.</p>
+<br>
+<p><strong>What made you get into programming?</strong></p>
+<p>I owned my personal computer (PC) when I was in senior high school, and remember that at the time the main purpose for the computer was for me to have my own system to play games on in my bedroom. However, I had actually fallen in love with computer science at an earlier stage in my life. I remember I used to hate attending maths class because of the unrealistic expectations I felt it put on me by my parents. I would never understand the reasoning behind the correlation between calculus and adding together numbers, but in later life it was something that made an impact in how I viewed computer science.</p>
+<br>
+<p>That’s because my parents didn’t really understand computing, and at that time it’s not popular. Imagine when you do something without enforcement. I was in smile when I could calculate something on MS Excel, write some words on MS Word, and even at some point I was obsessed to hack websites.</p>
+<br>
+<p>I was taking a degree of information technology only by that fascination. I had no idea on how it looks like, whether or not I’d love the subjects, and how I’d get a job someday. Luckily, there’s a subject called introduction to computer &amp; internet. I saw how I could make a tree-like pattern in terminal with a programming language called C++, how I could make a simple point of sales (POS) system with Visual FoxPro (OMG I feel old now), etc. Most of my friends around me felt programming is a burden, but I was “trapped” into unending &amp; deeper adventure with it.</p>
+<br>
+<p><strong>What made you want to create and be a maker?</strong></p>
+<p>The core fundamental reason, is because code gives me instant feedback. It’s instant to see whether or not what I make is true to my imagination through a browser (if you make a web app) or whatever the medium is. And even more so, it’s almost instant to see whether or not people would love what I create. I just have to code and present the result to them.</p>
+<br>
+<p>That was my evolution; when I found a greater impact beyond the code &amp; program. I have problems in life, and some people share the same painful experience. I found some of them could be solved with a tech product and bringing significant impact to the people. Hearing and seeing how people’s life changed because of it have made me stubborn to create meaningful product that solves problems.</p>
+<br>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<p>Personally what works for me is shutting down any other process to seek what’s the best method to learn. I started with whatever I feel I want to do to learn, and the nearest resources usually are documentation, books, and YouTube videos. I prefer written things first, because it takes less time to digest than video. If it still takes too long, then I take a break and continue to read again afterward. When I feel I know some basics, I’d directly jump into the pool of projects I want to make, then go back and forth between Google and code editor.</p>
+<br>
+<p>I’m also asking a bunch of questions to people I admire. The point is to ask something that couldn’t be found easily by googling. I usually describe my process that leads to my question, but sometimes when I don’t (and sometimes I ask silly question), people still love to help. So I just ask, and more than that I build meaningful relationship with them.</p>
+<br>
+<p>I also value the importance of being okay with “I don’t know yet.” If I’m literally starting from zero and try to grasp everything about developing websites, I’d be burnout soon. But when I realise it takes time, I’d prioritise on the most important things to learn at the moment. I’d not let my ego rules me to learn everything just because it looks cool when I tell my friends I could do X. I stay on my lane and be proud of knowledge that I have. I always remember there’s a sky above the sky, so..</p>
+<br>
+<p><strong>What does your process for building apps look like?</strong></p>
+<p>For me it’s always changing because I am always experimenting with different ways to make a product. But it always starts with a problem, and usually a problem that I have. Sometimes I start talking to people, to know whether or not we share the same pain. Sometimes I sketch on a notebook. Sometimes I jump directly into code. So far, the most effective one for me is the latter. I just slip one little process to write several details of what I want to make on Notes app for clarity. When it’s not clear, I’d compromise on time, saying yes to almost anything, and it only harms the project afterward.</p>
+<br>
+<p>What I feel like the right thing to do at the beginning is not to obsess over naming. I don’t buy a domain at the beginning when it comes to making a web app. I just name my project with exp.com to save me a lot of time that could be used to make the actual app. And I start with the most important feature first. I always ask myself, “What are you creating now?” And if it’s a tool to search for wallpaper, I’d build that feature first instead of login or any other fancy stuffs. When it’s finished, I just move to the next important feature until the whole app is finished.</p>
+<br>
+<p><strong>Do you face any particular challenges when building over a period of time?</strong></p>
+<p>It’s easy to fall into a trap of being afraid to fail. If I’m not careful enough, unconsciously I’d avoid some necessary work to accomplish my goal. Luckily everything that happens in my mind like doubts, impostor syndrome, or anything that holds me back are well-cured with a practice of mindfulness. I usually set a time in the morning to do meditation for 10-20 minutes before I start my day, and that helps a lot. I think the most underrated skill that I’m going to develop over time is the skill of distinguishing between I am in fear of something or I am in an actual challenge that needs some time to keep going. Realizing where I am on particular situation will help me progress towards the challenge.</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>Recently I was developing iOS apps for few years with Swift. But at some point I think there are many things that I could build on the browser, that’s not limited to people’s device. That makes me quite curious on how to make web apps, and my journey so far has brought me to learn JS stack, particularly on <a href="https://github.com/facebook/create-react-app">Create React App</a> &amp; <a href="https://www.typescriptlang.org/">TypeScript</a>.</p>
+<br>
+<p>I’ve learned and toying some stuffs with <a href="https://nextjs.org/">Next.js</a>, but I’m seeking much simpler solution if any. I’m open to suggestions anyway!</p>
+<br>
+<p><strong>Advice for those learning to code?</strong></p>
+<p>For those who are really new, I was there one day. Don’t get busy with getting more advice, just take one or two things that you could try and start doing it. Regardless the result at the end of your try, you’d learn something from it.</p>
+<br>
+<p>Now my actual advice would be to master the fundamentals first. I suggest you to pick JS (because you could use it later for advanced stuffs) and start writing variables, constants, flow controls, etc. Don’t get confused with paradigm of object oriented or functional programming at this stage. Just having fun toying with the fundamentals first.</p>
+<br>
+<p>My next advice that could be applied to those who have mastered the fundamentals or to those who’re stuck in learning would be mastering the art of collaboration. The earlier you do it, the faster you’re progressing. There’s no great software that’s made without any single collaboration with other people. So I suggest you to involve yourself in open source project. The first thing to discover is which one is the right project to join in. Don’t be discouraged, just asked! Search for people you admire in the community, and ask away. You’d be surprised that there are many kind &amp; nice people that are ready to help you.</p>
+<br>
+<p><strong>What’s your tech stack?</strong></p>
+<p>For building web apps:</p>
+<p>- React (with Next.js).</p>
+<p>- Go (or Express.js).</p>
+<p>- MongoDB.</p>
+<br>
+<p>For building iOS apps:</p>
+<p>- Swift.</p>
+<p>- Realm.</p>
+<p>- Firebase.</p>
+<br>
+<p><strong>What have been influential books, resources and links that have helped you?</strong></p>
+<p>If I could pick one book that changed me a lot, it is <a href="https://www.amazon.com/Mindset-Psychology-Carol-S-Dweck/dp/0345472322">Mindset</a>. It’s a book that taught me how to see progress in appropriate way. To believe that everything could be better has encouraged me to move forward towards anything that I want to achieve. It’s a super recommended book!</p>
+<br>
+<p>The recent book that’s pretty enlightening for me is <a href="https://www.amazon.com/Dancing-Gods-Reflections-Life-Art/dp/1786891158">Dancing With The Gods</a>. Realizing that we’re a unique creature opens up a new path for us to pursue. You don’t have to be somebody’s else, and the work is to discover what’s inside you that uniquely represents your purpose.</p>
+<br>
+<p>The last thing I found quite useful &amp; handy is <a href="https://devhints.io/">DevHints</a>. Surprisingly it’s also a good resource to learn something new when you’re already familiar with coding. For example, it only took me minutes to understand the surface of ES6, and that’s enough to bring the knowledge to practice afterward.</p>
+<br>
+<p><strong>Where can people learn more about you and your work?</strong></p>
+<p>You could find me on Twitter <a href="https://twitter.com/wilbertliu">@wilbertliu</a>, and you could also read my writings on <a href="https://wilbertliu.com/">my website</a>. On other platforms, you could find me easily with that handle.</p>
+<br>
+<p><em>Stop by and say hi!</em></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

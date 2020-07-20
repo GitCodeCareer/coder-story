@@ -1,0 +1,959 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Interviews</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+
+    <section>
+        <div class="bg-indigo-900 md:overflow-hidden">
+            <div class="px-4 py-20 md:py-4">
+                <div class="container md:mx-auto">
+                    <div class="md:flex md:flex-wrap">
+                        <div class="text-center md:text-left md:py-20">
+
+                            <h2 class="text-3xl tracking-tight leading-10 font-extrabold text-indigo-300 sm:text-5xl sm:leading-none md:text-6xl">Explore their <span class="text-white underline">stories</span></h2>
+                            <p class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-md  sm:mx-auto md:mt-5 md:text-lg lg:mx-0">They came, they worked hard, they conquered and now they want to share their story with you.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="container mx-auto">
+
+            <div class="flex flex-wrap">
+
+                
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/bjorn-schijff/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/james-pond-26vbutluffo-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/fmzg5bbl_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Bjorn Schijff
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Senior Frontend Engineer 💻. Trainer. #Angular, #TypeScript, #RxJS. Entrepreneur. Gaming/Esports. </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/ethan/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/1500x500.jpeg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/y7afwfoz_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Ethan 
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">16 yo maker behind @KanbanMail, @CodeTheWebBlog, @TogetherDotFit, @MakerDotRocks and more.</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/guillaume-bardet/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/hanny-naibaho-awxvxy8bszc-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/guilleme.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Guillaume Bardet
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Working on @QlearlyHQ &amp; @FoundersBundle</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/maria-denis/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/boris-stefanik-k3ulol3wubk-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/marie.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Maria Denis
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">👩🏻‍💻Creator @women_make_ • In a Tour de France﹙without🚲﹚•  She / Her</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/pat-walls/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/boulder-bowl-daylight-1580329.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="https://pbs.twimg.com/profile_images/1056074539703193600/ajqrJ3nG_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Pat Walls
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Founder @starter_story and @trypigeon. Launched http://24hrstartup.com Black heart</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/steph-smith/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/stephen-dawson-qwtcej5clys-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/steph.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Steph Smith
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Maker | Founder Integral Labs | Prev Head of Pubs @Toptal | Dev </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/veni-kunche/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/christina-wocintechchat-com-mtvpwhqkzk4-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/veni-kunche.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Veni Kunche
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Software Engineer. Founder. Maker. Runss @DiversifyTechCo &amp; @CodewithVeni. She/Her</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/leonardo-bighi/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/raphael-nogueira-okidila7k8q-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/cf6zv4h_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Leonardo Bighi
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Developer at @estantevirtual. Maker. Writer. Book-lover. He can never find a note-taking app that he loves. </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/danielle-johnson/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/boxed-water-is-better-btj_y8cdxpq-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/e7_yljdb_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Danielle Johnson
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Co-founder @SquarecatWebDev • Maker @LeaveMeAloneApp </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/ryzal-yusoff/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/screenshot-2020-04-19-at-16.18.44.png" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/wua1rjd0_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Ryzal Yusoff
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Made http://readermode.io: A distraction-free web reader with dyslexia support and research tools </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/johnny-boufarhat/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/allie-smith-goupqaau9qo-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/yn5mwky0_400x400-1-.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Johnny Boufarhat
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Founder @hopinofficial. Previously Readory &amp; Multiplex. </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/sarah-jackson/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/zack-spear-zb_ns0hvznk-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/jhql24sk_400x400-1-.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Sarah Jackson
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">@inweed_io 🔍 | @phclock 😻 | @listimpossible 💣</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/hari-krishna/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/element5-digital-ue2t1tcfsn8-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/ezfa0oki_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Hari Krishna
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Micro-startups Maker.  Brain behind http://visalist.io, http://anexplorer.co, http://acrypto.io
+&amp; http://dworks.io</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/andrew-askins/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="https://specials-images.forbesimg.com/imageserve/507971418/960x0.jpg?fit=scale" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="https://pbs.twimg.com/profile_images/1093919369212710912/3Z89qc9t_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Andrew Askins
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Helps non-technical founders @builtbykrit and curate @StartupWatching</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/benjamin-spak/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/arian-darvishi-wh-rpfr_3_m-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/k0ypatjt_400x400.png" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Benjamin Spak
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Creator behind #301DaysOfCode, #Code100Projects. Founder of @CodeCareerio &amp; @DeskFlipio 🖥</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/jess-wallace/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/luke-stackpoole-moeqotmupg8-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/jess-1-.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Jess Wallace
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Data Analyst in Performance Marketing | Football Fan. Below average Badminton Player.</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/jet-holt/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/sean-o-kmn4veeepr8-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/wo6mog5l_400x400.png" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Jet Holt
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">CS graduate who enjoys working on his own projects. Known for Eurorack Synth modules. </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/wilbert-liu/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/1500x500-2-.jpeg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/wilbert.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Wilbert Liu
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Maker, Designer &amp; Software Engineer.  Previously @gameloft &amp; @icehousecorp</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/dante-lex/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/desola-lanre-ologun-xvcdambxcoi-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/dante.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Dante Lex
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Building microstartups @treadieinc. Product Designer</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/paige-gorry/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/christina-wocintechchat-com-0nfqp0wijqc-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/nryoomc-_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Paige Gorry
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Software Developer. 💻 Ask her about her APIs ⚡️🚀
+</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/roland-horvath/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/photo-1541873676-a18131494184.jpeg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/8ebmxs6g_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Roland Horvath
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Astronaut wannabe. Maker, designer, developer 🚀 3x WWDC scholar. Head of engineering @extracard</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/daniel-kaczmarczyk/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/nesa-by-makers-igur1ix0mqm-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/glfmul-t_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Daniel Kaczmarczyk
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Lead Software Engineering Instructor @ Flatiron School. Stack - js; ruby; python;</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/ben-wallace/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="https://pbs.twimg.com/profile_images/1246919799030124544/TexdyoJv_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Ben Wallace
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">The Creative One / Slightly Netflix Obsessed • Love your truth, then live it • </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/james-gallagher/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/austin-distel-dfjjmvhwh_8-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/bkl1xagr_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        James Gallagher
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Writer &amp; Researcher @Career_Karma. Expert In Residence @beondeck
+</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/samuele-dassatti/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/erik-mclean-qrhtk8tbx_e-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/samuelinterview.png" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Samuele Dassatti
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Tech entrepreneur and award-winning UX designer. CEO at Igloo and creator of Fluently. Windows Insider MVP.</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/oliver-sarfas/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/max-duzij-qajjk-un3bi-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/personal_picture.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Oliver Sarfas
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Director at @clevereggio. Blogs at https://sarfas.codes</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/april-speight/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="https://images.unsplash.com/photo-1570063578733-6a33b69d1439?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="https://pbs.twimg.com/profile_images/1246662805240967168/_IosDi7F_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        April Speight
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Plays a developer on YouTube 👩🏾‍💻 @azureadvocates - Spatial Computing at @Microsoft</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/lee-crosdale/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/alex-kotliarskyi-qbpzgqemskg-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/unnamed.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Lee Crosdale
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Lead Laravel/PHP Web Developer. If you DM him he will only respond via Vulcan Mind-Meld.</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/ollie-read/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/roman-synkevych-vxinuov1n84-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/q129uzdt_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Ollie Read
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">PHP Developer, Laravel Aficionado,  Pixel Artist &amp; World Builder. </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/peter-thaleikis/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/sheri-silver-okdurdz8cxu-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/cqlzksxa_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Peter Thaleikis
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Cookie Monster. Indie Hacker. Freelance Developer. Built Startupnamecheck</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/shawn-wang/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/1500x500-1-.jpeg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/efws7lr9_400x400.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Shawn Wang
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Previously @Netlify, @TwoSigma &amp; @fullstack. Currently writing a book - Cracking the Coding Career. </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/noemi-stauffer/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/markus-spiske-cz-s645zbho-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/iyzpviuz_400x400-1-.jpg" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Noemi Stauffer
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Founder of @fresh_fonts, a newsletter to support independent type design. Front-end developer. Variable fonts enthusiast.</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+                    <div class="md:w-1/2 lg:w-1/3 py-4 px-4" >
+                        <div class=" ">
+					<a href="/interviews/daniel-vinnicombe/">
+                            <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg">
+                                <div class="right-0 mt-4 rounded-l-full absolute text-center font-bold text-xs text-white px-2 py-1 bg-indigo-900">
+                                    
+                                </div>
+                                <img src="/assets/img/federica-galli-_xhzcnsqphq-unsplash.jpg" class="h-32 rounded-lg w-full object-cover">
+                                <div class="flex justify-center">
+                                    <img src="/assets/img/danielphoto.png" class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                                </div>
+                                <div class="py-2 px-2">
+                                    <div class=" font-bold font-title text-center">
+                                        Daniel Vinnicombe
+                                    </div>
+
+                                    <div class="text-sm font-light text-center my-2">Developer @ Suffolk County Council. Built Orsolo, previously Makepad.</div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="flex justify-center text-gray-100 bg-indigo-900">
+    <div class="container py-20">
+        <h1 class="text-center text-lg font-bold lg:text-2xl">
+            Join 160+ others and never miss out on <br>our latest stories, blog posts and goodies.
+        </h1>
+
+        <div class="flex justify-center mt-6 mb-10   ">
+            <div class="bg-white rounded-lg">
+                <div class="flex flex-wrap justify-between md:flex-row">
+                    <form style="margin-block-end: 0rem;"action="https://coderstory.us19.list-manage.com/subscribe/post?u=3757dc73cf7e45a04dddc18bd&amp;id=70b2a3e203" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                        <input type="email" value="" name="EMAIL" class="required m-1 p-2 appearance-none text-gray-700 text-sm focus:outline-none"
+                        placeholder="Enter your email">
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3757dc73cf7e45a04dddc18bd_70b2a3e203" tabindex="-1" value=""></div>
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="w-full m-1 p-2 text-sm bg-indigo-900 rounded-lg font-semibold uppercase lg:w-auto">
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="h-px mt-6 mb-6 bg-gray-700 border-none">
+
+        <div class="flex flex-col items-center justify-between mt-3 md:flex-row">
+            <div>
+                <a href="/">
+                    <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-20">
+                </a>
+            </div>
+            <div class="flex mt-4 md:m-0">
+                <div class="-mx-4">
+                    <a href="/interviews"
+                        class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about"
+                        class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved"
+                        class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get
+                        Involved</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>

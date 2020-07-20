@@ -1,0 +1,223 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Ben Wallace</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("https://images.unsplash.com/photo-1512436991641-6745cdb1723f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="https://pbs.twimg.com/profile_images/1246919799030124544/TexdyoJv_400x400.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Ben Wallace
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                London,  United Kingdom
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                The Creative One / Slightly Netflix Obsessed • Love your truth, then live it • 
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/benwallaceuk" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://twitter.com/benwallaceuk"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from? What's your backstory?</strong></p>
+<p>Hi Everyone, I'm Ben Wallace and I'm 32 years old from Teddington, Middlesex a suburban town on the outskirts of London located closely to the home of rugby! (Twickenham). I currently work as a Senior Account Manager in Business Development working alongside Marketing, Brand and Communications Agencies that specialise in the health and pharmaceutical sectors. I have been doing this for over 2 years now and had previously worked for an E-Commerce company called The Chat Shop that gave me my first real taste of the online world and it's capabilities.</p>
+<br>
+<p>When I'm not chatting away on the phone or working with Jess on CoderStory, I volunteer my time with the local Royal British Legion or I can now be found binge watching way too many shows on Netflix which is quite a change to where I was only a couple of months ago when I decided to quit drinking; otherwise then you would have found me in a bar every weekend with my friends!</p>
+<br>
+<p><strong>What made you get involved with CoderStory?</strong></p>
+<p><em>Can I say that Jess made me? No, I kid!</em> The opportunity to become involved with CoderStory wasn't as simple as my sister coming to me and asking me to get involved. I was vaguely aware that she had been working on a new platform as part of the 24 hour start up challenge but hadn't requested further information until she had completed the challenge. Once I had gained a better understanding of what she was aiming to do, I found myself excited by the potential that a platform like this could bring and after throwing back and forth some ideas with Jess about the potential of CS, I knew I had to be a part of it somehow.</p>
+<br>
+<p>One of my biggest issues is that I like to have my finger in all of the pies! I like to keep busy and in other aspects of my life I've never really had the opportunity to stretch my creative wings. By becoming a part of the team here it would give me the chance to realise my full potential and see the growth of a platform that I feel has the potential to keep climbing higher and higher.</p>
+<br>
+<p><img src="https://lh3.googleusercontent.com/D-WGxPW5hOz0dpQFwhURylStPXAYT-s7nxEgHkWaoji8SspGrLCn0JhJMXSEKmpmOCSDE9KZ-sM99ZNmLs_V34mxZfA8sO_uiY9GnGKQLkhTs3dRJ-Mj3DXPudYL4zC4MtpOD2RP" alt="" title="Sibling Team 💪🏽"></p>
+<br>
+<p><strong>What inspires you when you are looking at content?</strong></p>
+<p>If there's one thing I like to do, it's research! I can sit for hours reading whether it's via a book, a magazine or a website! I'm always looking for something that stands out as I have so many varied interests that to write about all of them would mean this interview could go on for quite a long time! When it comes to subject matter, I always firstly look for the titles that catch my eye! I know that probably sounds quite cliche, but I look for the titles that straight away I know could inspire me. It's why when I write and edit the interviews for CS, I always try and think of a title that will inspire people or make them take a moment to think about the person they are about to discover.</p>
+<br>
+<p>This then leads on to the next thing; how inspirational is the content itself? We live in such a dark world sometimes I always need to be uplifted and nothing pleases me better than when I open a link and finish an article feeling like it's changed me; even in the smallest way. Those articles are the one that inspire me to write content that means something to someone, even if it just transports them away from everything for a moment - I want to be able to look back and know that something I wrote made even the smallest difference.</p>
+<br>
+<p><strong>Do you have any influences that play a part in how you work?</strong></p>
+<p>I am easily influenced and that's just talking from personal experience. But when it comes to my career and my aspirations it never amazes me how much can inspire me. Whether it's a certain song, a television show or movie or even a quote that I have come across. I find inspiration in the strangest of places which have had a detrimental effect on my way of thinking; especially when it comes to my work.</p>
+<br>
+<p><em>Have you ever seen the film Legally Blonde?</em>  Stay with me here, there's a point. Throughout the film Elle Woods isn't being taken seriously because of her background until she decides that she's had enough and decides to work her butt off so that can be taken seriously. I'm Elle Woods, and the amount of times I've listened to 'Watch me Shine' by Joanna Pacitti to put me in that mind set is beyond a number that I can probably write down.</p>
+<br>
+<p>Aside from that, music plays a big part of my motivation as I have such a diverse taste that the right track or singer can set the mood. I may actually create a playlist of the best motivational songs in the future as it can really do wonders for the pacing of your work!</p>
+<br>
+<p><strong>What are your aspirations moving forward?</strong></p>
+<p>Of course I would love to see CoderStory climb to reach its fullest potential as I believe that this platform is filling a gap in the market that I personally have yet to see. But I have also entertained the idea of the physical aspect of a platform such as this and what it could become. The dream is to eventually begin my own capabilities agency that focuses around marketing, brand and digital aspects. Whether this is a solo venture or as part of a team I'm not quite sure just yet, but by being a part of this it's inspired me to look at how I can use my growing experience to help benefit people all over the world.</p>
+<br>
+<p>Every day that I have worked on CoderStory has been a learning curve for me and as of recent, I have also considered coding myself as I can easily pick up new skills and I am always looking to immerse myself further into the creator's community. I love to complain about the lack of diversity in certain product areas, so maybe I should think about learning so that I can make that difference!</p>
+<br>
+<p><strong>Do you face any challenges?</strong></p>
+<p>In this particular field of course the biggest part is suffering from that horrible demon we call Writers Block! Sometimes I will have put the idea together in my head, laid out the plans and then I'll sit down and forget everything that I had thought about. Sometimes I have to use Jess and Whatsapp just to make sure I remember things because sometimes I could easily be compared to Dory in Finding Nemo!</p>
+<br>
+<p>My other challenge is confidence. As I mentioned earlier, I want to write content that makes a difference and without a doubt we all question whether what we are doing is good enough. As someone who openly suffers with anxiety, once I have written something I always second guess myself and even after it has been published and feedback has been received, I always go over things in my head wondering if certain points could have been changed or if the whole article was a mistake. It's something I'm slowly working on and I guess it's a part of the role I have here - I'll learn from my mistakes and with that I'll hopefully boost my confidence.</p>
+<br>
+<p><strong>Any advice to those looking at putting more focus on content and branding?</strong></p>
+<p>Firstly - really know your brand and the message that you are trying to project! Working on CS has been a huge learning curve as this wasn't a platform that I had created. As CS evolves, I am going to continue to utilise all the possible resources available to me whether those are e-books, literature, videos and group messaging platforms! You don't have to know absolutely everything but getting the basics down of brand understanding will help you map out how you want to share content and how you can align that with the brand you are trying to create.</p>
+<br>
+<p>Secondly - Write everything down. I sometimes find that I can get an injection of ideas at the most random of times. The other day I was walking up the stairs to my office and all of a sudden I had a content idea! By the time I reached my office, within seconds I had already written it down on a post-it and I'm now working on it so that it can be published in the coming weeks.</p>
+<br>
+<p>Thirdly - Keep writing and remember that every idea is a good idea! Sometimes it's easy to get lost in real life and put that pen down. But if you have something to say - no matter how big or small it is, somewhere there is someone waiting to read what you've written. The same applies for branding - if you want to add something that you think add's more flare to the existing brand, then test it out! Every brand has the space to evolve and one good idea can change the face and the future of the brand!</p>
+<br>
+<p><strong>Are there any particular resources or creators that inspire you?</strong></p>
+<p>Being quite new to this community in general, I've come across quite a few people who have really provided me with amazing insight. Whether it's by the work that they produce or the content that they share, I've had the chance to sit down and feel inspired by a number of creators many of whom we have had the chance to interview on CoderStory.</p>
+<br>
+<p>Awesome people to check out!</p>
+<br>
+<p>- <em><strong><a href="https://twitter.com/vogueandcode">@vogueandcode</a></strong></em> April has managed to take not only coding but fashion - and merge the two together! I love everything fashion related and she writes amazing content so check her out!</p>
+<p>-  <em><strong><a href="https://twitter.com/AndrewAskins">@AndrewAskins</a></strong></em> We had the chance to share Andrew's story and since then I've been a fan! Not only does he run his agency <a href="https://builtbykrit.com/blog">Krit</a>, but he also shares his thoughts via a weekly post as well as promoting great content on his company website!</p>
+<p>-  <em><strong><a href="https://twitter.com/DominicMcGregor">@DominicMcGregor</a></strong></em> Dominic originally found his way onto my radar due to his journey with drinking, and based on my own past was an inspiration. Now not only do I check in with him to see the progression of his journey but he runs a very well known Social Agency called <strong><a href="https://www.socialchain.com/">Social Chain</a></strong> which works with many well known brands and also posts brilliant content!</p>
+<p>- <em><strong><a href="https://twitter.com/melrobbins">@MelRobbins</a></strong></em> Sometimes we all need a little push or motivation, and I love following Mel as she always pushes you to believe in yourself and take control of your own journey! She has some great resources that you can check out via Audible which I would highly recommend.</p>
+<p>- <em><strong><a href="https://twitter.com/fajarsiddiqFS">@fajarsaddiqFS</a></strong></em> I have had the opportunity to come across some great makers, and although we haven't interacted as much as I would have liked, Fajar has been such a big supporter of CoderStory and even created the amazing promotional video that we shared when we relaunched. Sometimes when I need to feel optimistic or need to put a smile on my face, I always take the time to check out his feeds as he's always doing something and I'm really looking forward to seeing what comes next for him!</p>
+<br>
+<p><strong>Where can people learn more about you?</strong></p>
+<p>I don't have my own official website as of yet (That's a work in progress!) but I'm quite active on social platforms. I'm always open to meeting new people and having conversations so please feel free to add, follow and message me on the handles below:</p>
+<p>-  <em><strong><a href="https://twitter.com/benwallaceuk">Twitter</a></strong></em></p>
+<p>-  <em><strong><a href="https://www.instagram.com/oh_heybenno/">Instagram</a></strong></em></p>
+<p>-  <em><strong><a href="https://www.facebook.com/bennobasanez">Facebook</a></strong></em></p>
+<br>
+<p>Finally...</p>
+<br>
+<p><em>I would just like to say thank you to everyone who has been involved in CoderStory up to this point. To my sister Jess who believed in me even when I didn't believe in myself, you gave me an opportunity to spread my creative wings even when things were dark and you motivate me to keep doing brilliant things, I can't thank you enough.</em></p>
+<br>
+<p><em>To those who I have had the pleasure of speaking to, reading about in your interviews and to those who we are yet to introduce to the CS family - thank you for your contribution in my journey here. You've all changed my life in ways I couldn't have imagined; not only are you highly skilled makers but you have all been an inspiration to me on this journey and I look forward to growing this circle and really becoming a part of the maker's community.</em></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

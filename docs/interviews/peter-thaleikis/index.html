@@ -1,0 +1,245 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Peter Thaleikis</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("/assets/img/sheri-silver-okdurdz8cxu-unsplash.jpg");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="/assets/img/cqlzksxa_400x400.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Peter Thaleikis
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                Georgia
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                Cookie Monster. Indie Hacker. Freelance Developer. Built Startupnamecheck
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/spekulatius1984" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://peterthaleikis.com/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from and what is your backstory?</strong></p>
+<p>I’m Peter aka &quot;Spekulatius&quot; or &quot;cookie man 🍪️”. I grew up in collapsing Eastern Germany. School was more boring than challenging. Being a kid, roaming through the remains of industrial complexes and playing with the abandoned machines was way more exciting than school. The other side of my childhood was taking things apart. I found old TVs, VHS players, ... and took all them apart - to see what they are made off 🔌️ My dad on the other hand was an engineer by trade and put the things back together to fix them. Although my attitude towards school didn’t improve until later in my educational career I ended up receiving a scholarship in electrical engineering 👨‍🎓️</p>
+<br>
+<p>After finishing university I became a “professional software engineer” but I had things that I still wanted to do so after a year and a half in my job I decided to move to Asia (2011), then I moved to New Zealand 🌏️💗️ and a bit over three years later back to Asia 😁️ Here I moved around a bit and got stuck in Bangkok 🔥️ I’m working mostly as a contractor and when I get some down time I like to build stuff “on the side”.</p>
+<br>
+<p><strong>What made you get into programming?</strong></p>
+<p>I’ve dreamed about becoming a developer pretty much since my dad brought home a used 286 Intel computer. I must have been around 12 or 13. At the time it was already outdated but the machine was more than enough to fascinate me - even without an internet connection. I was excited to play around, looking into files, changing stuff and find out what broke it. I must have reinstalled Windows 3.1 a million times. A bit later I started learning C and played around with it for a while. But something was missing: it all felt a bit “useless”. Making another calculator didn’t give me a lot of satisfaction. That missing link came when my dad got an old 14.4 kBit modem and we installed dial-up internet. For those who have never had the experience of dial up internet check this out: <a href="https://www.youtube.com/watch?v=AgqEIp2YmtE">https://www.youtube.com/watch?v=AgqEIp2YmtE</a></p>
+<br>
+<p>I started playing around with the web. Inspecting the source code of websites. I started building my own sites and learned Perl as a backend language. This was pre-GitHub, even pre-Google. Learning stuff was much more challenging. I loved figuring out how it works and making stuff work. The little exciting moment when you found a way to make it work is what got it me and still keeps me going.<br></p>
+<p><strong>What made you want to create?</strong></p>
+<p>While being employed I helped out on many ends to “make it work” and this often led to very high workloads. I noticed my natural desire to code disappeared and my energy to push forward dropped more and more. I guess that's partly due to the project management, partly caused by clients having unrealistic expectations and for a share by myself of course.</p>
+<br>
+<p>Besides the workload issue, being an (employed) software engineer always with the downside of not being able to create what you want and how you want. There was constantly your boss or manager telling you what and (even worse) how to do stuff. Not a very good recipe for being fulfilled.</p>
+<br>
+<p>At some point I decided to leave work and gave another approach a try. I moved back to Asia, took a break and later started spending more time discovering new technologies and coding for fun. Ideas for little projects constantly jumped into my mind and I noticed that researching names and titles wasn't done the way I would do it. I ended up coding a little project, startupnamecheck.com and launched it as a learning exercise for new tech, SEO and marketing.</p>
+<br>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<p>I'm interested in a wide range of things. But I also don't think you can be a great developer in every aspect of technology. To address this conundrum I started excluding certain areas. One of them being native mobile apps for example. I don’t develop mobile apps and even decline considering it as client and personal projects. Plain and simple because I need to draw a line in the sand. For “the rest” I’m trying to have an understanding of basics and principles first. This helps putting things into clearer context. Usually, I start by learn the basic technologies rather than the framework. So “JavaScript” comes over React/Vue/Angular/you name it. I think if you are great with Plain JavaScript, for example, you will be able to use it everywhere and can jump into new frameworks easily. On the opposite, if you know how to build stuff efficiently in React you will only be able to use this in React. Some principals are transferable, but at the end you become a “React developer” instead of a “JavaScript developer” (or even better a “developer”). So much for my learning philosophy!</p>
+<br>
+<p>I learn better by example. That probably makes me a bad example for a good learner. In German you would say “Everyone is good for something, even if it’s just as a bad example” 😅 Often this is combined with a goal: usually solving a problem or building a little project.</p>
+<br>
+<p>Let me try explaining this more using my latest project. I've built a browser extension called “<a href="https://whichlogin.com/">which login</a>” to remember which social media site you used to sign-in on a particular site. This was my first browser extension and makes a good example for my learning process. I had already worked with VanillaJS, ES5 and ES6 (modern JavaScript versions) and was able to build the functionality itself before starting. The challenges were more about finding out how to get the right information from the browser and store information in the browser. So I dug into examples to see how other extensions access it. For this I found the Mozilla web extension examples very useful. The examples show ways to access the different Browser APIs in one simple add-on. Like with the old TVs I started playing around with the examples and tweaked them to see how they worked. This way, I managed to get a basic understanding of the way it worked. This allowed me to build the first version and later versions of the same browser extension got more sophisticated and I implemented more and more of the understanding I gained from the basic examples.</p>
+<br>
+<p><strong>What does your process for building apps look like?</strong></p>
+<p>This depends on the type and size of the project. Super small stuff I get going on without much thinking. This could be a new blog site for example. It takes no genius to use a template, deploy it to Netlify and tweak the design a bit.</p>
+<br>
+<p>For anything out of the category or super small I try to force myself into doing some research &amp; planning. Research is an important phase I tend to cut short too much so I’ve started asking myself these questions:<br>
+<br>
+<br></p>
+<ol>
+<li>
+<p>Does it exist? If yes, what would I do differently to make it worth the effort? If not, why not? Has anyone tried? Are there abandoned similar projects?</p>
+</li>
+<li>
+<p>Next step is getting an idea on involvement: Is this a one week job or one month job? Do I have the time?</p>
+</li>
+<li>
+<p>What technologies are needed? Do I have the knowledge to do it completely myself? What do I need to learn?</p>
+</li>
+<li>
+<p>Do I have a plan to market the idea? No project is worth being built if you can’t get anyone to use it at the end.</p>
+</li>
+</ol>
+<br>
+<p>These questions are key to making an informed decision for me. If i’m still getting a feeling this is worth it I start planning it out more.</p>
+<br>
+<p>That starts with scoping: What should it be able to do? What streams of work are there? For which login would this have been an extension on a simple website. If the project is more sizeable I split things up: usually along the lines of front-end (presentation) / backend (core functionality). Depending on my workload I might outsource a part of the work like the front-end implementation. With a demanding contracting business it just makes more sense financially.</p>
+<br>
+<p>All just for one thing: At the end nothing beats the moment when you click refresh and it works 😍️</p>
+<br>
+<p><strong>Do you face any particular challenges when building over a period of time?</strong></p>
+<p>I do find that with long term projects I suffer often from a loss of motivation. I had multiple ideas being implemented while I worked on something very similar. That isn’t a great feeling really. On top of that, very often client work comes up and distracts me from continuing on my side projects. These are “now problems”. I’ve started doing smaller projects with clear, limited scope. This alone hasn’t resolved the issue but it has helped a great deal. I keep working on solutions for this - if I stumble across a golden recipe I’ll share it on Twitter 😄️</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>Not completely new but VueJS is a hot topic for me. It’s a killer in combination with Laravel. Both are very easy to get started with and the learning curves are really flat. Vue and Laravel have great documentations online, tutorials and communities - exactly what a newbie dev needs to get started. To dip your toe into Vue you need not much more than an hour or two.</p>
+<br>
+<p>Otherwise, I like browser extensions. It’s a concept people get and the market is mature enough. I’m hoping to develop more small and big extensions over the next year. I’m learning a lot of new things here at the moment.</p>
+<br>
+<p><strong>Advice for those learning to code?</strong></p>
+<p>I think it’s mostly the things I’ve mentioned throughout the article already. Here a quick summary and some more thoughts:</p>
+<p>- Learn the basics first, don’t jump into a framework because it’s trendy or “everyone seems to use it now”.</p>
+<p>- When you are choosing technology choose by having quality material to learn with: up to date documentation with examples, maybe video tutorials or courses and of course a big and helpful community.</p>
+<p>- When it comes to coding itself: Set yourself small goals and find ways to work towards these. Don’t start off with trying to build the next Amazon or Netlify.</p>
+<p>- Document your progress on a blog or <a href="https://getmakerlog.com/">makerlog</a>. This keeps you accountable to continue and makes it easier for others to help you out.</p>
+<p>- Spend time off screen thinking on the issues you face: What is making it hard for me? Is it the coding itself or is it not knowing how to approach the problem? Is it PHP or Laravel?</p>
+<p>- Ask questions: People are happy to help out generally. Just don’t expect them to solve your problems - that’s what coding is. You will need to do it yourself.</p>
+<br>
+<p><strong>What’s your tech stack?</strong></p>
+<p>As you might have guessed: Lots of PHP stuff like Laravel, SilverStripe for business/government projects and VanillaJS.</p>
+<br>
+<p>I’m keen to keep my development environment simple. No IDE or whatsoever. Just Sublime Text and a few packages (git, syntax highlighting).<br></p>
+<p><strong>What have been influential books, resources and links that have helped you?</strong></p>
+<p>One book left a permanent impression on me. I stumbled across it when I was 14 or 15 in a book store I strolled through. It was on sale for 1 DM (German Mark, the old currency before the Euro. 1 DM is roughly half of 1 Euro). I bought one because the back of the book sounded interesting. When I read it I got drawn in more and more. I ended up reading it again every few years until today.</p>
+<br>
+<p>It’s not about coding at all - it’s actually about business. But no worries, it’s not one of these boring &amp; dry business books. It’s comparing the advantages of starting a business with the advantages of the great explorers in the past. They faced similar challenges as they chartered unexplored seas, same as you when you start your first business or get into something totally new like coding. Have a look at <a href="https://www.amazon.com/Venture-Adventure-Strategies-Thriving-Entrepreneurship-ebook/dp/B005S74A74/">The Venture Adventure by Daryl Bernstein</a>.</p>
+<br>
+<p><strong>Where can people learn more about you and your work?</strong></p>
+<p>There is my blog where I talk about<a href="https://peterthaleikis.com/"> freelancing, coding and making stuff</a>.It just launched and has still very little content, but that will change over time.</p>
+<br>
+<p>My projects are<a href="https://startupnamecheck.com/"> Startup Name Check</a> and <a href="https://whichlogin.com/">Which Login</a>. I’m always happy to see people using my software. If you find any bugs send me message on <a href="https://twitter.com/spekulatius1984">Twitter</a> please. If you are keen to follow my maker progress you should follow my on <a href="https://getmakerlog.com/@spekulatius">makerlog</a>.</p>
+<br>
+<p>On the more serious side: My business can be found under <a href="https://bringyourownideas.com/">Bring Your Own Ideas</a>. The site is also rather thin on content atm but I’m always happy to welcome visitors to it. I’m providing development services for pretty much everything I’ve talked above.</p>
+<br>
+<p><strong>What makes Spekulatius the ‘best’ cookie?</strong></p>
+<p>Spekulatius is the best cookie in the world because it got me through so many cold nights in front of my computer coding. It’s the perfect balance between sweet and tasty to keep me going during all nighters. It comes in big packs at almost no cost (like 0,50 - 0,70 Euro per big pack). Also works as a replacement for meals if you can’t stop coding. Depending on your addiction level this will last you between a day and a few weeks. I’m rather at the lower end, but it got better. But it comes with downsides: The stuff is highly addictive and I’ve been told it contains too much sugar. Here is my disclaimer: I won’t be responsible for any diabetes, sticky keyboards or similar. Consume responsibly 🍪️</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

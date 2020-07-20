@@ -1,0 +1,209 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Ollie Read</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("/assets/img/roman-synkevych-vxinuov1n84-unsplash.jpg");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="/assets/img/q129uzdt_400x400.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Ollie Read
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                Worcestershire, United Kingdom
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                PHP Developer, Laravel Aficionado,  Pixel Artist &amp; World Builder. 
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/ollieread" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://ollieread.com/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from and what is your backstory?</strong></p>
+<p>I am Ollie Read, and I’m from Worcestershire in the UK. I live in Birmingham with my partner and our 7 month old baby, Evie. I’ve been writing PHP for 15 years, with 12 of those being as a professional developer.</p>
+<br>
+<p>I lived in London for a few years where I got to work with some interesting companies on some even more interesting projects, such as Miniclip, CancerResearch UK, The Open University, and my personal favourite, Goodluck Johnathan who at the time, was the president of Nigeria. Outside of that my backstory is a simple one. I like to code, so I code, and I code everything that I can.</p>
+<br>
+<p><strong>What made you get into programming?</strong></p>
+<p>In my early teens, I had a fair few issues, most of which were of my own making, but they mostly stemmed from boredom. I found the work at school easy, and I didn’t really have anything to focus on. At the time I didn’t really know myself so was unaware that my behaviour was a result of not having a conduit for my thoughts. By the time I was 15, I discovered programming as a concept, specifically PHP, and it all just sort of clicked.</p>
+<br>
+<p>I have something called low latent inhibition, which has two side effects. Firstly I struggle to block out external stimuli, and secondly, I tend to see things as a sum of their parts, rather than a whole. While these two traits had caused me a number of issues, they worked perfectly with programming, allowing me to easily absorb information and break things down into their individual parts. It was around this time that I had to leave my home with my mom and stepdad, which was off the back of my behaviour. This, although of my own making, caused me to lock myself away in the spare room at my nans, with nothing but an old computer I had built and a 56k dialup line. Recognising that I was struggling, I decided to dive into the world of development and spent as much time as I could reading, learning and playing, and things just sort of went from there.</p>
+<br>
+<p><strong>What made you start building products?</strong></p>
+<p>I’ve created a number of products, though mostly for clients. I think the two things I’m probably better known for would be the multiauth Laravel package that introduced the concept of multiple authentication guards, back before it was in the core and my article on multitenancy with Laravel. The first I created because I needed it, and I saw that others were hacking around with what was available, with the end result being less than desirable. The second I wrote because there seemed to be a lot of misinformation and over-engineering to approach a topic that sounds far more complex than it actually is.</p>
+<br>
+<p>I’m in the process of creating a few more products. I have Contraption which is a pet project where I’m trying to create a modern simple and powerful framework whose components can work independently of the framework itself (much the way Laravel was originally intended), but with very very limited requirements, such as no Symfony. I’d say the next best one to mention would be the Kitchen Sink Academy, a video subscription service for learning to build everything with Laravel. I decided to start this project because I felt that most of the content out there was somewhat lacking, and focused far more on theory than practicality.<br></p>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<p>This is a particularly difficult question to ask, as I tend to absorb things subconsciously. My head is full of facts and answers to questions, though I have no knowledge of how or when I acquired this knowledge. I’d say that for me personally, I like to break everything down to be as small as possible, map out how it would look in my head, and then I just start to fill in the blanks. This is hard to explain as it mostly happens as an internal visualisation and I’ve no idea how I’d even begin to explain it.</p>
+<br>
+<p>That being said, I’d recommend following the same process. Take what you do know, or what you can initially learn and lay it out. Figure out how each of these parts relates to the other parts. It’s also very important not to be scared of failing, everyone does it, and we need to first fall before we can climb back up.</p>
+<br>
+<p><strong>What does your process for building apps look like?</strong></p>
+<p>My process for building is almost identical to my process for learning. I typically start with a requirements document, which will serve as the basis for the specification/statement of work. As I read through the requirements and build up the specification, the overall layout of the system will build up in my head, taking shape. I’ve found that this gives me a good insight into problems that may occur, and lets me find solutions, or make note of them before I write a single line of code.</p>
+<br>
+<p>Once I have this document I’ll go through and start writing the actual code. The order in which I develop parts of an app could be seen as haphazard or lacking order, as I sort of flow through it. I’ll typically pick a process through the system and then build that. It does mean that some sets of functionality will have bits missing as it has been built to match a particular process, but that will be handled later on when a process comes to need more than is available. The initial processes are simple ones, growing more and more complex as I go through the system. Unfortunately, I have little control over which processes I pick as they just sort of come to me, and I’ve learned to follow them otherwise I’ll end up distracted.</p>
+<br>
+<p>The overall idea of the app continues to build and iterate in my head, as the code builds and iterates. This allows me to go back to clients or the specification, and update with alternative solutions or even add/suggest new features.</p>
+<br>
+<p><strong>Do you face any particular challenges when building over a period of time?</strong></p>
+<p>My above answers to my building and learning process make me sound like one of those infuriating people that just sort of gets it, but it very much is a double-edged sword. Because things tend to build up in my head on an almost subconscious level, I have little to no control over it. The biggest challenge I face is an idea supplanting my current project, and becoming all I can think about.</p>
+<br>
+<p>I have a hefty amount of notebooks full of ideas and thoughts in an attempt to manage this. Sometimes an idea will continue to grow in my mind, and if I don’t do something about it, it becomes all I can think about. I’ve found that in most cases, simply writing it all down in a notebook serves as a good way to stop it beating on the inside of my skull, though 50% of the time it’ll come back at some point in the future.</p>
+<br>
+<p>This, unfortunately, affects my productivity because it’s hard to concentrate on a clients project while an idea beats on my brain, slowly becoming all I can think about.</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>There’s a lot that I would like to learn, and although I’m not actively learning anything new right now, I’m constantly trying to improve my methods and coding, constantly trying to find better solutions.</p>
+<br>
+<p><strong>Advice for those learning to code?</strong></p>
+<p>Look and play with the code. When I first wanted to get to know Laravel I installed 4.2 and ripped it apart. I went through everything, scanning and following as many method calls as I can. If there’s ever something I need to figure out, I look for similar code and read through that. Once I have an understanding of that works, I can create my own solution. While reading books, articles and watching videos will help a lot, reading through and playing with the code is invaluable.</p>
+<br>
+<p>Speaking to the community can also be very beneficial. I don’t mean just asking how to do something, I mean asking for opinions or alternatives on ways to do things. Don’t just drop into a Slack or Discord and ask how to do a particular task, instead first have a go, see what you can come up with, and then put it to some people willing to take a look and provide some criticism. You’d be amazed at the number of times I implemented a particular design pattern without knowing that it was an established design pattern.</p>
+<br>
+<p><strong>What’s your tech stack?</strong></p>
+<p>I’m primarily a web developer working with PHP, specifically Laravel. On top of this, there’s the standard HTML, CSS with some SaSS preprocessing, Javascript because you can’t live without it these days and MySQL though I typically favour MariaDB. This will mostly be deployed on a DigitalOcean Ubuntu based droplet, running Nginx, MariaDB and PHP-FPM.</p>
+<br>
+<p><strong>What have been influential books, resources and links that have helped you?</strong></p>
+<p>Code. It has been so long since I actually learned PHP (Almost 16 years) that the sites that I used no longer exist, and I’d be surprised if many of you reading this had even heard of them. The biggest resource I’ve found has been GitHub or any place that publicly has code for you to read. I said it before, but the code itself is an invaluable resource in learning.</p>
+<br>
+<p><strong>Where can people learn more about you and your work?</strong></p>
+<p>I write articles at ***<a href="https://ollieread.com/">https://ollieread.com</a>***, though that is on a bit of a hiatus at the moment as I rebuild the site. Having a baby limits the amount of time you have for writing articles, unfortunately. I often talk about dev stuff on my twitter <em><strong><a href="https://twitter.com/ollieread">https://twitter.com/ollieread</a>.</strong></em></p>
+<br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

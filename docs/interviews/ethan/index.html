@@ -1,0 +1,222 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Ethan </title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("/assets/img/1500x500.jpeg");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="/assets/img/y7afwfoz_400x400.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Ethan 
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                Sydney, Australia
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                16 yo maker behind @KanbanMail, @CodeTheWebBlog, @TogetherDotFit, @MakerDotRocks and more.
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/Booligoosh" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://ethan.link/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from and what is your backstory?</strong></p>
+<p>Hey! I’m Ethan, a 15 year old from Sydney, Australia. I started learning to code when I was 11 years old. In this time I’ve launched multiple products including KanbanMail, a kanban board for your emails, and Code The Web, a blog teaching people web development. Most recently I’ve created Maker Rocks, a platform that enabled me to establish myself as a creator within the maker community, ranking at #1 in the #24hourstartup challenge.</p>
+<br>
+<p><strong>What made you get into programming?</strong></p>
+<p>When I was 7 years old, I started playing about on a website called Scratch. It’s a drag-and-drop block programming environment mainly aimed at the young creators demographic. I really liked it! Scratch also had strong community features, so I got to know lots of other users. At the time, Scratch programs used Flash so they couldn’t be run on mobile. I heard about this thing called ‘HTML5’ which let you make programs that run on mobile, so I decided to take a look! I assumed that I’d be able to make an interactive game after 1 month of learning ‘HTML5’, but boy was I wrong! Regardless, making a simple heading appear with this mysterious text coding felt like a huge achievement. I’d finally graduated from drag-and-drop programming to ‘proper’ programming. I’ve been learning and improving my web development skills ever since then!</p>
+<br>
+<p><strong>What made you create Code the Web?</strong></p>
+<p>I’ve made quite a few products! But I’m going to talk about Code The Web here, because you can probably relate! When I was learning to code, there were a ton of resources. But it was hard to find <em>good</em> resources. Many StackOverflow answers, most documentation pages and almost all tutorials were all really hard to understand. Not because the concepts were hard, but because they were taught in really complicated ways. I’m still not sure if this was on purpose because people wanted to look smart or just an accidental thing that people did. But it was really hard to find simple explanations. The problem is, a lot of people assume that the more complex-sounding, the better. That because it uses big words, it must be ‘official’ and prestigious. But I just wanted someone to explain flexbox to me in a way that didn’t make my head hurt!</p>
+<br>
+<p>So I started making tutorials with the goal of them being simple and super easy to understand. In fact, I made the tagline “Web development explained for normal people”. I tried to sound as human as possible in my articles. A lot of people try and make their articles sound justifiably smart, but I think this just alienates readers and is especially nasty towards beginners. With this goal in mind, I started Code The Web! It’s been really successful – even though I’ve taken a break for a few months to work on other projects (I’ll get back in really soon!), it’s traffic has been going up really consistently from Google search. I’ve received lots of really powerful thank-yous from random people, so I think it’s a great thing to keep going at 😀</p>
+<br>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<p>I started my coding journey by completing a free Codecademy course on HTML and CSS. After this I knew the basics, and could create very simple websites, for example this one from 2015. After this, I slowly learned more and more about HTML and CSS by researching when necessary and by devouring articles about HTML/CSS features. It took me almost two years to get to a point where I felt like I completely understood CSS. I define this milestone as being when you can recreate any web design from an image (without using position: absolute for everything 😛). Believe it or not, teaching other people HTML and CSS really helped me learn faster!</p>
+<br>
+<p>When I started writing Code The Web I knew enough to teach beginners, but I didn’t have a fully developed understanding. Through the process of brainstorming; understanding what people needed to learn, digging deeper in research for articles, and by just writing it all out, I managed to get a much more solid understanding of web development. Don’t do this if you’ve never written a line of code, but if you know the basics and are looking to further your knowledge, consider writing tutorials on your own little blog. Whether you end up getting 12 or 12,000 visitors – it’s a super effective way to fill gaps in your knowledge!</p>
+<br>
+<p>I started learning JavaScript about a year after initially learning HTML and CSS. I actually found it really confusing at first! Going through Codecademy lesson after lesson, I found much of the syntax very confusing. The for loop took me ages to understand! It was only when I started trying to apply my learnings to mini-projects that I actually started getting somewhere. For example; I tried making a prime number generator in JavaScript. I learned a lot about key concepts, including HTML manipulation, and localStorage and cookies so that I could store the generated primes. After touching those JavaScript courses on Codecademy, I didn’t really do many tutorials. I didn’t even finish the course, I stopped as soon as I knew the basic syntax.</p>
+<br>
+<p>After that, I just looked everything up as and when I needed them for my mini-projects. For example, I remember searching up “How to change HTML with JavaScript” a lot. I searched it up so many times that eventually it just stuck with me! This is what I did with a lot of concepts, including things like promises and HTTP requests later on.</p>
+<br>
+<p><strong>What does your process for building apps look like?</strong></p>
+<p>I usually already have a basic idea in my head before I start building. Sometimes I do a short brainstorm to think of features, but I generally get straight into building pretty quickly. If it’s a product that I want to generate a lot of hype around, I might make a quick landing page first with a subscribe form and share it. But otherwise I like to get stuck right in and just start building. I find it pretty easy to decide on technologies, as I usually use the same stack – Node.js cloud functions for the back-end and plain HTML/CSS/JS (and sometimes Vue for more complex projects) for the front-end. I create a new folder, set up Git and I’m pretty much ready to go. I sometimes start with the back-end first, and sometimes the front-end.</p>
+<br>
+<p>I’m undecided on this but I think both are good approaches. I always make sure to use the product myself as I’m working on it – this usually decides what features I work on next, as I’ll want the ones that are most necessary first. Once I get it to a basic acceptable version (MVP), I release it in beta and get bug reports and ideas. Then I’ll make a “What’s stopping me” list of everything that’s stopping me from launching it right this second. I get all those things done (including making a proper landing page), and then launch it into the world!</p>
+<br>
+<p><strong>Do you face any particular challenges when building over a period of time?</strong></p>
+<p>I don’t have a huge amount of challenges when it comes to the building – most of the time I either know what to do or can look it up and find a solution. I sometimes overly question myself when working on projects. Is this a waste of time? Is this a bad idea in the first place? Will anyone even use this? I have to learn to just ignore these questions most of the time. While it’s good to see if you’re on the right track, I try to keep it to a minimum while I’m actually busy coding, and think about it some other time. I also sometimes have trouble taking enough breaks while developing, I get quite excited and always want to add that next feature right now but I need to remember to take breaks now and then. Sometimes I’m good at this, sometimes I’m not!</p>
+<br>
+<p>I’ve also been struggling in the past few months with balancing all my projects. I have 4 side projects + high school, so I need to prioritize my time and calculate how much time to spend on what. So far my development process has been a bit impulsive, working on whichever project I feel like at that moment. But I think I need to make more calculated decisions about which project to work on when and for how long.</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>I can get stuff done with everything I use currently, and I’m not sure I need to change the tools and technologies that I use. I’ll continue with a similar stack, but I do want to get into mobile &amp; desktop app development more. I probably won’t use the native languages because they’ll take longer to learn, I think I’ll use something such as Ionic or Vue Native. I recently built and launched a Mac app with Electron, and found that fun. A lot of people have asked for a KanbanMail mobile app, so I’m definitely going to have to find a way to do that in the near future.</p>
+<br>
+<p><strong>Advice for those learning to code?</strong></p>
+<p>I think my #1 piece of advice is that you don’t need to know everything. There’s so much to learn about all these languages that you could be stuck there for years learning, not having made anything with your skills. Instead, I think it’s better to learn the basics – so you have a solid foundation – but then just look up the rest as you come across it. I think this is a super efficient way to learn, because you will eventually memorize the stuff that you look up often, meaning you’ll know the parts of the language that are the most useful to you. Don’t try too hard to memorize stuff, let it come naturally. And don’t feel pressured to know it all. There’s no harm in looking something up, developers do it all the time because it’s just not practical to have it all crammed in your head.</p>
+<br>
+<p>Also, I think the fastest way to learn (once you have the bare basics down) is to make things. It doesn’t have to be real ‘products’ that other people will use, it can just be silly programs/applications/sites that will help you learn along the way (and if it ends up useful in its own right, that’s a bonus!)</p>
+<br>
+<p><strong>What’s your tech stack?</strong></p>
+<p>Front-end:</p>
+<p>-  Plain HTML</p>
+<p>- Plain CSS</p>
+<p>-  Plain JavaScript</p>
+<p>- Sometimes Vue.js (for KanbanMail, parts of Maker.rocks, Makerlog Menubar)</p>
+<p>- Sometimes Jekyll (for Code The Web)</p>
+<p>- I always make serverless sites hosted on Netlify for free.</p>
+<br>
+<p>Back-end:</p>
+<p>- Node.js written in Netlify cloud functions as a backend (125k requests/month free)</p>
+<br>
+<p><strong>What have been influential books, resources and links that have helped you?</strong></p>
+<p>When I was first learning to code, Codecademy was a huge help. They have free interactive tutorials on a range of topics, and they make learning to code really exciting! If you’re learning web development, I really recommend Flavio Copes’ tutorials as well – he’s got a ton of well-written content! Other than that, I don’t really have that many recommendations – I usually just search things up and click on whatever result looks useful (usually Stack Overflow). And I’ve never read a book on programming before. Oh, and don’t forget to check out Code The Web too!</p>
+<br>
+<p><strong>Where can people learn more about you and your work?</strong></p>
+<p>You can find me on Twitter here (***<a href="https://twitter.com/Booligoosh">@Booligoosh</a>***), and my personal website is ***<a href="https://ethan.link/">here</a>***.</p>
+<br>
+<p>Here are the links to my products:</p>
+<br>
+<p>-*** <a href="https://codetheweb.blog/">Code The Web</a>*** – Web development explained for normal people</p>
+<p>- <em><strong><a href="https://kanbanmail.app/">KanbanMail</a></strong></em> – A Kanban board for your emails (like Trello for email)</p>
+<p>- <a href="https://maker.rocks/"><em><strong>Maker.rocks</strong></em> </a>– A shareable profile for people who’ve launched stuff, come back and make a profile once you’re coding like a pro and launching awesome things!! 😄 (here is mine)</p>
+<p>-  ***<a href="https://menubar.getmakerlog.com/">Makerlog Menubar </a>***– A menubar app for Makerlog, a public place to log your accomplishments each day. You can join to document your coding journey publicly, then log stuff right from your menubar!</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

@@ -1,0 +1,207 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Daniel Vinnicombe</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("/assets/img/federica-galli-_xhzcnsqphq-unsplash.jpg");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="/assets/img/danielphoto.png"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Daniel Vinnicombe
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                Ipswich, United Kingdom
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                Developer @ Suffolk County Council. Built Orsolo, previously Makepad.
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/iiCe89" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://iice89.xyz/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from and what is your backstory?</strong></p>
+<p>Hello! I’m Daniel and I’m 29 years old from sunny Ipswich and currently work full time as a fullstack developer for the local council that works with Laravel / Azure and most recently mobile apps in Xamarin. My evenings are often spent Developing or playing video games ‘if my children allow it’or I watch far too much Netflix with my partner.</p>
+<br>
+<p><strong>What made you get into programming?</strong></p>
+<p>My first real experience was when I was 16, I came from a graphic design background and studied G.D in University. After I moved to Glasgow to live with my partner I started designing flyers and huge posters for the clubbing scene all over Europe and I decided I wanted to create a website for music and built a community site which became pretty big and was even sponsored by Drunknmunky Clothing.</p>
+<br>
+<p>I’m 100% self taught and never studied development. I learned my skills as I built the ideas that were in my head and I then moved away from design and began focusing my attention on being a front-end developer/designer creating small sites. I then moved back home to Ipswich and started as a full-time developer for the council and slowly moved into back-end development.</p>
+<br>
+<p><strong>What made you create Makepad?</strong></p>
+<p>Frustration if I’m honest as it solved a problem I was continuously having with too many tools that are now are all about teams and communication; What have you worked on, notifications and other noise. But they all ignore the individual users that work alone and don’t need all of that or need to pay for all the features they never use. So we created Makepad and scrapped everything and built it for the individuals and this in turn has kept the price low.</p>
+<p><img src="https://lh5.googleusercontent.com/3sW_t-D4ESyRWp7bhmFunb4Spzfl23JGG6WC3v3YGYeJPTOAQoSwLi3aEl4kHCMwvL1zzux9P5oRFkJjXtQJG4wTHoA9UDxrwldQi0St36jM0rW51-FySn0vleqmPIMajUPyo21-" alt=""></p>
+<br>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<p>I learn a lot by doing and asking hundreds of questions. I’ve used things like laracasts, codecademy and several other learning tools but the majority of my learning process is learning as I go along. I’ve never really been much of an educational fan even during high school as I could never keep focus on what they were teaching, choosing instead to throw my focus on things that meant something to me.</p>
+<br>
+<p><strong>What does your process for building apps look like?</strong></p>
+<p>With Makepad it’s been a project I’ve wanted to do for years and have started on/off. When we first built it I began designing it in Sketch from the ground up with an idea of how each page and feature would look. Then we started building in Laravel &amp; Bootstrap 4 creating all the blades first so the front end was all there; then as we started building in functionality we changed things and improved as we went along. Soon after we launched we took on all the feedback and improved the UI even more making it much cleaner and modern looking.It’s quite hard to design as its more user content driven, and more text based rather than focused around imagery so creating the UI to look clean and uncluttered was a big challenge.  <em>I also use Makepad to plan and manage Makepad!</em></p>
+<br>
+<p>Mobile design in Figma for Android / IOS in development</p>
+<br>
+<p><strong>Do you face any particular challenges when building over a period of time?</strong></p>
+<p>Most often it’s looking at the same thing over and over and it starts to look outdated or not good enough in my head. After launching project its keeping up with demand , updates , fixes and keeping users wanting to use it.</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>Currently I'm learning Xamarin in more detail as Ii want to build Makepad as a standalone app for IOS / Android as we have had several people ask about the mobile side. It is in the early stages though!</p>
+<br>
+<p><strong>Advice for those learning to code?</strong></p>
+<p>Take your time and learn at your own pace, it’s not a race and certainly don’t burn yourself out! If you feel deflated or annoyed something won’t work or doesn’t look right; get off your computer, go for a walk, go hang out with friends and when you feel fresh and recharged go back to it and you will probably find the answer to your problem. Find community’s that talk on Slack and ask questions; don’t feel like your answer or question is stupid, because no answer is stupid and we have all had to learn. 99% of the tech community loves to help and that is what makes us one of the best community’s out there.</p>
+<br>
+<p><strong>What’s your tech stack?</strong></p>
+<p>- Laravel</p>
+<p>- Azure</p>
+<p>- Bootstrap 3+</p>
+<p>- JS , HTML , CSS</p>
+<p>- VueJS</p>
+<br>
+<p><strong>What have been influential books, resources and links that have helped you?</strong></p>
+<p>I live on: <em><strong><a href="https://dribbble.com/">https://dribbble.com/</a></strong></em></p>
+<br>
+<p>I also love checking out <em><strong><a href="https://www.steveschoger.com/">https://www.steveschoger.com/</a></strong></em> and <em><strong><a href="https://laracasts.com/">https://laracasts.com</a></strong></em> for development.</p>
+<br>
+<p>I also enjoy reading a lot of design articles on <em><strong><a href="https://medium.com/">https://medium.com</a></strong></em></p>
+<br>
+<p><strong>Where can people learn more about you and your work?</strong></p>
+<p>I share everything I do on<a href="https://twitter.com/iiCe89">Twitter</a>and I’m always happy to help if you are looking for advice or assistance.</p>
+<br>
+<p>If you’re looking for a new productivity tool though, you can check out Makepad<a href="https://makepad.live/">here.</a></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

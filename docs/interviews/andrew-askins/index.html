@@ -1,0 +1,294 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Andrew Askins</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("https://specials-images.forbesimg.com/imageserve/507971418/960x0.jpg?fit=scale");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="https://pbs.twimg.com/profile_images/1093919369212710912/3Z89qc9t_400x400.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Andrew Askins
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                Charleston, South Carolina
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                Helps non-technical founders @builtbykrit and curate @StartupWatching
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/AndrewAskins" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://www.andrewaskins.com/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from and what is your backstory?</strong></p>
+<p>Hi 👋 I'm Andrew. I'm the CEO of Krit, an <a href="https://builtbykrit.com/">app development agency</a> that works with non-technical founders at early stage startups. I grew up in Columbia, SC - a sleepy southern city with about 100,000 people in the city proper. I started Krit while I was in college studying Computer Science (I was actually studying abroad in Scotland at the time).<br>
+<br>
+I worked as an iOS developer before starting Krit. For the first 3 years of our life as a company, I was primarily a front-end developer. Two years ago I stopped writing code full-time and embraced the CEO role. These days I spend my time focusing on sales, marketing and working with clients. It has absolutely been the right step for me, although my experience working as a programmer first continues to help me every day.
+<br>
+<br></p>
+<p><strong>What made you get into programming?</strong></p>
+<p>My first interaction with any code was in a high school class called ITGS. It stood for Integrated Technology in a Global Society (<em>gag</em>). We had an open project at the end of the class, and I decided to build a website for my grandparents' business. I used Dreamweaver to create it and recruited a friend who actually knew how to code to help me edit some of the HTML and CSS.</p>
+<br>
+<p>Unfortunately, the site can't be found anywhere, not even in the Wayback machine. So you'll have to take my word for it that it was truly hideous.</p>
+<br>
+<p>When I got to college I had no idea what I wanted to major in or do in life. My only thought was that I might want to teach math in the Peace Corps. So I signed up for Vector Calc and Computer Science 141. My thinking was that Computer Science would involve enough math that I could probably still do the teaching thing if I decided not to major in math. I quickly found that I hated Vector Calc, so a math major seemed like a pretty bad idea.</p>
+<br>
+<p>Computer Science, on the other hand, was a completely different experience. My professor was a Ph.D. student who was known around campus as JJ the Boombox guy. He would wear ridiculous blazers and carry a giant, 80s boombox around blaring techno music.</p>
+<br>
+<p>JJ made learning the basics of programming so much fun. He introduced the concept of Objects to us with a lolcats meme. All of our programming assignments involved building simple games in the command line. I found myself gravitating towards the problem-solving nature of writing code.</p>
+<br>
+<p><strong>What made you start Krit?</strong></p>
+<p>The summer after my freshman year of college, 3 friends and I got jobs working with a new startup in town. The company was called 52apps. Their original plan was to build an app a week and see what worked.</p>
+<br>
+<p>The interview went horribly.</p>
+<br>
+<blockquote>
+<p>&quot;Have you all ever built an iOS app?&quot;</p>
+<p>&quot;No, we haven't.&quot;</p>
+<p>&quot;So, have you all ever worked on anything outside of school?&quot;</p>
+<p>We looked around at each other, &quot;uh... no. Not really.&quot;</p>
+<p>&quot;Do any of you have an iPhone?&quot;</p>
+<p>&quot;No...&quot;</p>
+</blockquote>
+<br>
+<p>But we were willing to work for super cheap ($500 per month working full time that first summer), so we were hired.</p>
+<br>
+<p>I learned a ton about programming and startups. We built 6 apps over the first two months before the founders realized the business model wasn't working and started focusing on one larger project. When that failed too, they became an agency.</p>
+<br>
+<p>I loved working there, but there were some problems with the culture and I was cocky enough to start thinking I could do better. I recruited one of the guys I worked with and a designer friend from the student newspaper and we started tinkering with different ideas. Some people we met through work were starting an accelerator program (think Ycombinator without any of the glamour) and gave us $16,000 to officially start our company.</p>
+<br>
+<p>We spent the first year and a half working on a set of software tools for freelancers before deciding we were better at building software than selling it. So we followed in the footsteps of our mentors at 52apps and decided to go full time as an agency. That was over 3 years ago now.</p>
+<br>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<br>
+<p>My process looks something like this:</p>
+<ul>
+<li>Pay a bunch of money to spend 4 years in a computer science program where you'll learn a lot about programming concepts but not much about programming itself.</li>
+<li>Take a job working for dirt cheap where you immediately get thrown into the fire and asked to build an app a week.</li>
+<li>Do a lot of googling and nag your boss until you find one day that you're a programmer.</li>
+</ul>
+<br>
+<p>I wouldn't necessarily recommend this path to anyone else, but I think there are a couple of key pieces that are important.</p>
+<br>
+<p>It's hard to build anything without a basic understanding of programming principles. What is a loop? What is a variable? How do arrays work?</p>
+<br>
+<p>To learn these basics you can go the traditional route and get a computer science degree, pay money for a coding boot camp, or teach yourself through blog posts and videos. There is no right answer here. What works for you will depend on what motivates you, how quickly you want to make progress and how much money you have.</p>
+<br>
+<p>Once you have the basics down the best way to learn anything in programming is to build something. Whether you're learning a new language, framework, design concept, etc. the best way to learn is to build something. Just start and every time you get stuck start googling.</p>
+<br>
+<p><strong>What does your process for building apps look like?</strong></p>
+<p>At Krit, our process for building an app for a new client starts with a Roadmapping Session. This is a paid consulting session where we spend an entire day with a client learning about their industry, their business goals and defining the scope for the MLP (Minimum Loveable Product).</p>
+<br>
+<p>After we have the scope defined our team does some thumbnail sketches and spends a couple of weeks researching. We look into third-party tools, figure out the high-level data models and put together an estimate. We use t-shirt sizes for our estimates (x-small, small, medium) and each size corresponds to a number of hours ranging from 2-25.</p>
+<br>
+<p>If a client decides to move forward with a project we start designing the app. In parallel, we write documentation for the backend and set up our deployment infrastructure (this has gotten a lot easier with Heroku).</p>
+<br>
+<p>Once the designs are finalized we start building. On the frontend, we build what we call a sandbox first. This is essentially frontend documentation. We build all of the components that will be used in the app, minus any of the functionality. Then we rough out all of the templates, and finally, hook them up to the backend as endpoints are finished.</p>
+<br>
+<p>We try to follow Test Driven Development, so we write tests constantly as we're writing code. We've written in more detail about <a href="https://builtbykrit.com/blog/how-an-idea-becomes-an-app-a-look-at-the-krit-development-process">our development process here</a>.</p>
+<br>
+<p><strong>Do you face any particular challenges when building over a period of time?</strong></p>
+<br>
+<p>I've struggled with ADHD for most of my life. When I was programming full time this was particularly hard to deal with. Programming requires long periods of deep, focused work. Medication helped a little bit, but also came with increased anxiety and a loss of appetite.</p>
+<br>
+<p>So I had to find ways to hack my motivation. I didn't have the discipline to teach myself programming, so I studied it in college. I wasn't super motivated as an employee, so I started Krit. At times my motivation would wane at Krit, so I tried to put systems in place to hold myself accountable with my teammates (daily standups, etc.). Ultimately I realized engineering wasn't motivating to me, no matter how much I wanted it to be, so I transitioned to sales and management.</p>
+<br>
+<p>I think everyone experiences this to some degree, regardless of whether they have an attention disorder or not. The more you can learn about what motivates you, and align yourself with those forces, the more successful and the happier you will be.</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>Two years ago I stopped writing code. We were at a point with the company where sales had been up and down and we realized if it was ever going to change we need someone to focus on it fulltime. It was a scary leap, we cut our capacity for client work by 25% (we only had 4 people at the time and all of us were doing client work) and I had to trust my team completely.</p>
+<br>
+<p>Now I focus on sales, marketing, and management. All three are still a work in progress, but I'm happier and more productive than I ever was as a programmer. I always knew that I didn't want to be coding forever, I enjoyed being able to build things more than I enjoyed the building itself. But I didn't expect the transition to happen so fast. I'm glad it did.</p>
+<br>
+<p>At the same time, I wouldn't be an effective leader or salesperson without understanding the entire process. Being a programmer gives me credibility with future clients and probably gets them to lower their guard a little bit too...</p>
+<br>
+<p><strong>Advice for those learning to code?</strong></p>
+<br>
+<p>I touched on this earlier, but it's so important that I will say it again. Spend a lot of time thinking about what motivates you. Then do everything you can to align yourself with that thing. And don't beat yourself up about it.</p>
+<br>
+<p>For me it's people. I beat myself up about not being able to get side projects off the ground. But once I had partners and investors, I was able to start Krit. I have always struggled with going to the gym regularly. Now I pay a bunch of money for Crossfit, because there are people there encouraging me.</p>
+<br>
+<p>If you need to pay for a code school in order to be motivated to learn to code, that's fine. If you don't, that's fine too. If you just want to learn to code and then use it as stepping stone to a career in sales or product management, that's also a fine path. Just figure out what drives you, and work to get more and more of that in your life.</p>
+<br>
+<p><strong>What's your tech stack?</strong></p>
+<p>At Krit our typical tech stack is:</p>
+<ul>
+<li>Ember.js / Javascript</li>
+<li>Django / Python</li>
+<li>PostgresQL</li>
+<li>Heroku</li>
+</ul>
+<br>
+<p>We intentionally choose tools that optimize for speed of development over scale. Most of our clients are early-stage startups, their biggest risk is that they can't find product/market fit before running out of money. Ember and Django are both conventions over configuration frameworks. They take a lot of the crud (pun intended) off of our plate so we can focus on moving quickly and invest time in the features that make the product unique.</p>
+<br>
+<p><strong>What have been influential books, resources and links that have helped you?</strong></p>
+<br>
+<p>I've never read any programming books, I'm not even a huge fan of business books. I prefer to read sci-fi and fantasy novels. That said I devour blog content. Here are a few bloggers who have been hugely influential to me at different points in my career:</p>
+<br>
+<ul>
+<li>
+<p>Joel Spolsky - <a href="https://www.joelonsoftware.com/">https://www.joelonsoftware.com/</a></p>
+</li>
+<li>
+<p>Paul Graham - <a href="http://paulgraham.com/">http://paulgraham.com/</a></p>
+</li>
+<li>
+<p>Justin Jackson - <a href="https://justinjackson.ca/">https://justinjackson.ca/</a></p>
+</li>
+<li>
+<p>Alex Turnbull - <a href="https://www.groovehq.com/blog/entrepreneurship">https://www.groovehq.com/blog/entrepreneurship</a></p>
+</li>
+<li>
+<p>Jason &amp; Caroline Zook - <a href="https://wanderingaimfully.com/">https://wanderingaimfully.com/</a></p>
+</li>
+<li>
+<p>Amy Hoy - <a href="https://stackingthebricks.com/">https://stackingthebricks.com/</a></p>
+</li>
+<li>
+<p>Nathan Barry - <a href="https://nathanbarry.com/">https://nathanbarry.com/</a></p>
+</li>
+</ul>
+<br>
+<p><strong>Where can people learn more about you and your work?</strong></p>
+<p>I'm on twitter as <a href="https://twitter.com/AndrewAskins">@AndrewAskins</a>. I tweet pretty regularly about startups, tech and football. If you have any questions about getting into tech, transitioning from programming to other roles, or the state of the Carolina Panthers hit me up there.</p>
+<br>
+<p>You can learn more about me at my <a href="https://www.andrewaskins.com/about/">new personal site</a>. I'm trying to start publishing to it once or twice a month.</p>
+<p>Thanks for reading. 🙂</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

@@ -1,0 +1,245 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Roland Horvath</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("/assets/img/photo-1541873676-a18131494184.jpeg");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="/assets/img/8ebmxs6g_400x400.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Roland Horvath
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                Move in Progress
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                Astronaut wannabe. Maker, designer, developer 🚀 3x WWDC scholar. Head of engineering @extracard
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/hroland_" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://rolandhorvath.hu/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from and what is your backstory?</strong></p>
+<p>My name’s Roland Horváth, I’m 17, I’m from Sopron, Hungary, in my last year of high school. I’m a self taught developer, creator of many apps, like Try Not to Smile. I learned and use Swift, Node, React, Vue, Unity to build my ideas. I love tinkering with security and worked closely with HQ Trivia in that field. I fund my projects by working freelance.</p>
+<br>
+<p>I’ve been coding since I was little and over the years my apps have won plenty of national and international awards and have received recognition. I’ve been fortunate to attend WWDC18 as a scholarship winner in San Jose, to be delegated to represent Hungary at Intel ISEF 2017 Los Angeles and win the 4th Award in Software category, and to be featured on the App Store’s Today page as part of the“Meet the developer”series.</p>
+<br>
+<p><strong>What made you get into programming?</strong></p>
+<p>I used to be quite a creative kid, I loved drawing, crafting, playing with Legos. I used to make laptops and Nintendos out of cardboard on which I would draw swappable paper screens.</p>
+<br>
+<p>Neither my mom or dad have tech related jobs, but for some reason I was really into it. My internet access was very limited, I had to download whatever I wanted on my precious, always full pendrive, to later play around with it on my PC. I was really into YouTube and I would spend hours looking for ways to hack and pump up my Windows XP with transformation packs, skins, etc. to make it look like Win 7, or Mac.</p>
+<br>
+<p>I also used to play a ton of video games, Super Mario especially. My parents thought consoles were a waste of money, so I would always have to hack my way around by figuring out how to run games on my PC with emulators.</p>
+<br>
+<p>I probably started actually coding at around age 9. I really wanted to turn my own characters, heroes and game ideas into reality, I started digging online to find out ways to make games. I found this C++ based visual dev tool called GameMaker 7/8 and it’s huge dev community. I downloaded, tried and looked into tons of open source games uploaded by other users, to slowly put the pieces together, understand and learn how to build my silly games. After a while I started looking into PHP and MySQL, wanting to make my games online, have leaderboards, login systems, etc. My coding addiction blasted off after I got a taste of how cool and magical it is to be able to create anything with code.</p>
+<br>
+<p><strong>What made you create your products?</strong></p>
+<p>I usually base my ideas on making the everyday lives of people a little better.</p>
+<br>
+<p>My first bigger project, Show Me! is a 3D sign language teaching app, started in 2015, using Unity. The app had quite a successful run, winning several national and international awards, like the Apple WWDC 2016 Scholarship, 4th Award at Intel ISEF 2017 Los Angeles or the Oracle Young Talent Award 2017.</p>
+<br>
+<p>My app Transitnap lets people who commute to school or work, have naps on their way, while making sure they wake up coming close to their destination.</p>
+<br>
+<p>Toiler app, with its recommendation algorithm helped people in quick need of a restroom, find the best pick for their needs, based on user reviews and other properties. (app not maintained anymore)</p>
+<br>
+<p>With my Try Not to Smile app, you can instantly make your day better, with on-demand funny videos. The app has face detection built in and you’re challenged to not smile while watching those videos, which usually result in an even larger burst of laughter. Not to mention your captured reaction GIF which you can share with your friends. This app was featured on the App Store’s “New Apps We Love” section and currently has 182K users.</p>
+<br>
+<p>Seeing this incredible amount of people actually laugh, smile, seeing kids learn to form sign language signs with their hands, hear people tell stories of how their days were saved by one of my apps, makes all the work absolutely worth it.</p>
+<br>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<p>I’m quite an audio-visual person, so I always start by looking through YouTube for tutorials (or Udemy in case of a larger, more deep subject). I try to look through as many of these sources as possible, to gain a more diverse knowledge.</p>
+<br>
+<p><strong>Advice for those learning to code?</strong></p>
+<p>In my opinion the best way to learn something new is to set a goal, like a whole project in mind that you want to build. Being able to download similar example projects, experimenting and modifying them to your needs is also a great source of learning. It’s way easier to jump into complex and detailed documentations, after you understand the gist of a certain language or framework and you know what you’re looking for.</p>
+<br>
+<p>In today’s day and age you can have no excuses not to start learning to code by yourself.Most schools approach teaching by making you memorise tons of information about a certain subject, ignoring teaching how to use and apply the knowledge. This is the exact opposite of how you can become a great maker and developer. Even the greatest of programmers Google trivial things several times a day. There’s no shame in this, it’s the way to go. Learning concepts, methods and ways to think, is worth much more than learning raw informational knowledge, which you can access online within seconds anyways.</p>
+<br>
+<p>On this note, knowing how to Google right, is a huge plus whether you’re starting out, or later in your career.</p>
+<br>
+<p><strong>What does your process for building apps look like?</strong></p>
+<p>An app idea can strike you at the most random times, locations and situations. On my phone I always have the Notes app ready for these brainstorms. As soon as I have access to a notebook or my computer and Sketch, I start visualising my idea. After that I need a couple days to think out all the possible outcomes of how the app could turn out.</p>
+<br>
+<p>After finding the idea worthy of making, to ensure I don’t get bored of the app quick and to expand my skill-set, I force myself to mix up my tech stack with something new I haven’t used much or tried before. This way you can learn better, by having a goal set in front of you, and you can build better by not having to do boring, repetitive coding work that you’ve already done before.</p>
+<br>
+<p>Building a complex app could take a few months, but I try posting teasers and such, to keep myself and the community on their toes :)</p>
+<br>
+<p>I almost never release unreleased versions or even tell anybody about my ideas before I have a finished prototype ready. My apps have to speak for themselves. Just like with a joke, if you have to explain it, its ruined.</p>
+<br>
+<p>When it comes to shipping and launching, my friends, followers and the maker community is always open to new projects. I always advise people to be proud of their work and show the world what they can do. If what you’ve built is great and people enjoy it, it’ll eventually spread and get into the hands of the right people.</p>
+<br>
+<p><strong>Do you face any particular challenges when building over a period of time?</strong></p>
+<p>I’m quite a perfectionist and I can easily get lost in unworthy details, wasting my time and energy. I struggle with getting bored of my ideas too quickly and it’s hard to find a way around it.</p>
+<br>
+<p>A great idea, motivation or hype can pull me into non-stop, sleep and restless hours, days, weeks of work and hustle which may show great quick results, but will leave you burnt out, exhausted, detached from reality and miserable for days, weeks or potentially months to come.</p>
+<br>
+<p>Work can become an addiction and I can’t emphasise how important it is to keep an (at least somewhat) healthy balance between your work and real life. It’s worth it in the long run.</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>I’m always learning! Despite being familiar with Vue, I never got into React. The past two months I’ve been really invested in learning React Native. I’m currently building a small app with it, and rewriting one of my freelance apps for RN. I’m currently trying to figure out React Hooks and Redux.</p>
+<br>
+<p><strong>What’s your tech stack?</strong></p>
+<p>Swift, Vue.js, React Native, Electron, Node.js (with Express and Objection.js), MySQL, (PHP if fits the work better), WebSockets, simple DigitalOcean droplets and spaces. Or anything that’s required to build something and get shit done.</p>
+<br>
+<p>Building with Javascript and React really reminds me of building with Legos as a kid, with how huge the open-source package community is. This takes off a ton of repetitive and boring work off of you, so you can focus more on the craft. Makes me want to believe it’s the future for indie makers.</p>
+<br>
+<p><strong>What does your hardware setup look like?</strong></p>
+<p>I’ve recently done a workstation overhaul. I’m planning on moving to the US when I finish school this summer, and wanted to become as mobile as possible. I’ve always dreamed about smaller notebooks capable of having desktop grade performance and 2018 was finally the year. The 2018 13” MacBook Pro is my dream machine. I sold my iMac and bought a much more powerful RX Vega GPU and a USB-C Razer eGPU case. At home I have beefy graphics performance and plenty of monitor space, but since it’s all plug and play, I can take my files and apps with me and work from anywhere.</p>
+<br>
+<p>The LG 27UK650 4K monitor is probably the best for its price. If well calibrated, it has really great colors and plenty of workspace when scaled down from 5K. Unfortunately I was a little naive, and it can’t compete with the 5K iMac or the LG Ultrafine’s panel, but for a third of the price, its the go-to monitor for creatives out there.</p>
+<br>
+<p>Apps wise, Notion is the god mode of notes apps. I always come back to Thing 3 to-do manager, can’t live without it. Other than that, I use VS Code, Paw HTTP, Sequel Pro and Charles.</p>
+<br>
+<p><strong>What have been influential books, resources and links that have helped you?</strong></p>
+<p>Unfortunately I can’t find the time to read as much as I would like. It’s amazing to be part of the maker community on ProductHunt, Makerlog, Twitter, etc. It’s so motivating to see the incredible products and projects people come up with on a daily basis! Definitely pushes me forward and keeps me on my toes every day.</p>
+<p><em><strong>🔥 Creators you should check out:</strong></em></p>
+<p>- <a href="https://twitter.com/matteing">Sergio Mattei</a></p>
+<p>- <a href="https://twitter.com/fajarsiddiqFS">Fajar Siddiq</a></p>
+<p>- <a href="https://twitter.com/williamsthing">williamsthing</a></p>
+<p>- <a href="https://twitter.com/danielsinger">Daniel Singer</a></p>
+<p>- <a href="https://twitter.com/EstherCrawford">EstherCrawford</a></p>
+<p>- <a href="https://twitter.com/dinkydani21">Danielle</a>+<a href="https://twitter.com/JamesIvings">JamesIvings</a></p>
+<br>
+<p><strong>Where can people learn more about you and your work?</strong></p>
+<p>My website / portfolio is <em><strong><a href="https://rolandhorvath.hu/">https://rolandhorvath.hu</a></strong></em></p>
+<p>I’m mostly active on Twitter <em><strong><a href="https://twitter.com/hroland_">@hroland_</a></strong></em></p>
+<br>
+<p><em>Feel free to hit me up if you need help with coding, if you have questions, if you have work or job offers, if you have a dope idea or if you want to hang out or just chat!</em></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

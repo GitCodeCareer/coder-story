@@ -1,0 +1,195 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Sarah Jackson</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("/assets/img/zack-spear-zb_ns0hvznk-unsplash.jpg");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="/assets/img/jhql24sk_400x400-1-.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Sarah Jackson
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                Portland, Oregon
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                @inweed_io 🔍 | @phclock 😻 | @listimpossible 💣
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/sarah__jackson" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://inweed.io/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from? What's your backstory?</strong></p>
+<p>My name is Sarah Jackson. I'm from Chicago, IL but have lived in Portland, OR since 2002. In college I received a Bachelors in Sustainable Agriculture and then went back and received another one in Computer Science. Upon graduating, I decided to utilise the Computer Science degree and needles to say I've been working for a Fortune 500 Financial Services company for 17 years. I have a beautiful wife and 2 awesome kids.</p>
+<br>
+<p><strong>What made you get into programming?</strong></p>
+<p>I've always been into computers. I'm a Generation X kid, I grew up in the 80's. Our first computer was a Texas Instruments TI 99 which I used to create computer games (following tutorials from a book my dad brought home) in a language called TI Basic.</p>
+<br>
+<p>Fast forward 30 years... I was talking to friends of mine that owned businesses, trying to uncover problems they were experiencing that could be solved with software (trying to find ideas for software to build). A friend of mine who ran a very successful Airbnb management company said she had a huge pain point in keeping up with guest communication (I will spare you the painful details).</p>
+<br>
+<p>Without even researching to see if it was feasible, I told her I could build her a solution. So there I was, hadn't touched programming since college and I had this friend who was expecting me to deliver! I saved up a bunch of money and hired a ‘gig’ company that said they could build me an MVP. Perfect! Well, the MVP they built me was too &quot;M&quot; and not even close to a Viable Product.</p>
+<br>
+<p>Plus, it took them way longer than it should have. In the meantime, my friend had moved on to a different software solution and I was stuck with a crappy piece of software. I still had my landing page up and was getting signups and collecting email addresses. So I said screw it, I'll build it myself.</p>
+<br>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<p>I watched an 8 hour Lynda.com tutorial and for the rest I have relied on Stack Overflow and Google.</p>
+<br>
+<p><strong>What does your process for building apps look like?</strong></p>
+<p>It involves a lot of'Ctrl+Z'! A lot of trial and error.I usually have a pretty good overview in my head about how I want the finished product to be, but I start out by defining the database, keeping in mind CRUD functionality.</p>
+<br>
+<p>I will then write the code that makes the app do it's thing, then lastly I worry about CSS. I should probably pay closer attention to the CSS because it always feels like an afterthought.</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>I'm currently trying to wrap my brain around JavaScript.</p>
+<br>
+<p><strong>What's your tech stack?</strong></p>
+<p>- PHP</p>
+<p>- MySQL</p>
+<br>
+<p><strong>Advice for those learning to code?</strong></p>
+<p>Don't give up. The best way to learn is by doing, so just start making things. Start small if you have to.</p>
+<br>
+<p><strong>Shameless Plugs</strong></p>
+<p>The first app I made was the Airbnb one, Bnbboss. It's been temporarily shelved because Airbnb found out I was reverse engineering their API and deleted all my hosting accounts. I have since applied for an API license, but they refused me because I don't have enough of a client base for the app...catch 22 I guess. So I pivoted to an industry that I'm much more passionate about.I'm currently working on Inweed.io. It's a job board for the emerging Cannabis industry. I also recently made Product Hunt Clock as a fun side project.</p>
+<p><br><img src="https://lh5.googleusercontent.com/8etwnLM_yjVm2v9g2K5lTXwA_6CfanZxxkyReFVtlVhOyqg63_4LsGN0m6WL5Z6et9_NuFbVdU7jD9K5HtB4czHPlaX2ghlxrU2qft45M-S_a7wU2hStbjUN2N-R9bcky-_mlvWP" alt=""></p>
+<p><strong>Hot Picks</strong></p>
+<p>I'm really into everything that comes out of Women Make. I'm also a WIP member, it's really cool to see the products coming from there too.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

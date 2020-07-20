@@ -1,0 +1,199 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Noemi Stauffer</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("/assets/img/markus-spiske-cz-s645zbho-unsplash.jpg");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="/assets/img/iyzpviuz_400x400-1-.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Noemi Stauffer
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                Barcelona, Spain
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                Founder of @fresh_fonts, a newsletter to support independent type design. Front-end developer. Variable fonts enthusiast.
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/noemistauffer" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://stauffer.design/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from? What's your backstory?</strong></p>
+<p>Hi, I’m Noemi. I’m a Swiss and Canadian entrepreneur based in Barcelona. After graduating from the Master of Innovation and Entrepreneurship at ESADE Business School, I started my career by working in healthcare innovation. However, I wasn’t feeling passionate about it, so I eventually resigned and turned to tech.</p>
+<br>
+<p><img src="https://res.cloudinary.com/coderstory/image/upload/v1549274179/Interview%20Image%20Gallery/General_Type_Home.gif" alt=""></p>
+<br>
+<p>Given my business background, I started working as a project manager in a digital studio. There, I grew more interested in what my team was doing (design and development) rather than my manager’s responsibilities. I soon felt the need to start working on my projects, and with a better understanding of the possibilities in tech, started two:<a href="http://freshfonts.io/">Fresh Fonts</a>, a curated newsletter sharing the newest font releases of independent designers, including free and open source typefaces, and <a href="http://flowsupply.co/">Flow Supply Co</a>, an online gallery of prints and posters made by digital artists.</p>
+<br>
+<p><strong>What made you get into programming?</strong></p>
+<p>Working on my own projects, I started making websites using services that are available to everyone, without having to write a single line of code. However, I quickly felt limited, and wanted to ‘graduate’ from templates without having to pay and depend on a developer.</p>
+<br>
+<p><img src="https://res.cloudinary.com/coderstory/image/upload/v1549274227/Interview%20Image%20Gallery/Screenshot_2018-11-16_at_16.18.57.png" alt=""></p>
+<br>
+<p>Although the idea had been on my mind for a while, what really encouraged me to get started was to realise that programming is much more accessible than I thought – there are plenty of good resources to help you, and the tech community is very supportive. In the process, I realised that working as a freelance developer could be a well-paid sideline to earn revenues while growing my own projects, which became an extra source of motivation.</p>
+<br>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<p>Although there are plenty of resources available for self-learning, I felt the need for some guidance, and wanted a clear structure to learn front-end development. I therefore signed up for<a href="https://www.superhi.com/courses/html-css-javascript-foundation">the front-end foundation course</a> at SuperHi, which is fully online, but they also send you well-written book to make sure that you get the basics right. Therefore, every week, I start by reading the relevant chapters in the book, then follow the videos provided in the course to make a new website, and finally, recreate a similar website from scratch, as a homework. Lastly, I ask the teachers to review my homework, just to make sure that my code is optimal and that I didn’t miss on any learning.</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>Yes, as I’m about midway into the course now, I’m starting to learn Javascript. I’m also fine-tuning my skills when it comes to the Flexbox layout model, and after that, would like to give CSS grid a go.</p>
+<br>
+<p><strong>Advice for those learning to code?</strong></p>
+<p>As for me, I struggled a bit to learn how to make multi-column websites using floats, so if it was to do all over again, I would skip that part and go straight to the Flexbox model, which was much more intuitive for me. So if you are learning front-end development, I would recommend doing just that.</p>
+<br>
+<p>Also, this is a bit more random, but I recently found out that I was overpaying for hosting and domain names. So, screw GoDaddy! Just ask experienced developers for their best, cheapest solutions and I’m sure you’ll find something that works for you.</p>
+<br>
+<p><strong>What's your tech stack?</strong></p>
+<p>I can summarise it in only three products:<a href="https://www.superhi.com/learn-to-code-now-book"></a></p>
+<p>- <a href="https://www.superhi.com/learn-to-code-now-book">the SuperHi book</a>(yeah, I still love to learn by reading, I guess I got used to it in college)</p>
+<p>- the SuperHi code editor, which is so beginner-friendly (it’s only available for students though)</p>
+<p>- <a href="https://www.notion.so/">Notion</a>. I use it to keep all my learnings and coding resources neatly organised.</p>
+<br>
+<p>PS I know it sounds like I sold my soul to <a href="https://www.superhi.com/">SuperHi</a>, but I honestly really enjoy learning with them. The teachers provide quick and helpful feedback via Slack, and they have a great, supportive community of students doing <a href="https://www.superhi.com/hall-of-fame">inspiring work</a> which keeps me highly engaged. They offer plenty of courses, from WordPress customisation to front-end and back-end languages, so if you are interested in learning with them, you can use my referral to benefit from a discount:<a href="https://www.superhi.com/?r=Noemi">https://www.superhi.com/?r=Noemi</a>. Or, if you’re not sure it might be the best solution for you, ping me on <a href="https://twitter.com/noemistauffer">Twitter</a> and I’ll be happy to help!</p>
+<br>
+<p><strong>Hot Picks</strong></p>
+<p>I’m a big fan of typography, so I enjoyed these projects for their simplicity and good type:</p>
+<p>- The website of type foundry <a href="https://www.generaltypestudio.com/">General Type Studio</a></p>
+<p>- <a href="https://www.aristidebenoist.com/">The portfolio</a> of Aristide Benoist</p>
+<p>- <a href="https://www.hailpixel.com/">The portfolio</a> of Devin Hunt<a href="https://loveiko.com/"></a></p>
+<p><a href="https://loveiko.com/">- The portfolio</a> of Denys Loveiko</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

@@ -1,0 +1,249 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Hari Krishna</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("/assets/img/element5-digital-ue2t1tcfsn8-unsplash.jpg");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="/assets/img/ezfa0oki_400x400.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Hari Krishna
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                Sydney, Australia
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                Micro-startups Maker.  Brain behind http://visalist.io, http://anexplorer.co, http://acrypto.io
+&amp; http://dworks.io
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/1HaKr" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://1hakr.com/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from and what is your backstory?</strong></p>
+<p>Hi, I'm Hari Krishna, a computer science graduate from India, living in Sydney. I’m currently a Digital Nomad traveling the world. I have been a developer, an engineering manager, a product manager, an entrepreneur and a growth hacker as well as a designer for the last 9 years.</p>
+<br>
+<p>In 2009, I founded DWorkS shortly after my graduation and have been working on open source libraries and micro startups ever since. Two years back I decided to quit my job and become a Digital Nomad.</p>
+<br>
+<p>I built AnExplorer, a file manager which has more than 150K downloads. I’m the author of a popular networking library for Android developers called VolleyPlus. In 2017, I made ACrypto, a cryptocurrency app which enables users to keep track of all their cryptocurrencies which has 150K downloads to date.</p>
+<br>
+<p>My most recent micro-startup is VisaList which launched in December 2018. After it’s launch, VisaList was quickly picked up by multiple news publications and went viral.</p>
+<br>
+<p><img src="https://lh5.googleusercontent.com/d9IDqzrgblq3fEbffAclORLiBTM6zlDO5PxL83G-lrzbTO1h8Eilg-B-ybm_yO1uXr-uzPn3EEBXXnsf7m-ip6yyVF_6ZvwJjv_P2lTWzcsco57SXhfUmmAQ_u9nvaNKt2bXc9bn" alt=""></p>
+<br>
+<p><strong>What made you get into programming?</strong></p>
+<p>This might sound strange but I was introduced to programming at the age of 14 when I was in school and this was in 2000. There was a computer class as part of our extracurricular activities. It was the basic usage of computer and a very basic command prompt. I liked it but it didn't last long.</p>
+<br>
+<p>I finished high school and had totally forgotten about it. I was ready for college and one day I heard about a coaching institute in my hometown which was teaching ‘C’ language. I went there and saw brand new Pentium desktops with windows ‘95 all around the place. Everything felt so surreal and unlike anything, I had ever seen. I immediately enrolled and learned the basics of C and programming in the first two months. I decided then that I wanted to work with computers and my passion for programming grew slowly during my time at college. I learned C, C++, Java, and PHP in college. Then started with Android at my first job. After a while, I moved to a fancy Consulting company where I was writing code in X++. After a few years, I joined a startup and put my android skills to test. After I decided to be a digital nomad, I started learning new languages like Swift, NodeJS, VueJS, Golang as required by the things I wanted to build.</p>
+<br>
+<p><strong>What made you create VisaList?</strong></p>
+<p>After becoming a digital nomad and starting to travel the world, I soon realised that I needed a Visa to get into most countries that I intended on visiting. Although a few have Visa on Arrival (VOA), most require that you go through their embassy in your home country (in my case, India). I wanted to find the countries I could go to without having to wait three weeks to get a visa, so I started to do some research. I had to wade through a few blogs and websites, but I eventually found a list with the information I need, and off I went! After a few months, I wanted to travel to another country, but I’d lost the original list I’d found so I had to start my research all over again. Luckily, I found a new site that listed even more countries offering VOA. Along the same vein, a friend of mine told me that when he was researching visa information for Vietnam, he found almost 10 websites with a .gov address, which was really confusing. In my own research, I found that many blogs don’t have links to official embassy websites, which is ultimately unhelpful.</p>
+<br>
+<p>Frustrated, I searched for a product that could help, but everything I came across just had a table with the very basic visa requirements and nothing more. Even though I had no formal experience in travel and visa related issues, I realised that all of my time researching and traveling had put me in a position to address the need. I decided to aggregate all of the information I could find, organize it, and present it in a useful, digestible way. Thus, VisaList was born!</p>
+<br>
+<p>I built an MVP of the site and shared it with a few friends—and they loved it. Their positive responses gave me the hope and motivation I needed to move forward, so I started building a full-fledged site. Within two months it was ready. The public launch was a huge success and it’s been growing strong ever since.</p>
+<br>
+<p><img src="https://lh4.googleusercontent.com/7Bo-RhoCfn9uNJgKlcCHlJLBAJcYGfdJ1Q9zeI3_TR3Nq_eEKo2rx9Z0NT7UHD4YH0VWklyJYH3e2wUFsk9aJersUvkaDhJsSZFRY1fuY-ZehmvUNs2XYk4dlv97T-D_i-rM4reu" alt=""></p>
+<br>
+<p><strong>What does your process for building apps look like?</strong></p>
+<p>My process for building my next app (web/mobile) starts when I’m working on my current app. I purposely distract myself once in a while and start thinking about what I can build next and typically try to shortlist two or three ideas. This way I don't get burnt out while continuously working. This typically goes on for one-two months and at the end, I zero in on one idea.</p>
+<br>
+<p>Once I have decided what to build, I start pitching the idea to my brother and my close friends. This is similar to the rubber duck concept in programming, but instead of code, it's an idea and while I’m pitching most of the time, I realise shortcomings and redefine my idea on the go. Based on these pitches, it would be obvious that if the idea is going to work or not. If I can't convince a couple of people then I don't have a chance of convincing bigger crowd. Most of the time, the ideas pass with flying colors. When it doesn't, I pick my runner up from my shortlist and repeat the process.</p>
+<br>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<p>Once I make a decision on what I am going to build, I start to think of the technology I’m going to use. For example with VisaList, I didn’t know the best solution to build such a complex web app - so I started researching relevant technologies.</p>
+<br>
+<p>A good friend suggested I use VueJs, which I fell in love with almost immediately. It was really easy to learn and build apps using VueJS, and I also found a framework on top of it called NuxtJS, which had so many things right out of the box and it saved me a ton of time. Instead of learning ABC’s of the languages, I started by checking some open source examples. Then I started watching basic example tutorials on youtube. After a week, I could easily build a basic website.</p>
+<br>
+<p>Once I was able to build a basic version of a web app, I then moved onto the features. For every feature, I wanted to build I would try to find a relevant example or open source project. I would try to find if there are any libraries doing what I wanted. I would follow these examples and try to build that one particular feature. After its was completed, I would repeat the process for the next feature. By doing it this way I was able to learn to code the actual feature I wanted to build rather than some random example.</p>
+<br>
+<p><strong>Do you face any particular challenges when building over a period of time?</strong></p>
+<p>One of the biggest challenges I have faced creatively is being motivated. Once in a while, you hit a roadblock. You can have many ideas but if you lack motivation you can never finish anything. I overcame this by simply not working all the time. My usual pattern is building for two months and taking a break for two months. I call it the build-break style.</p>
+<br>
+<p>This means that I don’t get burnt out and can enjoy my break and find new inspiration.</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>I’m currently working on improving my SEO knowledge. I’m learning a lot of new things every day as SEO is like an ocean and it doesn't seem to end.</p>
+<br>
+<p>I’m also planning on mastering GoLang as my entire VisaList backend is on that for which I’m Gin and Gorm for building the API.</p>
+<br>
+<p>Docker and containerisation is also something that I’m currently learning which makes deploying a current project anywhere with just a single line of code.</p>
+<br>
+<p><strong>Advice for those learning to code?</strong></p>
+<p>I believe coding is a form of art. Programming languages have the ability to shape and change the world around you. The possibilities are only limited by our own imagination.</p>
+<br>
+<p>If you are new then all you have to do is master one language first to the core with basics concepts of programming. It could be an older language like Java or a modern one like Swift. Once you have mastered a single language then you can easily grasp other languages easily. Also instead of learning in a traditional manner, try to find something that you want to solve/build and do that while learning.</p>
+<br>
+<p>But once you are already a coder then you want to increase your technical skills and for that, a tough choice is to decide if you should learn a new programming language and if yes then which one?</p>
+<br>
+<p>Many people tell you to use ReactJS or some other tech stacks. Don't listen to them. Instead, you need to decide what you want to build and then find the tools and technologies that can bring your particular idea to life the fastest and with the least amount of effort.</p>
+<br>
+<p><strong>What’s your tech stack?</strong></p>
+<p>- Android - I love it building apps for android like AnExplorer, ACrypto, ALancher</p>
+<p>- Swift - building iOS app ACrypto</p>
+<p>- NodeJS - For building API and for building cloud functions for ACrypto</p>
+<p>- VueJS - For building DWorkS website. Very easy to learn and use.</p>
+<p>- NuxtJS - For building web apps VisaList</p>
+<p>- GoLang - Build highly scalable backend system for VisaList</p>
+<p>- MySQL - For storing relational data of VisaList</p>
+<p>- <a href="https://firebase.google.com/">Firebase</a>- for realtime database, API using cloud functions, Hosting for static sites, Auth for login in my apps. Crash reporting, perf for mobile apps</p>
+<p>- <a href="https://sentry.io/">Sentry</a>- For error reporting forVisaList</p>
+<p>- <a href="https://www.sketchapp.com/">Sketch App</a>- for designing artwork, logos and mock screens</p>
+<p>- <a href="https://www.cloudflare.com/">Cloudflare</a>- for CDN for VisaList</p>
+<br>
+<p><strong>What have been influential books, resources and links that have helped you?</strong></p>
+<p>Product -<a href="https://makebook.io/">MAKE</a>: Bootstrapper’s Handbook by Pieter Levels. It’s an amazing book and I have to give it credit for my successful product launch.</p>
+<br>
+<p>Improve SEO - I suggest <a href="https://www.seotesteronline.com/">SEO tester online</a>, <a href="https://kwfinder.com/">KW Finder</a>, <a href="https://varvy.com/">Varvy</a></p>
+<br>
+<p>Web performance -<a href="https://www.webpagetest.org/">Webpage Test</a></p>
+<br>
+<p><strong>Where can people learn more about you and your work?</strong></p>
+<p>I’m usually active on Twitter <a href="https://twitter.com/1HaKr">@<em><strong>1HaKr</strong></em></a>. Over the years I have built many products such as</p>
+<p><em>- <strong>✈️ <a href="https://visalist.io/">VisaList</a></strong></em></p>
+<p><em>- <strong>💱<a href="https://acrypto.io/">ACrypto</a></strong></em></p>
+<p><em>- <strong>📁<a href="https://github.com/1hakr/AnExplorer">AnExplorer</a></strong></em></p>
+<p><em>- <strong>🏐<a href="https://github.com/DWorkS/VolleyPlus">VolleyPlus</a></strong></em></p>
+<br>
+<p>And several more at ***<a href="https://dworks.io/">DWorkS</a>***. Right now, I’m traveling and coding my way through life. I love it and it's super fun but it also means that if I can't make any money with it then I have to take a desk job and these products will cease to exist.</p>
+<br>
+<p>So if you like what I build, you can support my <em><strong><a href="https://dworks.io/">products</a></strong></em> by buying me a coffee 😉</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

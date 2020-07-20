@@ -1,0 +1,224 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Leonardo Bighi</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("/assets/img/raphael-nogueira-okidila7k8q-unsplash.jpg");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="/assets/img/cf6zv4h_400x400.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Leonardo Bighi
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                Rio de Janeiro, Brazil
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                Developer at @estantevirtual. Maker. Writer. Book-lover. He can never find a note-taking app that he loves. 
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/bighi" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="http://leonardobighi.com/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from and what is your backstory?</strong></p>
+<p>Hi. I'm Leonardo Bighi, a web developer from the electric country of Brazil. I was a born in a poor and small town near the city of Rio de Janeiro and have always loved two things since I was a small kid: reading books and using computers.</p>
+<br>
+<p>When I was 17 years old I started to learn programming and it eventually changed my life. I got into one of the best universities of the country to learn Computer Science, but I quit after 3 years, when I got an interesting job offer. I said programming changed my life because it helped me earn a decent wage and move to Rio. That was 10 years ago, and I've continued to develop without looking back since.</p>
+<br>
+<p><strong>What made you get into programming?</strong></p>
+<p>I hate to sound cliche but my original intention when I began programming was to make video games. I loved games when I was a teenager and used this as a launch pad to begin my journey into coding. So I bought lots of books and magazines, and they told me I had to learn C++.</p>
+<br>
+<p>I remember learning C++ step by step. I didn't know you could have more than one condition in a statement, so I would make 3 ifs to make 3 comparisons. But I made a pong clone, anyway. It made me so happy that I decided that was the career for me. But that was the one and only game I've ever developed.</p>
+<br>
+<p><strong>What made you create Motorcycle Space?</strong></p>
+<p>I've always wanted to build my own projects and, one day I decided to quit my day job. I started doing that when I was 23, but after many failures I kind of gave up. Last year I was approaching my 34th birthday, and started reading stories like Pieter Levels. (https://levels.io/) So I decided to go back to my dream of building interesting projects.</p>
+<br>
+<p>I decided I would build one project a month, starting in November 2018 and I soon realized that short deadlines were the thing I needed to push me into ensuring successful and continuous builds. In November I built a command-line journal app and in December I built an app for motorcycle riders like me. I've always had one problem: I never knew where to park and so with this in mind that's where the idea for <a href="http://findmotorcycle.space/">Motorcycle Space</a> came from; it helps riders find a place to legally park their motorcycles for free.</p>
+<br>
+<p><img src="https://lh4.googleusercontent.com/KMLfg_eZH-oUVmC8tu2D-onFn22I4wZVvhvmO9Jg1sr3IFZl1ytqouSHgzxDBLNv01ENtJC8HHcuglYLzaK6xY8FNypd7xrNdHf-SJbyP-qIoOecNbkd29K-0Ma46P03upliSjRj" alt=""></p>
+<br>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<p>Learning, to me, is a very hands-on process. If I just sit and read a lot of theory I get bored and learn nothing. Things don't stick in my mind unless I build stuff. At first I tried to learn new stuff that looked interesting, while also programming it.Then I just gave up.</p>
+<br>
+<p>Now my approach is to just learn what I need, when I need it. I start building a project using technology I already know, without worrying if I'm writing the best possible code, and I keep going until I don't know how to do something. If I hit a wall, then I google it and utilise the resources, which has allowed me to really explore the blogosphere to find articles that can assist me.</p>
+<br>
+<p>To make sure that I won't forget what I'm reading, I make lots of notes on the great<a href="http://notion.so/">Notion app</a>. But I don't spend more than a few hours on it before I start writing code. My current focus these days is the product. If I can make it work, then the code is good enough. That's not sexy for a programmer, but worrying to much on the code was holding me back.</p>
+<br>
+<p><strong>What does your process for building apps look like?</strong></p>
+<p>I made websites and web apps, so the first thing I do is to prototype an interface in HTML. I'm very very bad at photoshop, so HTML is the only tool I have to mock my interfaces. I like to look at it, feel how it's going to look like, before doing anything else.</p>
+<br>
+<p>I also ask my wife to look at it too, after every step in the process. She's a psychologist, and she's much better than me at understanding people. Without her, everything I do would look like the typical &quot;UI made by a programmer&quot;.</p>
+<br>
+<p>When I have an interface, I start writing code. I try to build the smallest first version I can, so I can ship it before I get bored of the project. I'm a very visual person, so that's why I build the interface first. I also like to see it working, because it motivates me. I see it's becoming real.</p>
+<br>
+<p><strong>Do you face any particular challenges when building over a period of time?</strong></p>
+<p>I have two big problems. The first one is that entertainment is so attractive. Video games, movies, TV shows, books. Every day I fight down my urges to go and play a game. Sometimes I lose the fight, but my goal is to work on my projects at least 6 days a week. My maker friend Elomar is always helping me stay productive, because we both want to become financially independent.</p>
+<br>
+<p>The second problem is that I tend to get bored of my projects after some time. I stop loving the idea, or the appeal of a new idea looks better, and so the old idea starts to feel lackluster in comparison. Making myself release a new project by the end of every month helps me &quot;fix&quot; this problem. I know that it won't take long before I start working on another new idea.</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>Yes, I'm learning something new, but it's not a programming skill. I have spent so many years of my career learning about code that I forgot to learn other stuff. Now that I'm more into the maker world I realized there are many important skills that I never learned. Marketing. Networking. Shipping.</p>
+<br>
+<p>I have decided to focus on non-programming skills in 2019. How to find my target audience. How to reach them. How to make my product look interesting in a few paragraphs. How to differentiate my app from my competitors, and how to make potential customers understand those differences.I realized too late that those skills are more important than writing good code.</p>
+<br>
+<p><strong>Advice for those learning to code?</strong></p>
+<p>For people that are just starting: don't let people tell you're not good enough or that you can't do something.You can. There's a lot of gatekeeping in IT, but don't let that get to you. In my day job I work for a company made by a guy that didn't know how to code. He had a dream and a lot of perseverance. He started out by buying a programming book, starting making a website in Perl (perl!), and now the company has almost a hundred employees. Just build stuff, and ignore all the negative people you're going to cross paths with.</p>
+<br>
+<p>To people that have experience: the code is not the most important part of a product. We are programmers, we learn to love our code. But the customer doesn't see or care about the code. The customer wants a product that works and solves problems. When I was building products many years ago, I cared about writing the perfect code. I would refactor my classes two, three times. I imagined an invisible man looking over my shoulder and judging every line of code I wrote. But I'm not the best programmer in the world, so this invisible man was never satisfied. And I would not ship. Biggest mistake I made.</p>
+<br>
+<p><strong>What’s your tech stack?</strong></p>
+<p><strong>-</strong> <a href="https://code.visualstudio.com/">Visual Studio Code</a> is my current code editor. I used <a href="https://www.vim.org/">Vim</a> for years and still love it.</p>
+<p>- <a href="https://ruby-lang.org/">Ruby</a> is my programming language of choice, using the<a href="https://rubyonrails.org/">Ruby On Rails</a> framework.</p>
+<p>- I use <a href="http://rspec.info/">RSpec</a> with <a href="https://github.com/thoughtbot/factory_bot">Factory Bot</a> for automated testing.</p>
+<p>- On the front end, I'm still using <a href="https://jquery.com/">jQuery</a>. But thinking of using <a href="https://vuejs.org/">VueJS</a> on my next projects.</p>
+<p>- I use <a href="https://www.heroku.com/">Heroku</a> to host my web sites and apps, because it's so simple. One git push, and it's deployed.</p>
+<p>- Oh, and <a href="https://git-scm.com/">Git</a> as my version management system.</p>
+<p>- My computer is a Lenovo Thinkpad X230. This laptop was released in 2012 and, to this day, is more than good enough to do everything I need, so I never bought a new one.</p>
+<br>
+<p><strong>What have been influential books, resources and links that have helped you?</strong></p>
+<p><strong>-</strong> <a href="https://amzn.to/2HSj2Yp">Rework</a>. This book made me rethink everything I knew about what a good company was.</p>
+<p>- <a href="https://amzn.to/2UGv20D">It Doesn't Have To Be Crazy at Work</a>. The newest book from the same authors of Rework. They talk a lot about how work doesn't have to be this stressful mess of meetings and constant interruption.</p>
+<p>- <a href="http://makebook.io/">Make</a>. The book from Pieter Levels that made me realize why I've never shipped a product when I was young. One idea from the book I will never forget: being a programmer sometimes makes it harder to ship a tech product, because how we get fixated on the quality of the code.</p>
+<br>
+<p><strong>Where can people learn more about you and your work?</strong></p>
+<p>You can find me on Twitter, at <em><strong><a href="https://twitter.com/bighi">@bighi</a>.</strong></em> That's where I'm most active.</p>
+<br>
+<p>I'm also rebuilding my website and blog at <em><strong><a href="http://www.leonardobighi.com/">www.leonardobighi.com</a>,</strong></em> which you can check out and which should be completed by the time you’ve read this interview.</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+

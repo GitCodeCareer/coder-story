@@ -1,0 +1,229 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | About</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <section>
+    <div class="bg-indigo-900 md:overflow-hidden">
+        <div class="px-4 py-20 md:py-4">
+            <div class="container md:mx-auto">
+                <div class="md:flex md:flex-wrap">
+                    <div class="text-center md:text-left md:py-20">
+
+                        <h2
+                            class="text-3xl tracking-tight leading-10 font-extrabold text-indigo-300 sm:text-5xl sm:leading-none md:text-6xl">
+                            Our <span class="text-white underline">journey</span></h2>
+                        <p
+                            class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-md  sm:mx-auto md:mt-5 md:text-lg lg:mx-0">
+                           We are the product of evolution, and before we started this story - there was a whole other narrative being told.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container mx-auto">
+        <div class="py-20 px-10">
+            <p class="mb-2 text-gray-800">CoderStory is a platform to share every story. With exclusive interviews from
+            creators; we aim to bring you a new way of learning. We believe everyone has a story to tell, and you can
+            find or start yours here.
+        </p>
+            <p class="mb-2 text-gray-800">
+            By sharing your stories we want to create conversations that will not only provide knowledge and support for
+            the makers of today, but for those who want to be inspired as the creators of tomorrow. The industry is
+            always expanding and by detailing your journey there is an opportunity to provide a blueprint for the
+            community that will bring to the forefront; products and creations that need to be shared with the world.
+        </p>
+            <p class="mb-2 text-gray-800">
+            Coderstory was born from the mind of Jessica Wallace, an evolving maker who wanted to challenge the norm and
+            find a way to make the community more tight-knit. In a sea of platforms where creators can come together,
+            her mission is to invite people from all walks of life to share, educate and celebrate their hard work.
+        </p>
+
+        </section>
+        <section class="container mx-auto">
+            <p class=" text-center text-2xl mb-2 text-gray-800">
+        The Team </p>
+            <div class="flex flex-wrap">
+
+                <div class="md:w-1/2 lg:w-1/2 py-4 px-4">
+                    <a href="/interviews/jess-wallaces">
+                        <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg"><img src="../assets/img/luke-stackpoole-moeqotmupg8-unsplash.jpg"
+                        class="h-32 rounded-lg w-full object-cover">
+                            <div class="flex justify-center">
+                                <img src="../assets/img/jess-1-.jpg"
+                                class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                            </div>
+                            <div class="py-2 px-2">
+                                <div class=" font-bold font-title text-center">
+                                Jess Wallace
+                            </div>
+
+                                <div class="text-sm font-light text-center my-2">The Creator</div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <div class="md:w-1/2 lg:w-1/2 py-4 px-4">
+                    <a href="/interviews/ben-wallace">
+                        <div class="bg-white relative shadow p-2 rounded-lg text-gray-800 hover:shadow-lg"><img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60ss"
+                        class="h-32 rounded-lg w-full object-cover">
+                            <div class="flex justify-center">
+                                <img src="https://pbs.twimg.com/profile_images/1246919799030124544/TexdyoJv_400x400.jpg"
+                                class="rounded-full -mt-6 border-4 object-center object-cover border-white mr-2 h-16 w-16">
+                            </div>
+                            <div class="py-2 px-2">
+                                <div class=" font-bold font-title text-center">
+                                Ben Wallace
+                            </div>
+
+                                <div class="text-sm font-light text-center my-2">The Creative</div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<footer class="flex justify-center text-gray-100 bg-indigo-900">
+    <div class="container py-20">
+        <h1 class="text-center text-lg font-bold lg:text-2xl">
+            Join 160+ others and never miss out on <br>our latest stories, blog posts and goodies.
+        </h1>
+
+        <div class="flex justify-center mt-6 mb-10   ">
+            <div class="bg-white rounded-lg">
+                <div class="flex flex-wrap justify-between md:flex-row">
+                    <form style="margin-block-end: 0rem;"action="https://coderstory.us19.list-manage.com/subscribe/post?u=3757dc73cf7e45a04dddc18bd&amp;id=70b2a3e203" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+                        <input type="email" value="" name="EMAIL" class="required m-1 p-2 appearance-none text-gray-700 text-sm focus:outline-none"
+                        placeholder="Enter your email">
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_3757dc73cf7e45a04dddc18bd_70b2a3e203" tabindex="-1" value=""></div>
+                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="w-full m-1 p-2 text-sm bg-indigo-900 rounded-lg font-semibold uppercase lg:w-auto">
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+        <hr class="h-px mt-6 mb-6 bg-gray-700 border-none">
+
+        <div class="flex flex-col items-center justify-between mt-3 md:flex-row">
+            <div>
+                <a href="/">
+                    <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-20">
+                </a>
+            </div>
+            <div class="flex mt-4 md:m-0">
+                <div class="-mx-4">
+                    <a href="/interviews"
+                        class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about"
+                        class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved"
+                        class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get
+                        Involved</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>

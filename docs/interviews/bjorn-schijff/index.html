@@ -1,0 +1,240 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="dns-prefetch" href="https://identity.netlify.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderStory | Bjorn Schijff</title>
+    <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <link href="../assets/css/main.css" rel="stylesheet">
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/d09f181782.js" crossorigin="anonymous"></script>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+    <link rel="icon" href="https://res.cloudinary.com/coderstory/image/upload/v1587318454/CODERSTORY_1.png">
+
+    <!-- Facebook OG Image -->
+    <meta property="og:title" content="CoderStory - Taking Digital Passion Around The World"/>
+    <meta property="og:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta property="og:image:height" content="600"/>
+    <meta property="og:image:width" content="1200"/>
+
+    <!-- Twitter Card Image -->
+    <meta name="twitter:title" content="CoderStory - Taking Digital Passion Around The World">
+    <meta property="twitter:image" content="https://res.cloudinary.com/coderstory/image/upload/v1587318471/social.jpg"/>
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118575748-3"></script>
+    <script>
+        var host = window.location.hostname;
+
+        if (host != "localhost") {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-118575748-3');
+        }
+    </script>
+</head>
+<body class="">
+<nav x-data="{ open: false }" @keydown.window.escape="open = false" class="bg-indigo-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="flex items-center">
+                <div class="flex-shrink-0">
+                    <a href="/">
+                        <img src="https://res.cloudinary.com/coderstory/image/upload/v1587317977/coderstory-white.png" class="h-32">
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:block">
+                <div class="ml-4 flex items-center md:ml-6">
+                    <a href="/interviews" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+                    
+                    <a href="/about" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+                    <a href="/getinvolved" class="ml-4 px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+                </div>
+            </div>
+            <div class="-mr-2 flex md:hidden">
+                <button @click="open = !open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-white focus:text-black" x-bind:aria-label="open ? 'Close main menu' : 'Main menu'" x-bind:aria-expanded="open">
+                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                        <path :class="{'hidden': open, 'inline-flex': !open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        <path :class="{'hidden': !open, 'inline-flex': open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div :class="{'block': open, 'hidden': !open}" class="hidden md:hidden">
+        <div class="px-2 pt-2 pb-3 sm:px-3">
+            <a href="/interviews" class="block px-3 py-2 rounded-md text-base font-medium text-white focus:outline-none focus:text-white focus:bg-gray-700">Interviews</a>
+            
+            <a href="/about" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">About</a>
+            <a href="/getinvolved" class="mt-1 block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-700">Get Involved</a>
+        </div>
+
+    </div>
+</nav>
+
+
+    <main class="profile-page text-gray-800 antialiased">
+        <section class="relative block" style="height: 500px;">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                style='background-image: url("/assets/img/james-pond-26vbutluffo-unsplash.jpg");'>
+                <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+            </div>
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+                style="height: 70px; transform: translateZ(0px);">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="none" version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-gray-300 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-gray-300">
+            <div class="container mx-auto px-4">
+                <div
+                    class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..." src="/assets/img/fmzg5bbl_400x400.jpg"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16"
+                                        style="max-width: 150px;"/>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1 lg:text-left lg:self-center">
+                                <div class="lg:mt-10 py-3 px-3 mt-4 sm:mt-0"></div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3">
+                                <div class="flex justify-end py-4 lg:pt-4 pt-8"></div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-800 mb-2">
+                                Bjorn Schijff
+                            </h3>
+                            <div class="text-sm leading-normal mt-0 mb-2 text-gray-500 font-bold uppercase">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-gray-500"></i>
+                                The Netherlands
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                Senior Frontend Engineer 💻. Trainer. #Angular, #TypeScript, #RxJS. Entrepreneur. Gaming/Esports. 
+                            </div>
+                            <div class="mb-2 text-gray-700 mt-6">
+                                <a href="https://twitter.com/bjeaurn" target="_blank">
+                                    <i class="fab fa-twitter text-indigo-700"></i>
+                                </a>
+                                <a href="https://bjeaurn.com/"  target="_blank">
+                                    <i class="fas fa-link text-indigo-700 ml-4"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="mt-10 py-10 border-t border-gray-300">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4 markdown">
+                                    <p><strong>Who are you? Where are you from? What's your backstory?</strong></p>
+<p>Hello my name is Bjorn, online more commonly known as ‘Bjeaurn’. I’m 29 years old as of right now and I live in The Netherlands. I currently work as a Senior Front-end Engineer.</p>
+<br>
+<p>I have been coding for as long as I can remember and have been programming professionally for about 10 years, with a couple of stories on how I got to where I am right now. Hopefully we’ll get to explore some of the more interesting parts in my journey to becoming a developer and an engineer during this interview!</p>
+<br>
+<p><strong>What made you get into programming?</strong></p>
+<p>My dad introduced me to programming when I was 6. When you’re younger you just pick up faster on things like language, so this was both a nice way to see if I could develop some understanding of the English language and maybe get me to get interested in computers and the like. We used very simple languages like (Q)BASIC and a few years later and tons of hours with books that my dad would help me get through, I was quite fluent in the language and made games for myself and others to play.</p>
+<br>
+<p>My interest in board games and video games later on definitely triggered me to learn and try and do more with computers than I normally would’ve, as I can imagine plenty of people reading this may have in common with me.</p>
+<br>
+<p>Around my 12th or 13th I had tried a few languages, including Visual Basic and was getting familiar with some basic HTML. I think I built a simple (manually managed) RPG as a bunch of HTML pages and me and a couple of friends from around the block would play with that. Sending messages through a forum describing actions they wanted to take; which I would reflect in the HTML pages.</p>
+<br>
+<p>The web really peaked my interest in development in general and that’s where the bug bit. I learned PHP and starting building websites, which I could in turn sell to other people. This new found power of being able to make a little bit of money tinkering around with computers and software I had made myself really got me driven to actually pursue a career in (web) development. I was hooked and some entrepreneurial spirit became more and more visible.</p>
+<br>
+<p><strong>What does your process for learning to code look like?</strong></p>
+<p>Coding is more of a side-effect of trying to solve a problem using software. That may sound a bit vague, but when you’ve played around with multiple languages; you’ll quickly run into some common concepts, theories and so called “patterns” that run throughout all levels of software development. The language becomes more of a tool, then something you feel you have to master.</p>
+<br>
+<p>So picking up a new language, as an experienced “coder”, is much more of a low effort switch that brings new and interesting experiences and let’s you try a different approach to doing something, then you’re used too.</p>
+<br>
+<p>One of the first things I would do if I were to try out a new language, tool, library or framework, is to look up how to do basic things. Every program starts with a “Hello World”. Figuring out how to get the expected result, as basic as a message on the screen, is always the first step in understanding how a particular “tool” works.</p>
+<br>
+<p>The more interesting question underlying this question, in my opinion, is where to start if you have little or very limited experience with coding in general. And it’s definitely the harder question as well, cause there’s so many paths to take and none is actually better or worse than another.</p>
+<br>
+<p>One common theme that I have always liked, when I had limited experience with certain programming languages to code in, was that I wanted to see progress fast. It’s so rewarding to get the thing you’re trying to make to do what you want in front of your eyes. It’s what I enjoy very much about front-end programming with JavaScript and TypeScript; you see results within minutes when you’re using a new tool that offers good documentation.</p>
+<br>
+<p>In any case, my process for starting something new that I’m unfamiliar with is visit the website. Read through the “Getting Started” tutorials that they so often provide, or if I’m feeling I need more visual stimulation: Look up a YouTube video of someone that you don’t mind listening to and goes through some material in a pace that you are comfortable with.</p>
+<br>
+<p><strong>What does your process for building apps look like?</strong></p>
+<p>An app always starts with motivation. This came come in the form of an idea, which I’m sure many people have often. The difficult thing for me is that ideas usually don’t come alone, they come with many, and identifying which ones are worth the pursuit and the time investment is very difficult. I know for a fact that many coders have plenty of unfinished side-projects because of this.</p>
+<br>
+<p>But where to start when that motivation strikes hard, depends on what your side goals are. Do you want to try a new language or tool? Do you want to expand on your limited knowledge of something, or do you actually want to make something and ship to see if your idea actually works as you intend it to?</p>
+<br>
+<p>In the former two cases, figuring out what “technical stack” to use and laying some groundwork (usually known as getting the “boilerplate” to work so you can start) and actually seeing some results can be very rewarding already; just finding a reason to use a piece of technology you were interested in.</p>
+<br>
+<p>But for the latter case, when you just want to start making and shipping; what works best for me is to grab some tools I’m comfortable with and just start writing.</p>
+<br>
+<p>When you’ve built a few apps, either professionally for a company or for yourself, can be either big or small, you will always learn some things you would approach differently. And we could probably dedicate an entire website to describing these pitfalls and where to find them, but that’s not a very powerful to learn.</p>
+<br>
+<p>Many parts will be rebuilt anyway after learning some things just don’t work at scale, or are very hard to expand upon. So not sitting still for too long and not overthinking big design decisions in the beginning is how you get something that actually works out within a few days or a few weeks depending on the size of the project.</p>
+<br>
+<p>I can’t stress enough how powerful “just start” is, and starting can also be just drawing a basic interface you would want to build. You’ll hit plenty of things on the way that you wished you’d thought about a bit more before you went ahead and built something in a certain way, but THAT is the most powerful way to learn in my honest opinion.</p>
+<br>
+<p><strong>Are you currently learning anything new?</strong></p>
+<p>I’m currently working for a big client with a very ambitious project and as one of the lead front-end engineers in my team; we work with Angular. The very latest, bleeding edge version. (Version 7 at the time of writing)</p>
+<br>
+<p>I love working with it, and I still learn and think about new approaches whilst I have been working with Angular for the better part of 2,5 years now, starting from the Angular 2 beta in 2016.</p>
+<br>
+<p>What I’m also learning a lot about right now is the more professional and scalable enterprise ways of doing big apps that must handle enormous loads and concurrent users, and how to make sure you have to never do anything manually in order to keep it all running. It’s a very interesting experience.</p>
+<br>
+<p><strong>What's your tech stack?</strong></p>
+<p>On a daily basis I work with Angular (7, not to be confused with the end-of-life AngularJS!), RxJS, TypeScript. I use Visual Studio Code (free) and JetBrains IntelliJ (paid) to manage my code. The results and features I produce usually interact with a Java or Scala backend. If I had to do some backend work, I would pick NodeJS or PHP for the job, depending on what I’m trying to do.</p>
+<br>
+<p>For version control of our code (crucial when working in a team or with multiple teams!) we use Git, which is the de-facto standard around; don’t let anyone else tell you differently. For private projects I use Github or my own Gitea server, for work we either use Github paid or GitLab. All of which are excellent products, so use what you’re comfortable with.</p>
+<br>
+<p>For the more boring parts of coding, like unit testing and Continuous Integration and Delivery (CI/CD), Karma/Jasmine is an excellent basis that is very compatible with Angular and TypeScript. For CI/CD, either Jenkins if you can host it or free and paid options like CircleCI or TravisCI do an excellent job. But if you’re just learning and getting started, I wouldn’t go to deep into CI/CD unless you’re really interested in what it does. Let’s skip over that for now.</p>
+<br>
+<p>Most frontends are hosted on either Apache or Nginx, I prefer the latter; but both are really excellent and have similar learning curves if you want to do some creative things with these. Setting them up is a breeze if you follow the right guides.</p>
+<br>
+<p>There’s probably a hundred or more tools and libraries I use on a daily basis that I’m either not aware of, or are so automated in my workflow I don’t even notice them anymore. But feel free to hit me up if you are looking for a tool do a specific thing, there’s always someone around that knows one.</p>
+<br>
+<p><strong>Advice for those learning to code?</strong></p>
+<p>Think of something simple, that is useful to you; and just start. Both starting and keeping it simple is important, cause it keeps you from getting demotivated by the enormous amounts of work you’ll have to dig through before you see any results.</p>
+<br>
+<p>We all would like to build the next Facebook or a Massive Multiplayer Online game. But when starting out to gather experience and maybe building a small product; focus on the very basics. Get results fast so you can see what works and what doesn’t work. One of the most important things is learning to design and write code that is easily extendible and properly readable. This helps you understand code when you revisit it a few months or even years later when you need to touch older code to add new features or fix bugs.</p>
+<br>
+<p><strong>Shameless Plugs</strong></p>
+<p>Follow me at @Bjeaurn on Twitter, I talk and retweet plenty in regards of (game) development, and I also do some game and development streaming on a regular basis so plenty to go round for all!</p>
+<br>
+<p>Recently released “Gine” version 3, which is a TypeScript based HTML5 game engine that I intend to use in the next Ludum Dare challenge (48 hours to build a game, most of it is live streamed), so definitely check that out if you’re interested and come say hi on Twitch!</p>
+<br>
+<p>In regards of projects, plenty of ideas; nothing concrete I can tweet about now. Just follow on Twitter mainly or any other platform you would like to use; I’m usually named the same. If not, feel free to ask! And that goes for anything basically, feel free to ask me things!</p>
+<br>
+<p><strong>Hot Picks</strong></p>
+<p>I just got back from AngularConnect in London. Met some amazing people from the Angular community and saw some interesting ideas.</p>
+<br>
+<p>One I took with me is “FormQL”. Interesting if you want to work with GraphQL (a way of communication between front and backend, simply put) and reactive forms in Angular.</p>
+<br>
+<p>The world of JavaScript and Frontend in general is moving really quickly. It feels like everyday there’s something cool being tested or released. The trick for me is to look at a lot, but be very picky about what I want to try. Else finishing any project at all becomes nearly impossible.</p>
+<br>
+<p>Good luck on your personal journey!</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="pt-4 text-center">
+                <a href="/interviews">Read more interviews →</a>
+            </p>
+            
+        </section>
+    </main>
+
