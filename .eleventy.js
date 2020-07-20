@@ -9,7 +9,7 @@ module.exports = function(config) {
         templateFormats: ["html", "njk", "md"],
         dir: {
             input: "src",
-            output: "_site",
+            output: "docs",
             includes: "includes"
         }
     }
