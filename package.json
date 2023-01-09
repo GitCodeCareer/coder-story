@@ -21,6 +21,6 @@
   },
   "homepage": "https://github.com/GitCodeCareer/coder-story#readme",
   "dependencies": {
-    "@11ty/eleventy": "^0.10.0"
+    "@11ty/eleventy": "^1.0.2"
   }
 }
